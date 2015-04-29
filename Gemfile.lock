@@ -12,6 +12,7 @@ GEM
       iso
     iso (0.2.1)
       i18n
+    rake (10.4.2)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
@@ -32,4 +33,5 @@ PLATFORMS
 DEPENDENCIES
   doorkeeper-i18n!
   i18n-spec (~> 0.6.0)
+  rake
   rspec
