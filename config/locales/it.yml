@@ -1,0 +1,151 @@
+it:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Nome'
+        redirect_uri: 'Redirect URI'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'non può contenere un fragment.'
+              invalid_uri: 'deve essere un URI valido.'
+              relative_uri: 'deve essere un URI assoluto.'
+              secured_uri: 'deve essere un URI HTTPS/SSL.'
+
+  mongoid:
+    attributes:
+      doorkeeper/application:
+        name: 'Nome'
+        redirect_uri: 'Redirect URI'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'non può contenere un fragment.'
+              invalid_uri: 'deve essere un URI valido.'
+              relative_uri: 'deve essere un URI assoluto.'
+              secured_uri: 'deve essere un URI HTTPS/SSL.'
+
+  mongo_mapper:
+    attributes:
+      doorkeeper/application:
+        name: 'Nome'
+        redirect_uri: 'Redirect URI'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'non può contenere un fragment.'
+              invalid_uri: 'deve essere un URI valido.'
+              relative_uri: 'deve essere un URI assoluto.'
+              secured_uri: 'deve essere un URI HTTPS/SSL.'
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Sei sicuro?'
+      buttons:
+        edit: 'Modifica'
+        destroy: 'Elimina'
+        submit: 'Invia'
+        cancel: 'Annulla'
+        authorize: 'Autorizza'
+      form:
+        error: 'Ops! Controlla la form per possibili errori'
+      help:
+        redirect_uri: 'Usa una riga per URI'
+        native_redirect_uri: 'Usa %{native_redirect_uri} per test locali'
+      edit:
+        title: "Modifica l'application"
+      index:
+        title: 'Le tue applicazioni'
+        new: 'Nuova Applicazione'
+        name: 'Nome'
+        callback_url: 'Callback URL'
+      new:
+        title: 'Nuova Applicazione'
+      show:
+        title: 'Applicazione: %{name}'
+        application_id: 'Id Applicazione'
+        secret: 'Secret'
+        callback_urls: 'Callback urls'
+        actions: 'Azioni'
+
+    authorizations:
+      buttons:
+        authorize: 'Autorizza'
+        deny: 'Nega'
+      error:
+        title: 'Si è verificato un errore'
+      new:
+        title: 'Richiesta di autorizzazione'
+        prompt: 'Autorizzi %{client_name} ad usare il tuo account?'
+        able_to: 'Questa applicazione portà'
+      show:
+        title: 'Codide di autorizzazione'
+
+    authorized_applications:
+      confirmations:
+        revoke: 'Sei sicuro?'
+      buttons:
+        revoke: 'Revoca'
+      index:
+        title: 'Applicazioni autorizzate'
+        application: 'Applicazione'
+        created_at: 'Creata il'
+        date_format: '%Y-%m-%d %H:%M:%S'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'Manca un parametro obbligatorio nella richiesta, include un valore non supportato, oppure è malformata.'
+        invalid_redirect_uri: "L'uri di redirect incluso non è valido."
+        unauthorized_client: 'Il client non è autorizzato per effettuare questa richiesta utilizzando questo metodo.'
+        access_denied: 'Il proprietario della risorsa o il server di autorizzazione rifiuta la richiesta.'
+        invalid_scope: 'Lo scope della richiesta non è valido, sconosciuto, o malformato.'
+        server_error: 'Il server di autorizzazione ha rilevato una condizione inaspettata che ha impedito di soddisfare la richiesta.'
+        temporarily_unavailable: 'Il server di autorizzazione non è momentaneamente disponibile a causa di un sovraccarico temporaneo o di manutenzione.'
+
+        #configuration error messages
+        credential_flow_not_configured: "Il flusso di credenziali utente è fallito perchè Doorkeeper.configure.resource_owner_from_credentials deve essere configurato."
+        resource_owner_authenticator_not_configured: "La ricerca dell'utente è fallita perchè Doorkeeper.configure.resource_owner_authenticator deve essere configurato."
+
+        # Access grant errors
+        unsupported_response_type: 'Il server di autorizzazione non supporta questo response type.'
+
+        # Access token errors
+        invalid_client: "L'autenticazione client è fallita a causa di client sconosciuto, nessuna autenticazione client inclusa, o metodo di autenticazione non supportato."
+        invalid_grant: "L'autorizzazione richiesta non è valida, scaduta, revocata, non corrisponde all'uri di redirezione usato nella richiesta di autorizzazione, o è stata richiesta da un altro client."
+        unsupported_grant_type: "Il tipo di autorizzazione richista non è supportato dal server di autorizzazione."
+
+        # Password Access token errors
+        invalid_resource_owner: "Le credenziali non sono valide, o l'utente non è stato trovato"
+
+        invalid_token:
+          revoked: "Il token di accesso è stato revocato"
+          expired: "Il token di accesso è scaduto"
+          unknown: "Il token di accesso non è valido"
+
+    flash:
+      applications:
+        create:
+          notice: 'Applicazione creata.'
+        destroy:
+          notice: 'Applicazione eliminata.'
+        update:
+          notice: 'Applicazione aggiornata.'
+      authorized_applications:
+        destroy:
+          notice: 'Applicazione revocata.'
+
+    layouts:
+      admin:
+        nav:
+          oauth2_provider: 'OAuth2 Provider'
+          applications: 'Applicazioni'
+      application:
+        title: 'Richiesta autorizzazione OAuth'
