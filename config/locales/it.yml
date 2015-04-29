@@ -60,7 +60,7 @@ it:
         redirect_uri: 'Usa una riga per URI'
         native_redirect_uri: 'Usa %{native_redirect_uri} per test locali'
       edit:
-        title: "Modifica l'application"
+        title: "Modifica l'applicazione"
       index:
         title: 'Le tue applicazioni'
         new: 'Nuova Applicazione'
