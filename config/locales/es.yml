@@ -9,7 +9,7 @@ es:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'no puede contener un fragment.'
+              fragment_present: 'no puede contener un fragmento.'
               invalid_uri: 'debe ser una URI válida.'
               relative_uri: 'debe ser una URI absoluta.'
               secured_uri: 'debe ser una URI HTTPS/SSL.'
@@ -24,7 +24,7 @@ es:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'no puede contener un fragment.'
+              fragment_present: 'no puede contener un fragmento.'
               invalid_uri: 'debe ser una URI válida.'
               relative_uri: 'debe ser una URI absoluta.'
               secured_uri: 'debe ser una URI HTTPS/SSL.'
@@ -39,7 +39,7 @@ es:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'no puede contener un fragment.'
+              fragment_present: 'no puede contener un fragmento.'
               invalid_uri: 'debe ser una URI válida.'
               relative_uri: 'debe ser una URI absoluta.'
               secured_uri: 'debe ser una URI HTTPS/SSL.'
