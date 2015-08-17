@@ -119,7 +119,7 @@ zh-CN:
 
         # Access token errors
         invalid_client: '由于未知、不支持或没有客户端，认证失败'
-        invalid_grant: '登录回调地址无效、过期或者已经被撤销了'
+        invalid_grant: '授权方式无效，或者登录回调地址无效、过期或已被撤销'
         unsupported_grant_type: '服务器不支持此类型的授权方式'
 
         # Password Access token errors
