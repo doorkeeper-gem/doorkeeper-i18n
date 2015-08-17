@@ -119,7 +119,7 @@ zh-TW:
 
         # Access token errors
         invalid_client: '由於未知、不支援或是沒有客戶端認證而失敗'
-        invalid_grant: '轉向網址的授權許可無效、過期或已被撤銷'
+        invalid_grant: '授權許可型態無效，或者轉向網址的授權許可無效、過期或已被撤銷'
         unsupported_grant_type: '授權伺服器不支援此授權許可型態'
 
         # Password Access token errors
