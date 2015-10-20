@@ -1,0 +1,123 @@
+ja:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: '名前'
+        redirect_uri: 'リダイレクトURI'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'cannot contain a fragment.'
+              invalid_uri: 'must be a valid URI.'
+              relative_uri: 'must be an absolute URI.'
+              secured_uri: 'must be an HTTPS/SSL URI.'
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: '本当に削除しますか?'
+      buttons:
+        edit: '編集'
+        destroy: '削除'
+        submit: '登録'
+        cancel: 'キャンセル'
+        authorize: '認証'
+      form:
+        error: 'Whoops! Check your form for possible errors'
+      help:
+        redirect_uri: 'Use one line per URI'
+        native_redirect_uri: 'Use %{native_redirect_uri} for local tests'
+        scopes: 'Separate scopes with spaces. Leave blank to use the default scopes.'
+      edit:
+        title: 'アプリケーションの編集'
+      index:
+        title: 'あなたのアプリケーション'
+        new: '新しいアプリケーション'
+        name: '名前'
+        callback_url: 'コールバックURL'
+      new:
+        title: '新しいアプリケーション'
+      show:
+        title: 'アプリケーション: %{name}'
+        application_id: 'アプリケーション Id'
+        secret: 'シークレット'
+        scopes: 'スコープ'
+        callback_urls: 'コールバック urls'
+        actions: 'アクション'
+
+    authorizations:
+      buttons:
+        authorize: '認証'
+        deny: '否認'
+      error:
+        title: 'エラーが発生しました'
+      new:
+        title: '認証が必要です'
+        prompt: 'あなたのアカウントで %{client_name} 認証しますか?'
+        able_to: 'このアプリケーションは次のことが可能です'
+      show:
+        title: '認証コード'
+
+    authorized_applications:
+      confirmations:
+        revoke: '本当に取消ますか?'
+      buttons:
+        revoke: '取消'
+      index:
+        title: 'あなたの認証されたアプリケーション'
+        application: 'アプリケーション'
+        created_at: '作成日時'
+        date_format: '%Y-%m-%d %H:%M:%S'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.'
+        invalid_redirect_uri: 'The redirect uri included is not valid.'
+        unauthorized_client: 'The client is not authorized to perform this request using this method.'
+        access_denied: 'The resource owner or authorization server denied the request.'
+        invalid_scope: 'The requested scope is invalid, unknown, or malformed.'
+        server_error: 'The authorization server encountered an unexpected condition which prevented it from fulfilling the request.'
+        temporarily_unavailable: 'The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.'
+
+        #configuration error messages
+        credential_flow_not_configured: 'Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.'
+        resource_owner_authenticator_not_configured: 'Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.'
+
+        # Access grant errors
+        unsupported_response_type: 'The authorization server does not support this response type.'
+
+        # Access token errors
+        invalid_client: 'Client authentication failed due to unknown client, no client authentication included, or unsupported authentication method.'
+        invalid_grant: 'The provided authorization grant is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client.'
+        unsupported_grant_type: 'The authorization grant type is not supported by the authorization server.'
+
+        # Password Access token errors
+        invalid_resource_owner: 'The provided resource owner credentials are not valid, or resource owner cannot be found'
+
+        invalid_token:
+          revoked: "The access token was revoked"
+          expired: "The access token expired"
+          unknown: "The access token is invalid"
+
+    flash:
+      applications:
+        create:
+          notice: 'アプリケーションが作成されました。'
+        destroy:
+          notice: 'アプリケーションが作成されました。'
+        update:
+          notice: 'アプリケーションが更新されました。'
+      authorized_applications:
+        destroy:
+          notice: 'アプリケーションが取消されました。'
+
+    layouts:
+      admin:
+        nav:
+          oauth2_provider: 'OAuth2 プロバイダー'
+          applications: 'アプリケーション'
+      application:
+        title: 'OAuth認証が必要です'
