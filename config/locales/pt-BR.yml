@@ -14,36 +14,6 @@ pt-BR:
               relative_uri: 'dever ser uma URI absoluta.'
               secured_uri: 'deve ser uma URI HTTPS/SSL.'
 
-  mongoid:
-    attributes:
-      doorkeeper/application:
-        name: 'Nome'
-        redirect_uri: 'URI de redirecionamento'
-    errors:
-      models:
-        doorkeeper/application:
-          attributes:
-            redirect_uri:
-              fragment_present: 'Não pode conter um fragmento.'
-              invalid_uri: 'deve ser uma URI válida.'
-              relative_uri: 'dever ser uma URI absoluta.'
-              secured_uri: 'deve ser uma URI HTTPS/SSL.'
-
-  mongo_mapper:
-    attributes:
-      doorkeeper/application:
-        name: 'Nome'
-        redirect_uri: 'URI de redirecionamento'
-    errors:
-      models:
-        doorkeeper/application:
-          attributes:
-            redirect_uri:
-              fragment_present: 'Não pode conter um fragmento.'
-              invalid_uri: 'deve ser uma URI válida.'
-              relative_uri: 'dever ser uma URI absoluta.'
-              secured_uri: 'deve ser uma URI HTTPS/SSL.'
-
   doorkeeper:
     applications:
       confirmations:
@@ -59,6 +29,7 @@ pt-BR:
       help:
         redirect_uri: 'Use uma linha por URI'
         native_redirect_uri: 'Use %{native_redirect_uri} para testes locais'
+        scopes: 'Separate scopes with spaces. Leave blank to use the default scopes.'
       edit:
         title: 'Editar aplicação'
       index:
@@ -72,6 +43,7 @@ pt-BR:
         title: 'Aplicação: %{name}'
         application_id: 'Id da Aplicação (Application Id)'
         secret: 'Segredo (Secret)'
+        scopes: 'Scopes'
         callback_urls: 'urls de Callback'
         actions: 'Ações'
 
