@@ -14,36 +14,6 @@ fr:
               relative_uri: "doit être une URL absolue."
               secured_uri: "doit être une URL HTTP/SSL."
 
-  mongoid:
-    attributes:
-      doorkeeper/application:
-        name: "Nom"
-        redirect_uri: "L'URL de redirection"
-    errors:
-      models:
-        doorkeeper/application:
-          attributes:
-            redirect_uri:
-              fragment_present: "ne peut contenir un fragment."
-              invalid_uri: "doit être une URL valide."
-              relative_uri: "doit être une URL absolue."
-              secured_uri: "doit être une URL HTTP/SSL."
-
-  mongo_mapper:
-    attributes:
-      doorkeeper/application:
-        name: "Nom"
-        redirect_uri: "L'URL de redirection"
-    errors:
-      models:
-        doorkeeper/application:
-          attributes:
-            redirect_uri:
-              fragment_present: "ne peut contenir un fragment."
-              invalid_uri: "doit être une URL valide."
-              relative_uri: "doit être une URL absolue."
-              secured_uri: "doit être une URL HTTP/SSL."
-
   doorkeeper:
     applications:
       confirmations:
@@ -59,6 +29,7 @@ fr:
       help:
         redirect_uri: "Utiliser une ligne par URL"
         native_redirect_uri: "Utiliser %{native_redirect_uri} pour les tests locaux"
+        scopes: ~
       edit:
         title: "Modifier l'application"
       index:
@@ -72,6 +43,7 @@ fr:
         title: "Application : %{name}"
         application_id: "ID de l'application"
         secret: "Secret"
+        scopes: ~
         callback_urls: "URL du retour d'appel"
         actions: "Actions"
 

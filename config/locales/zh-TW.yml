@@ -14,36 +14,6 @@ zh-TW:
               relative_uri: '必須是絕對的網址'
               secured_uri: '必須是有 HTTPS/SSL 的網址'
 
-  mongoid:
-    attributes:
-      doorkeeper/application:
-        name: '名稱'
-        redirect_uri: '轉向網址'
-    errors:
-      models:
-        doorkeeper/application:
-          attributes:
-            redirect_uri:
-              fragment_present: '不能包含片段(#)'
-              invalid_uri: '必須是有效的網址'
-              relative_uri: '必須是絕對的網址'
-              secured_uri: '必須是有 HTTPS/SSL 的網址'
-
-  mongo_mapper:
-    attributes:
-      doorkeeper/application:
-        name: '名稱'
-        redirect_uri: '轉向網址'
-    errors:
-      models:
-        doorkeeper/application:
-          attributes:
-            redirect_uri:
-              fragment_present: '不能包含片段(#)'
-              invalid_uri: '必須是有效的網址'
-              relative_uri: '必須是絕對的網址'
-              secured_uri: '必須是有 HTTPS/SSL 的網址'
-
   doorkeeper:
     applications:
       confirmations:
@@ -59,6 +29,7 @@ zh-TW:
       help:
         redirect_uri: '每個網址必須只有一行'
         native_redirect_uri: '使用 %{native_redirect_uri} 作本地端測試'
+        scopes: ~
       edit:
         title: '編輯應用'
       index:
@@ -72,6 +43,7 @@ zh-TW:
         title: '應用: %{name}'
         application_id: '應用 ID'
         secret: '私鑰'
+        scopes: ~
         callback_urls: '回應網址'
         actions: '動作'
 

@@ -14,36 +14,6 @@ zh-CN:
               relative_uri: '必须是绝对的 URL 地址'
               secured_uri: '必须是 HTTPS/SSL 的 URL 地址'
 
-  mongoid:
-    attributes:
-      doorkeeper/application:
-        name: '名称'
-        redirect_uri: '登录回调地址'
-    errors:
-      models:
-        doorkeeper/application:
-          attributes:
-            redirect_uri:
-              fragment_present: '不能包含片段(#)'
-              invalid_uri: '必须是有效的 URL 格式'
-              relative_uri: '必须是绝对的 URL 地址'
-              secured_uri: '必须是 HTTPS/SSL 的 URL 地址'
-
-  mongo_mapper:
-    attributes:
-      doorkeeper/application:
-        name: '名称'
-        redirect_uri: '登录回调地址'
-    errors:
-      models:
-        doorkeeper/application:
-          attributes:
-            redirect_uri:
-              fragment_present: '不能包含片段(#)'
-              invalid_uri: '必须是有效的 URL 格式'
-              relative_uri: '必须是绝对的 URL 地址'
-              secured_uri: '必须是 HTTPS/SSL 的 URL 地址'
-
   doorkeeper:
     applications:
       confirmations:
@@ -59,6 +29,7 @@ zh-CN:
       help:
         redirect_uri: '每行只能有一个 URL'
         native_redirect_uri: '使用 %{native_redirect_uri} 作为本地测试'
+        scopes: ~
       edit:
         title: '修改应用'
       index:
@@ -72,6 +43,7 @@ zh-CN:
         title: '应用: %{name}'
         application_id: '应用 ID'
         secret: '私钥'
+        scopes: ~
         callback_urls: '登录回调地址'
         actions: '操作'
 
