@@ -29,7 +29,7 @@ zh-CN:
       help:
         redirect_uri: '每行只能有一个 URL'
         native_redirect_uri: '使用 %{native_redirect_uri} 作为本地测试'
-        scopes: 'Separate scopes with spaces. Leave blank to use the default scopes.'
+        scopes:
       edit:
         title: '修改应用'
       index:
@@ -43,7 +43,7 @@ zh-CN:
         title: '应用: %{name}'
         application_id: '应用 ID'
         secret: '私钥'
-        scopes: 'Scopes'
+        scopes:
         callback_urls: '登录回调地址'
         actions: '操作'
 
