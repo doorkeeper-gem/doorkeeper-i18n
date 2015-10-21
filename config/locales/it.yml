@@ -29,7 +29,7 @@ it:
       help:
         redirect_uri: 'Usa una riga per URI'
         native_redirect_uri: 'Usa %{native_redirect_uri} per test locali'
-        scopes:
+        scopes: ~
       edit:
         title: "Modifica l'applicazione"
       index:
@@ -43,7 +43,7 @@ it:
         title: 'Applicazione: %{name}'
         application_id: 'Id Applicazione'
         secret: 'Secret'
-        scopes:
+        scopes: ~
         callback_urls: 'Callback urls'
         actions: 'Azioni'
 

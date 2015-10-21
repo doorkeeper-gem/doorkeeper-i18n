@@ -29,7 +29,7 @@ zh-TW:
       help:
         redirect_uri: '每個網址必須只有一行'
         native_redirect_uri: '使用 %{native_redirect_uri} 作本地端測試'
-        scopes:
+        scopes: ~
       edit:
         title: '編輯應用'
       index:
@@ -43,7 +43,7 @@ zh-TW:
         title: '應用: %{name}'
         application_id: '應用 ID'
         secret: '私鑰'
-        scopes:
+        scopes: ~
         callback_urls: '回應網址'
         actions: '動作'
 

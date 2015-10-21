@@ -29,7 +29,7 @@ pt-BR:
       help:
         redirect_uri: 'Use uma linha por URI'
         native_redirect_uri: 'Use %{native_redirect_uri} para testes locais'
-        scopes:
+        scopes: ~
       edit:
         title: 'Editar aplicação'
       index:
@@ -43,7 +43,7 @@ pt-BR:
         title: 'Aplicação: %{name}'
         application_id: 'Id da Aplicação (Application Id)'
         secret: 'Segredo (Secret)'
-        scopes:
+        scopes: ~
         callback_urls: 'urls de Callback'
         actions: 'Ações'
 
