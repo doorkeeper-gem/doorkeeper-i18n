@@ -1,4 +1,1 @@
-module DoorkeeperI18n
-  class Engine < ::Rails::Engine
-  end
-end
+require 'doorkeeper-i18n/railtie' if defined?(Rails)
