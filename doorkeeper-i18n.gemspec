@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
   s.add_development_dependency "i18n-spec", "~> 0.6.0"
+  s.add_development_dependency "railties", ">= 0"
 end
