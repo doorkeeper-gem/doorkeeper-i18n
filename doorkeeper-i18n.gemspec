@@ -14,6 +14,8 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- test/*`.split("\n")
   s.require_paths = ["lib"]
 
+  s.add_dependency "doorkeeper"
+
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
   s.add_development_dependency "i18n-spec", "~> 0.6.0"
