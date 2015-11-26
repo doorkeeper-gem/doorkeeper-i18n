@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    doorkeeper-i18n (2.0.0)
+    doorkeeper-i18n (3.0.0)
 
 GEM
   remote: http://rubygems.org/
