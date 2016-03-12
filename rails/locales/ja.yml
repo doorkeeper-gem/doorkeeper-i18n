@@ -9,10 +9,10 @@ ja:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'cannot contain a fragment.'
-              invalid_uri: 'must be a valid URI.'
-              relative_uri: 'must be an absolute URI.'
-              secured_uri: 'must be an HTTPS/SSL URI.'
+              fragment_present: 'はURLフラグメントを含めることはできません。'
+              invalid_uri: 'は有効なURIではありません。'
+              relative_uri: 'は絶対URIでなければなりません。'
+              secured_uri: 'はHTTPS/SSL URIでなければなりません。'
 
   doorkeeper:
     applications:
@@ -27,24 +27,24 @@ ja:
       form:
         error: 'Whoops! Check your form for possible errors'
       help:
-        redirect_uri: 'Use one line per URI'
-        native_redirect_uri: 'Use %{native_redirect_uri} for local tests'
-        scopes: 'Separate scopes with spaces. Leave blank to use the default scopes.'
+        redirect_uri: 'URIごとに1行で入力してください'
+        native_redirect_uri: 'ローカルテストのため、 %{native_redirect_uri} を使用してください。'
+        scopes: '各スコープをスペースで区切ってください。初期設定のスコープを使用する場合は、空白のままにしてください。'
       edit:
         title: 'アプリケーションの編集'
       index:
-        title: 'あなたのアプリケーション'
+        title: 'アプリケーション'
         new: '新しいアプリケーション'
-        name: '名前'
+        name: '名称'
         callback_url: 'コールバックURL'
       new:
-        title: '新しいアプリケーション'
+        title: 'アプリケーションの作成'
       show:
         title: 'アプリケーション: %{name}'
-        application_id: 'アプリケーション Id'
+        application_id: 'アプリケーションID'
         secret: 'シークレット'
         scopes: 'スコープ'
-        callback_urls: 'コールバック urls'
+        callback_urls: 'コールバックURL'
         actions: 'アクション'
 
     authorizations:
@@ -69,7 +69,7 @@ ja:
         title: 'あなたの認証されたアプリケーション'
         application: 'アプリケーション'
         created_at: '作成日時'
-        date_format: '%Y-%m-%d %H:%M:%S'
+        date_format: '%Y年%m月%d日 %H:%M:%S'
 
     errors:
       messages:
@@ -98,9 +98,9 @@ ja:
         invalid_resource_owner: 'The provided resource owner credentials are not valid, or resource owner cannot be found'
 
         invalid_token:
-          revoked: "The access token was revoked"
-          expired: "The access token expired"
-          unknown: "The access token is invalid"
+          revoked: "アクセストークンが取り消されました"
+          expired: "アクセストークンの有効期限が切れました"
+          unknown: "アクセストークンが無効です"
 
     flash:
       applications:
