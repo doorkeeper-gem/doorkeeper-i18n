@@ -1,0 +1,152 @@
+pl:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Nazwa'
+        redirect_uri: 'Adres przekierowania'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'nie może zawierać sekcji fragment.'
+              invalid_uri: 'musi być poprawnym URI.'
+              relative_uri: 'musi być absolutnym URI.'
+              secured_uri: 'musi być HTTPS/SSL URI.'
+
+  mongoid:
+    attributes:
+      doorkeeper/application:
+        name: 'Nazwa'
+        redirect_uri: 'Adres przekierowania'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'nie może zawierać sekcji fragment.'
+              invalid_uri: 'musi być poprawnym URI.'
+              relative_uri: 'musi być poprawnym URI.'
+              secured_uri: 'musi być HTTPS/SSL URI.'
+
+  mongo_mapper:
+    attributes:
+      doorkeeper/application:
+        name: 'Nazwa'
+        redirect_uri: 'Adres przekierowania'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'nie może zawierać sekcji fragment.'
+              invalid_uri: 'musi być poprawnym URI.'
+              relative_uri: 'musi być poprawnym URI.'
+              secured_uri: 'musi być HTTPS/SSL URI.'
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Na pewno?'
+      buttons:
+        edit: 'Edytuj'
+        destroy: 'Usuń'
+        submit: 'Wyślij'
+        cancel: 'Anuluj'
+        authorize: 'Uwierzytelnij'
+      form:
+        error: 'Ups! Sprawdź czy formularz nie zawiera błędów'
+      help:
+        redirect_uri: 'Umieść każde URI w osobnej linii'
+        native_redirect_uri: 'Użyj %{native_redirect_uri} do testów lokalnych'
+      edit:
+        title: 'Edycja aplikacji'
+      index:
+        title: 'Twoje aplikacje'
+        new: 'Nowa aplikacja'
+        name: 'Nazwa'
+        callback_url: 'URL do callbacków'
+      new:
+        title: 'Nowa aplikacja'
+      show:
+        title: 'Aplikacja: %{name}'
+        application_id: 'ID aplikacji'
+        secret: 'Sekretny klucz'
+        callback_urls: 'URLe do callbacków'
+        actions: 'Akcje'
+
+    authorizations:
+      buttons:
+        authorize: 'Autoryzuj'
+        deny: 'Odrzuć'
+      error:
+        title: 'Wystąpił błąd'
+      new:
+        title: 'Wymagana autoryzacja'
+        prompt: 'Czy zezwolić %{client_name} na używanie Twojego konta?'
+        able_to: 'Ta aplikacja uzyska dostęp do'
+      show:
+        title: 'Kod autoryzacyjny'
+
+    authorized_applications:
+      confirmations:
+        revoke: 'Na pewno?'
+      buttons:
+        revoke: 'Unieważnij'
+      index:
+        title: 'Twoje autoryzowane aplikacje'
+        application: 'Aplikacja'
+        created_at: 'Utworzono'
+        date_format: '%d-%m-%Y %H:%M:%S'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'Zapytanie nie posiada wymaganego parametru, zawiera nieobsługiwaną wartość parametru lub jest nieprawidłowe w inny sposób.'
+        invalid_redirect_uri: 'Przekazany adres do przekierowań jest nieprawidłowy.'
+        unauthorized_client: 'Klient nie jest upoważniony do wykonywania tego zapytania za pomocą tej metody.'
+        access_denied: 'Właściciel zasobu lub serwer autoryzacji zablokował zapytanie.'
+        invalid_scope: 'Żądany zakres jest błędny, nieznany lub nieprawidłowy w inny sposób.'
+        server_error: 'Serwer autoryzacji napotkał niespodziewany błąd, który uniemożliwił odpowiedź na zapytanie.'
+        temporarily_unavailable: 'Serwer autoryzacji jest tymczasowo niedostępny ze względu na przeciążenie lub prace konserwacyjne.'
+
+        #configuration error messages
+        credential_flow_not_configured: 'Resource Owner Password Credentials flow nie powiódł się ponieważ Doorkeeper.configure.resource_owner_from_credentials jest nieskonfigurowane.'
+        resource_owner_authenticator_not_configured: 'Nie udało się odnaleźć właściciela zasobu ponieważ Doorkeeper.configure.resource_owner_authenticator jest nieskonfigurowane.'
+
+        # Access grant errors
+        unsupported_response_type: 'Serwer autoryzacji nie obsługuje tego rodzaju odpowiedzi.'
+
+        # Access token errors
+        invalid_client: 'Uwierzytelnianie klienta nie powiodło się ze względu na nieznany identyfikator klienta lub nieznaną metodę uwierzytelniania.'
+        invalid_grant: 'Przydzielony token jest nieprawidłowy, przedawniony, unieważniony, zawiera adres przekierowania inny niż w oryginalnym zapytaniu lub został nadany innemu klientowi.'
+        unsupported_grant_type: 'Serwer autoryzacji nie obsługuje tego rodzaju uwierzytelniania.'
+
+        # Password Access token errors
+        invalid_resource_owner: 'Podane klucze są nieprawidłowe lub nie można odnaleźć właściciela zasobu.'
+
+        invalid_token:
+          revoked: "Token został unieważniony"
+          expired: "Token jest przedawniony"
+          unknown: "Token jest nieprawidłowy"
+
+    flash:
+      applications:
+        create:
+          notice: 'Utworzono aplikację.'
+        destroy:
+          notice: 'Usunięto aplikację.'
+        update:
+          notice: 'Zaktualizowano aplikację.'
+      authorized_applications:
+        destroy:
+          notice: 'Unieważniono aplikację.'
+
+    layouts:
+      admin:
+        nav:
+          oauth2_provider: 'OAuth2 Provider'
+          applications: 'Aplikacje'
+      application:
+        title: 'Wymagana autoryzacja OAuth'
+        
