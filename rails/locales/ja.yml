@@ -25,7 +25,7 @@ ja:
         cancel: 'キャンセル'
         authorize: '認証'
       form:
-        error: 'Whoops! Check your form for possible errors'
+        error: 'おっと!フォームにエラーがないか確認してください'
       help:
         redirect_uri: 'URIごとに1行で入力してください'
         native_redirect_uri: 'ローカルテストのため、 %{native_redirect_uri} を使用してください。'
@@ -74,28 +74,28 @@ ja:
     errors:
       messages:
         # Common error messages
-        invalid_request: 'The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.'
-        invalid_redirect_uri: 'The redirect uri included is not valid.'
-        unauthorized_client: 'The client is not authorized to perform this request using this method.'
-        access_denied: 'The resource owner or authorization server denied the request.'
-        invalid_scope: 'The requested scope is invalid, unknown, or malformed.'
-        server_error: 'The authorization server encountered an unexpected condition which prevented it from fulfilling the request.'
-        temporarily_unavailable: 'The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.'
+        invalid_request: '必須パラメータが不足しているか、サポートされていないパラメータが含まれているか、もしくはパラメータが不正であるため、リクエストを処理できませんでした。'
+        invalid_redirect_uri: '含まれるリダイレクトURIが正しくありません。'
+        unauthorized_client: 'クライアントはこのメソッドを用いたリクエストを実行する権限がありません。'
+        access_denied: 'リソースオーナーもしくは認可サーバがリクエストを拒否しました。'
+        invalid_scope: '指定されたスコープが無効か、不明か、もしくは正しくありません。'
+        server_error: '予期せぬ事態が発生したため、認可サーバはリクエストを処理できませんでした。'
+        temporarily_unavailable: '認可サーバが一時的に高負荷な状態にあるか、もしくはメンテナンス中であるため、リクエストを処理できません。'
 
         #configuration error messages
-        credential_flow_not_configured: 'Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.'
-        resource_owner_authenticator_not_configured: 'Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.'
+        credential_flow_not_configured: 'Doorkeeper.configure.resource_owner_from_credentialsが設定されていないため、リソースオーナーパスワードクレデンシャルフローは失敗しました。'
+        resource_owner_authenticator_not_configured: 'Doorkeeper.configure.resource_owner_authenticatorが設定されていないため、リソースオーナーの取得に失敗しました。'
 
         # Access grant errors
-        unsupported_response_type: 'The authorization server does not support this response type.'
+        unsupported_response_type: '認可サーバは指定されたレスポンスタイプをサポートしていません。'
 
         # Access token errors
-        invalid_client: 'Client authentication failed due to unknown client, no client authentication included, or unsupported authentication method.'
-        invalid_grant: 'The provided authorization grant is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client.'
-        unsupported_grant_type: 'The authorization grant type is not supported by the authorization server.'
+        invalid_client: 'クライアントが不明か、クライアント認証が含まれていないか、もしくは認証メソッドがサポートされていないため、クライアント認証は失敗しました。'
+        invalid_grant: '指定された認可グラントは不正か、有効期限切れか、無効か、リダイレクトURIが異なるか、もしくは別のクライアントに適用されています。'
+        unsupported_grant_type: 'この認可グラントのタイプは認可サーバではサポートされていません。'
 
         # Password Access token errors
-        invalid_resource_owner: 'The provided resource owner credentials are not valid, or resource owner cannot be found'
+        invalid_resource_owner: '指定されたリソースオーナークレデンシャルが不正か、もしくはリソースオーナーが見つかりません。'
 
         invalid_token:
           revoked: "アクセストークンが取り消されました"
