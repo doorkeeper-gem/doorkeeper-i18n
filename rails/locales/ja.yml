@@ -119,5 +119,6 @@ ja:
         nav:
           oauth2_provider: 'OAuth2 プロバイダー'
           applications: 'アプリケーション'
+          home: 'ホーム'
       application:
         title: 'OAuth認証が必要です'
