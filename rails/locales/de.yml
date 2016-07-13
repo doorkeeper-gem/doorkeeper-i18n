@@ -75,7 +75,7 @@ de:
       messages:
         # Common error messages
         invalid_request: 'Die Anfrage enthält einen nicht-unterstützten Parameter, ein Parameter fehlt oder sie ist anderweitig fehlerhaft.'
-        invalid_redirect_uri: 'Die Redirect-URI in der Anfrage ist ungültig.'
+        invalid_redirect_uri: 'Der Redirect-URI in der Anfrage ist ungültig.'
         unautorized_client: 'Der Client ist nicht autorisiert, diese Anfrage mit dieser Methode auszuführen.'
         access_denied: 'Der Resource Owner oder der Autorisierungs-Server hat die Anfrage verweigert.'
         invalid_scope: 'Der angeforderte Scope ist inkorrekt, unbekannt oder fehlerhaft.'
@@ -91,7 +91,7 @@ de:
 
         # Access token errors
         invalid_client: 'Client-Autorisierung MKIM ist fehlgeschlagen: Unbekannter Client, keine Autorisierung mitgeliefert oder Autorisierungsmethode nicht unterstützt.'
-        invalid_grant: 'Die bereitgestellte Autorisierung ist inkorrekt, abgelaufen, widerrufen, ist mit einem anderen Client verknüpft oder die Redirection URI stimmt nicht mit der Autorisierungs-Anfrage überein.'
+        invalid_grant: 'Die bereitgestellte Autorisierung ist inkorrekt, abgelaufen, widerrufen, ist mit einem anderen Client verknüpft oder der Redirection URI stimmt nicht mit der Autorisierungs-Anfrage überein.'
         unsupported_grant_type: 'Der Autorisierungs-Typ wird nicht vom Autorisierungs-Server unterstützt.'
 
         # Password Access token errors
