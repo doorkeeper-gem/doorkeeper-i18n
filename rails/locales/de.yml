@@ -23,7 +23,7 @@ de:
         destroy: 'Löschen'
         submit: 'Übertragen'
         cancel: 'Abbrechen'
-        autorize: 'Autorisieren'
+        authorize: 'Autorisieren'
       form:
         error: 'Whoops! Bitte überprüfe das Formular auf Fehler!'
       help:
@@ -47,9 +47,9 @@ de:
         callback_urls: 'Callback URLs'
         actions: 'Aktionen'
 
-    autorizations:
+    authorizations:
       buttons:
-        autorize: 'Autorisieren'
+        authorize: 'Autorisieren'
         deny: 'Verweigern'
       error:
         title: 'Ein Fehler ist aufgetreten'
@@ -60,7 +60,7 @@ de:
       show:
         title: 'Autorisierungscode'
 
-    autorized_applications:
+    authorized_applications:
       confirmations:
         revoke: 'Bist du sicher?'
       buttons:
@@ -76,7 +76,7 @@ de:
         # Common error messages
         invalid_request: 'Die Anfrage enthält einen nicht-unterstützten Parameter, ein Parameter fehlt oder sie ist anderweitig fehlerhaft.'
         invalid_redirect_uri: 'Der Redirect-URI in der Anfrage ist ungültig.'
-        unautorized_client: 'Der Client ist nicht autorisiert, diese Anfrage mit dieser Methode auszuführen.'
+        unauthorized_client: 'Der Client ist nicht autorisiert, diese Anfrage mit dieser Methode auszuführen.'
         access_denied: 'Der Resource Owner oder der Autorisierungs-Server hat die Anfrage verweigert.'
         invalid_scope: 'Der angeforderte Scope ist inkorrekt, unbekannt oder fehlerhaft.'
         server_error: 'Der Autorisierungs-Server hat ein unerwartetes Problem festgestellt und konnte die Anfrage nicht beenden.'
@@ -110,7 +110,7 @@ de:
           notice: 'Applikation gelöscht.'
         update:
           notice: 'Applikation geupdated.'
-      autorized_applications:
+      authorized_applications:
         destroy:
           notice: 'Applikation widerrufen.'
 
