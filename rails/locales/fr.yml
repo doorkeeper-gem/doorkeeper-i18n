@@ -119,5 +119,6 @@ fr:
         nav:
           oauth2_provider: "Fournisseur OAuth2"
           applications: "Applications"
+          home: 'Home'
       application:
         title: "Autorisation OAuth requise"

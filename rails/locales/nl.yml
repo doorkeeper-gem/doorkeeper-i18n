@@ -119,5 +119,6 @@ nl:
         nav:
           oauth2_provider: 'OAuth2 Provider'
           applications: 'Applicaties'
+          home: 'Home'
       application:
         title: 'OAuth authorisatie vereist'

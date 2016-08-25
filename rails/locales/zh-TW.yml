@@ -119,5 +119,6 @@ zh-TW:
         nav:
           oauth2_provider: 'OAuth2 Provider'
           applications: '應用'
+          home: 'Home'
       application:
         title: 'OAuth 認證需求'

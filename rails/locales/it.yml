@@ -119,5 +119,6 @@ it:
         nav:
           oauth2_provider: 'OAuth2 Provider'
           applications: 'Applicazioni'
+          home: 'Home'
       application:
         title: 'Richiesta autorizzazione OAuth'
