@@ -78,7 +78,7 @@ fr:
         invalid_redirect_uri: "L'URL de redirection n'est pas valide."
         unauthorized_client: "Le client n'est pas autorisé à effectuer cette demande à l'aide de cette méthode."
         access_denied: "Le propriétaire de la ressource ou le serveur d'autorisation a refusé la demande."
-        invalid_scope: "La portée demandée n'est pas valide, est inconnue, ou est mal formée."
+        invalid_scope: "Le scope demandé n'est pas valide, est inconnu, ou est mal formé."
         server_error: "Le serveur d'autorisation a rencontré une condition inattendue qui l'a empêché de remplir la demande."
         temporarily_unavailable: "Le serveur d'autorisation est actuellement incapable de traiter la demande à cause d'une surcharge ou d'un entretien temporaire du serveur."
 
