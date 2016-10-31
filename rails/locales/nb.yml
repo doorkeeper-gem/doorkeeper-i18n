@@ -1,0 +1,124 @@
+nb:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Navn'
+        redirect_uri: 'VideresendingsURI'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'kan ikke inneholde et fragment.'
+              invalid_uri: 'må være en gyldig URI.'
+              relative_uri: 'må være en fullstendig URI.'
+              secured_uri: 'må være en HTTPS/SSL URI.'
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Er du sikker?'
+      buttons:
+        edit: 'Endre'
+        destroy: 'Slett'
+        submit: 'Lagre'
+        cancel: 'Avbryt'
+        authorize: 'Autoriser'
+      form:
+        error: 'Whoops! Sjekk skjema for mulige feil'
+      help:
+        redirect_uri: 'Bruk en linje per URI'
+        native_redirect_uri: 'Bruk %{native_redirect_uri} for lokale tester'
+        scopes: 'Separer tagger med mellomrom. La den være blank for standard tagger.'
+      edit:
+        title: 'Endre applikasjonen'
+      index:
+        title: 'Dine applikasjoner'
+        new: 'Ny applikasjon'
+        name: 'Navn'
+        callback_url: 'Callback URL'
+      new:
+        title: 'Ny Applikasjon'
+      show:
+        title: 'Applikasjon: %{name}'
+        application_id: 'Application Id'
+        secret: 'Secret'
+        scopes: 'Tagger'
+        callback_urls: 'Callback url-er'
+        actions: 'Handlinger'
+
+    authorizations:
+      buttons:
+        authorize: 'Autoriser'
+        deny: 'Nekt'
+      error:
+        title: 'En feil har oppstått'
+      new:
+        title: 'Autorisering nødvendig'
+        prompt: 'Autoriser %{client_name} til å bruke din bruker?'
+        able_to: 'Denne applikasjonen vil ha tilgang til å gjøre følgende'
+      show:
+        title: 'Autorisasjonskode'
+
+    authorized_applications:
+      confirmations:
+        revoke: 'Er du sikker?'
+      buttons:
+        revoke: 'Tilbakekall'
+      index:
+        title: 'Dine autoriserte applikasjoner'
+        application: 'Applikasjon'
+        created_at: 'Opprettet'
+        date_format: '%Y-%m-%d %H:%M:%S'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'Forespørselen mangler et nødvendig parameter, inkluderer et parameter som ikke er støttet, eller er på annen måte feilskrevet.'
+        invalid_redirect_uri: 'Videresendings uri-en inkludert er ikke gyldig.'
+        unauthorized_client: 'Klienten er ikke autorisert til å utføre denne forespørselen ved å bruke denne metoden.'
+        access_denied: 'Ressurs-eieren eller autorisasjonsserveren nektet forespørelsen fra å fullføre.'
+        invalid_scope: 'Forespørselens omfang er ugyldig, ukjent, eller feilskrevet.'
+        server_error: 'Autoriseringsserveren har møtt en uforventet betingelse som har forhindret serveren fra å fullføre forespørselen.'
+        temporarily_unavailable: 'Autorisasjonsserveren er for øyeblikket utilgjengelig på grunn av en foreløpig overlasting eller vedlikehold av serveren.'
+
+        #configuration error messages
+        credential_flow_not_configured: 'Ressurseierens Passord legitimasjonsflyt feilet på grunn av at Doorkeeper.configure.resource_owner_from_credentials ikke var konfigurert.'
+        resource_owner_authenticator_not_configured: 'Resource Owner find feilet på grunn av Doorkeeper.configure.resource_owner_authenticator ikke var konfigurert.'
+
+        # Access grant errors
+        unsupported_response_type: 'Autoriseringsserveren har ikke støtte for denne responstypen.'
+
+        # Access token errors
+        invalid_client: 'Klientautentikasjon feilet på grunn av ukjent klient, ingen klientautentikasjon inkludert, eller autentikasjonsmetode som ikke støttes.'
+        invalid_grant: 'Den medfølgende autoriseringsinnvilgelsen er ugyldig, utgått, tilbakekalt, er ulik videresendings URI-en brukt i autoriseringsforespørselen, eller tilhører en annen klient.'
+        unsupported_grant_type: 'Autoriseringsinnvilgelsens type er ikke støttet av autorisasjonsserveren'
+
+        # Password Access token errors
+        invalid_resource_owner: 'Den medfølgende ressurseierens legitimasjon er ikke gyldig, eller ressurseier er ikke funnet.'
+
+        invalid_token:
+          revoked: "Tilgangspolletten var tilbakekalt"
+          expired: "Tilgangspolletten er utgått"
+          unknown: "Tilgangspolletten er ugyldig"
+
+    flash:
+      applications:
+        create:
+          notice: 'Applikasjon opprettet.'
+        destroy:
+          notice: 'Applikasjon slettet.'
+        update:
+          notice: 'Applikasjon oppdatert.'
+      authorized_applications:
+        destroy:
+          notice: 'Applikasjon tilbakekalt.'
+
+    layouts:
+      admin:
+        nav:
+          oauth2_provider: 'OAuth2 Levrandør'
+          applications: 'Applikasjoner'
+          home: 'Hjem'
+      application:
+        title: 'OAuth autorisering nødvendig'
