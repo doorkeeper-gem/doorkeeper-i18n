@@ -1,0 +1,124 @@
+fi:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Nimi'
+        redirect_uri: 'Uudelleenohjauksen URI'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'ei voi sisältää URI fragmenttia.'
+              invalid_uri: 'täytyy olla validi URI.'
+              relative_uri: 'täytyy olla absoluuttinen URI.'
+              secured_uri: 'täytyy olla HTTPS/SSL URI.'
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Oletko varma?'
+      buttons:
+        edit: 'Muokkaa'
+        destroy: 'Poista'
+        submit: 'Lähetä'
+        cancel: 'Peruuta'
+        authorize: 'Valtuuta'
+      form:
+        error: 'Hups! Tarkasta lomakkeesi mahdollisten virheiden varalta.'
+      help:
+        redirect_uri: 'Yksi URI riviä kohden'
+        native_redirect_uri: 'Käytä %{native_redirect_uri} paikallisia testejä varten'
+        scopes: 'Erottele näkyvyysalueet välilyönnein. Jätä tyhjäksi, mikäli haluat käyttää oletusnäkyvyysalueita.'
+      edit:
+        title: 'Muokkaa sovellusta'
+      index:
+        title: 'Omat sovellukset'
+        new: 'Uusi sovellus'
+        name: 'Nimi'
+        callback_url: 'Callback URL'
+      new:
+        title: 'Uusi sovellus'
+      show:
+        title: 'Sovellus: %{name}'
+        application_id: 'Sovelluksen ID'
+        secret: 'Salainen avain'
+        scopes: 'Näkyvyysalueet'
+        callback_urls: 'Callback URL:t'
+        actions: 'Toiminnot'
+
+    authorizations:
+      buttons:
+        authorize: 'Valtuuta'
+        deny: 'Kiellä'
+      error:
+        title: 'Virhe'
+      new:
+        title: 'Valtuutus vaadittu'
+        prompt: 'Valtuuta %{client_name} käyttämään tiliäsi?'
+        able_to: 'Tämä sovellus pystyy'
+      show:
+        title: 'Valtuutuskoodi'
+
+    authorized_applications:
+      confirmations:
+        revoke: 'Oletko varma?'
+      buttons:
+        revoke: 'Evää'
+      index:
+        title: 'Valtuuttamasi sovellukset'
+        application: 'Sovellukset'
+        created_at: 'Valtuutettu'
+        date_format: '%d. %m. %Y klo %H:%M:%S'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'Pyynnöstä puuttuu vaadittu parametri, se sisältää virheellisen parametrin arvon tai on muutoin väärin muodostettu.'
+        invalid_redirect_uri: 'Uudelleenohjauksen URI ei ole validi.'
+        unauthorized_client: 'Asiakasohjelmaa ei ole valtuutettu suorittamaan haluttua pyyntöä käyttäen tätä metodia.'
+        access_denied: 'Resurssin omistaja tai valtuutuspalvelin kieltäytyi suorittamasta pyyntöä.'
+        invalid_scope: 'Pyynnön näkyvyysalue on virheellinen, tuntematon tai väärin muodostettu.'
+        server_error: 'Valtuutuspalvelin kohtasi odottamattoman tilan, jonka seurauksena se ei pystynyt suorittamaan pyyntöä.'
+        temporarily_unavailable: 'Valtuutuspalvelin ei tällä hetkellä pysty suorittamaan pyyntöä väliaikaisen ylikuormituksen tai palvelinhuollon takia.'
+
+        #configuration error messages
+        credential_flow_not_configured: '"Resource Owner Password Credentials flow" -proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_from_credentials -asetusta ei ole konfiguroitu.'
+        resource_owner_authenticator_not_configured: '"Resource Owner find" -proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_authenticator -asetusta ei ole konfiguroitu.'
+
+        # Access grant errors
+        unsupported_response_type: 'Valtuutuspalvelin ei tue tämän tyyppisiä vastauksia.'
+
+        # Access token errors
+        invalid_client: 'Asiakasohjelman valtuutus epäonnistui tuntemattoman asiakasohjelman, virheellisen valtuutuksen tai tukemattoman valtuutusmetodin takia.'
+        invalid_grant: 'Toimitettu valtuutus on virheellinen, vanhentunut, evätty, se ei vastaa valtuutuspyynnön uudelleenohjauksen URI:a tai sen on myöntänyt toinen asiakasohjelma.'
+        unsupported_grant_type: 'Valtuutuspalvelin ei tue tämän tyyppisiä valtuutuksia.'
+
+        # Password Access token errors
+        invalid_resource_owner: 'Toimitetut resurssin omistajan pääsytiedot ovat virheelliset tai resurssin omistajaa ei löydy.'
+
+        invalid_token:
+          revoked: "Pääsyoikeus evätty"
+          expired: "Pääsyoikeus vanhentunut"
+          unknown: "Pääsyoikeus virheellinen"
+
+    flash:
+      applications:
+        create:
+          notice: 'Sovellus luotu.'
+        destroy:
+          notice: 'Sovellus poistettu.'
+        update:
+          notice: 'Sovellus päivitetty.'
+      authorized_applications:
+        destroy:
+          notice: 'Sovellus evätty.'
+
+    layouts:
+      admin:
+        nav:
+          oauth2_provider: 'OAuth2 tarjoaja'
+          applications: 'Sovellukset'
+          home: 'Etusivu'
+      application:
+        title: 'OAuth valtuutus vaadittu.'
