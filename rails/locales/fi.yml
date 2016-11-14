@@ -1,4 +1,4 @@
-en:
+fi:
   activerecord:
     attributes:
       doorkeeper/application:
@@ -83,8 +83,8 @@ en:
         temporarily_unavailable: 'Valtuutuspalvelin ei tällä hetkellä pysty suorittamaan pyyntöä väliaikaisen ylikuormituksen tai palvelinhuollon takia.'
 
         #configuration error messages
-      credential_flow_not_configured: '"Resource Owner Password Credentials flow" -proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_from_credentials -asetusta ei ole konfiguroitu.'
-      resource_owner_authenticator_not_configured: '"Resource Owner find" -proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_authenticator -asetusta ei ole konfiguroitu.'
+        credential_flow_not_configured: '"Resource Owner Password Credentials flow" -proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_from_credentials -asetusta ei ole konfiguroitu.'
+        resource_owner_authenticator_not_configured: '"Resource Owner find" -proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_authenticator -asetusta ei ole konfiguroitu.'
 
         # Access grant errors
         unsupported_response_type: 'Valtuutuspalvelin ei tue tämän tyyppisiä vastauksia.'
