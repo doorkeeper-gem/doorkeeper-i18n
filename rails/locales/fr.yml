@@ -29,7 +29,7 @@ fr:
       help:
         redirect_uri: "Utiliser une ligne par URL"
         native_redirect_uri: "Utiliser %{native_redirect_uri} pour les tests locaux"
-        scopes: ~
+        scopes: "Utilisez une espace entre chaque portée. Laissez vide pour utiliser la portée par defaut"
       edit:
         title: "Modifier l'application"
       index:
@@ -43,7 +43,7 @@ fr:
         title: "Application : %{name}"
         application_id: "ID de l'application"
         secret: "Secret"
-        scopes: ~
+        scopes: "Portées"
         callback_urls: "URL du retour d'appel"
         actions: "Actions"
 
