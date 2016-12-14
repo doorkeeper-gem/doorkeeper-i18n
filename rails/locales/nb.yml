@@ -117,7 +117,7 @@ nb:
     layouts:
       admin:
         nav:
-          oauth2_provider: 'OAuth2 Levrandør'
+          oauth2_provider: 'OAuth2 Leverandør'
           applications: 'Applikasjoner'
           home: 'Hjem'
       application:
