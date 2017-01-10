@@ -4,6 +4,7 @@ pt-BR:
       doorkeeper/application:
         name: 'Nome'
         redirect_uri: 'URI de redirecionamento'
+        scopes: ~
     errors:
       models:
         doorkeeper/application:

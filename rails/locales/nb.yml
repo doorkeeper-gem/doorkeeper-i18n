@@ -4,6 +4,7 @@ nb:
       doorkeeper/application:
         name: 'Navn'
         redirect_uri: 'VideresendingsURI'
+        scopes: 'Tagger'
     errors:
       models:
         doorkeeper/application:

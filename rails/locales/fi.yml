@@ -4,6 +4,7 @@ fi:
       doorkeeper/application:
         name: 'Nimi'
         redirect_uri: 'Uudelleenohjauksen URI'
+        scopes: 'Näkyvyysalueet'
     errors:
       models:
         doorkeeper/application:

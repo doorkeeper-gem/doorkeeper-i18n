@@ -4,6 +4,7 @@ fr:
       doorkeeper/application:
         name: "Nom"
         redirect_uri: "L'URL de redirection"
+        scopes: "Portées"
     errors:
       models:
         doorkeeper/application:

@@ -4,6 +4,7 @@ zh-CN:
       doorkeeper/application:
         name: '名称'
         redirect_uri: '登录回调地址'
+        scopes: 'Scopes'
     errors:
       models:
         doorkeeper/application:

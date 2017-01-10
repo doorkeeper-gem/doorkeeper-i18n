@@ -4,6 +4,7 @@ zh-TW:
       doorkeeper/application:
         name: '名稱'
         redirect_uri: '轉向網址'
+        scopes: ~
     errors:
       models:
         doorkeeper/application:

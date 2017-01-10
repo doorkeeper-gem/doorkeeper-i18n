@@ -4,6 +4,7 @@ nl:
       doorkeeper/application:
         name: 'Naam'
         redirect_uri: 'Redirect URI'
+        scopes: 'Scopes'
     errors:
       models:
         doorkeeper/application:
