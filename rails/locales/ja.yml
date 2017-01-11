@@ -4,6 +4,7 @@ ja:
       doorkeeper/application:
         name: '名前'
         redirect_uri: 'リダイレクトURI'
+        scopes: 'スコープ'
     errors:
       models:
         doorkeeper/application:
