@@ -57,7 +57,7 @@ de:
       new:
         title: 'Autorisierung erforderlich'
         prompt: 'Soll %{client_name} für die Benutzung dieses Accounts autorisiert werden?'
-        able_to: 'Diese Anwendung wird folgende Rechte haben:'
+        able_to: 'Diese Anwendung wird folgende Rechte haben'
       show:
         title: 'Autorisierungscode'
 
