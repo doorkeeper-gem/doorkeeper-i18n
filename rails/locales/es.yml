@@ -4,7 +4,7 @@ es:
       doorkeeper/application:
         name: 'Nombre'
         redirect_uri: 'URI de redirección'
-        scopes: ~
+        scopes: 'Ámbitos'
     errors:
       models:
         doorkeeper/application:
@@ -30,7 +30,7 @@ es:
       help:
         redirect_uri: 'Usa una linea por URI'
         native_redirect_uri: 'Usa %{native_redirect_uri} para test locales'
-        scopes: ~
+        scopes: 'Separa los ámbitos con espacios. Deja en blanco para usar los ámbitos predeterminados.'
       edit:
         title: 'Editar aplicación'
       index:
@@ -44,7 +44,7 @@ es:
         title: 'Aplicación: %{name}'
         application_id: 'Identificador de aplicación'
         secret: 'Secret'
-        scopes: ~
+        scopes: 'Ámbitos'
         callback_urls: 'Callback urls'
         actions: 'Acciones'
 
