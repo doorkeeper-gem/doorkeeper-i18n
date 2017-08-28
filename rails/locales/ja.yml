@@ -108,7 +108,7 @@ ja:
         create:
           notice: 'アプリケーションが作成されました。'
         destroy:
-          notice: 'アプリケーションが作成されました。'
+          notice: 'アプリケーションが削除されました。'
         update:
           notice: 'アプリケーションが更新されました。'
       authorized_applications:
