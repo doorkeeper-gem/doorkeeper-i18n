@@ -1,0 +1,122 @@
+ru:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Наименование'
+        redirect_uri: 'URI для редиректа'
+        scopes: 'Скоупы'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'не должен содержать фрагменты'
+              invalid_uri: 'должен быть корректным URI'
+              relative_uri: 'должен быть абсолютным URI'
+              secured_uri: 'должен быть HTTPS/SSL URI'
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Вы уверены?'
+      buttons:
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        submit: 'Сохранить'
+        cancel: 'Отменить'
+        authorize: 'Авторизовать'
+      form:
+        error: 'Возникли ошибки! Проверьте правильность заполнения полей'
+      help:
+        redirect_uri: 'Указывайте каждый URI в отдельной строке'
+        native_redirect_uri: 'Используйте %{native_redirect_uri} для локального тестирования'
+        scopes: 'Записывайте скоупы через пробел. Оставьте поле пустым для использования значений по-умолчанию'
+      edit:
+        title: 'Редактировать приложение'
+      index:
+        title: 'Ваши приложения'
+        new: 'Новое приложение'
+        name: 'Наименование'
+        callback_url: 'Callback URL'
+      new:
+        title: 'Новое приложение'
+      show:
+        title: 'Приложение: %{name}'
+        application_id: 'ID приложения'
+        secret: 'Secret'
+        scopes: 'Скоупы'
+        callback_urls: 'Callback urls'
+        actions: 'Действия'
+
+    authorizations:
+      buttons:
+        authorize: 'Разрешить'
+        deny: 'Отклонить'
+      error:
+        title: 'Произошла ошибка'
+      new:
+        title: 'Требуется авторизация'
+        prompt: 'Разрешить %{client_name} использовать данные Вашей учетной записи?'
+        able_to: 'Данное приложение требует следующие разрешения:'
+      show:
+        title: 'Код авторизации'
+
+    authorized_applications:
+      confirmations:
+        revoke: 'Вы уверены?'
+      buttons:
+        revoke: 'Отозвать авторизацию'
+      index:
+        title: 'Ваши авторизованные приложения'
+        application: 'Приложение'
+        created_at: 'Создано'
+        date_format: '%d-%m-%Y %H:%M:%S'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'В запросе отсутствуют необходимые параметры или они некорректны'
+        invalid_redirect_uri: 'Некорректный URI для перенаправления'
+        unauthorized_client: 'Клиент не авторизован для выполнения данного запроса'
+        access_denied: 'Доступ запрещен: сервер или владелец ресурса отклонил запрос'
+        invalid_scope: 'Неверный скоуп'
+        server_error: 'На авторизационном сервере произошла ошибка; запрос не выполнен'
+        temporarily_unavailable: 'В настоящее время авторизационный сервер не может обработать запрос в силу высокой загруженности или тех. работ'
+
+        #configuration error messages
+        credential_flow_not_configured: 'Resource Owner Password Credentials не сконфигурированы, необходимо настроить Doorkeeper.configure.resource_owner_from_credentials'
+        resource_owner_authenticator_not_configured: 'Resource Owner не найден, необходима конфигурация Doorkeeper.configure.resource_owner_authenticator'
+
+        # Access grant errors
+        unsupported_response_type: 'Сервер авторизации не поддерживает данный тип запроса'
+
+        # Access token errors
+        invalid_client: 'Ошибка аутентификации клиента: неверный токен, неизвестный клиент или неподдерживаемый метод аутентификации'
+        invalid_grant: 'Право на авторизацию истекло или отозвано'
+        unsupported_grant_type: 'Авторизационный сервер не поддерживает данный способ авторизации'
+
+        invalid_token:
+          revoked: "Токен доступа отозван"
+          expired: "Токен доступа устарел"
+          unknown: "Неверный токен доступа"
+
+    flash:
+      applications:
+        create:
+          notice: 'Приложение создано'
+        destroy:
+          notice: 'Приложение удалено'
+        update:
+          notice: 'Приложение обновлено'
+      authorized_applications:
+        destroy:
+          notice: 'Приложение отозвано'
+
+    layouts:
+      admin:
+        nav:
+          oauth2_provider: 'OAuth2 провайдер'
+          applications: 'Приложения'
+          home: 'Главная'
+      application:
+        title: 'Необходима авторизация'
