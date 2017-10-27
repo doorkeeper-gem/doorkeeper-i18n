@@ -50,20 +50,20 @@ ja:
 
     authorizations:
       buttons:
-        authorize: '認証'
+        authorize: '承認'
         deny: '否認'
       error:
         title: 'エラーが発生しました'
       new:
-        title: '認証が必要です'
-        prompt: 'あなたのアカウントで %{client_name} 認証しますか?'
+        title: '承認が必要です'
+        prompt: 'あなたのアカウントで %{client_name} 承認しますか?'
         able_to: 'このアプリケーションは次のことが可能です'
       show:
-        title: '認証コード'
+        title: '認可コード'
 
     authorized_applications:
       confirmations:
-        revoke: '本当に取消ますか?'
+        revoke: '本当に取消しますか?'
       buttons:
         revoke: '取消'
       index:
