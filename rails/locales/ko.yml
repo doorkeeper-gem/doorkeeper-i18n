@@ -1,0 +1,125 @@
+ko:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: '이름'
+        redirect_uri: '리다이렉트 URI'
+        scopes: '스코프'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: '는 프래그먼트(# 이후의 부분)를 포함할 수 없습니다.'
+              invalid_uri: '는 유효한 URI가 아닙니다.'
+              relative_uri: '는 절대 경로 URI여야 합니다..'
+              secured_uri: '는 HTTPS/SSL URI여야 합니다.'
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: '정말 삭제하시겠습니까?'
+      buttons:
+        edit: '수정'
+        destroy: '삭제'
+        submit: '확인'
+        cancel: '취소'
+        authorize: '인가'
+      form:
+        error: '잘못된 입력이 있는지 확인해주세요'
+      help:
+        redirect_uri: '각 줄에 하나의 URI씩 써주세요'
+        native_redirect_uri: '로컬 테스트 용도로는 %{native_redirect_uri} 주소를 써주세요'
+        scopes: '스코프들을 띄어쓰기로 구분하여 나열해주세요. 비어두면 기본값을 사용합니다.'
+      edit:
+        title: '애플리케이션 수정'
+      index:
+        title: '애플리케이션'
+        new: '새 애플리케이션'
+        name: '앱 이름'
+        callback_url: '콜백 URL'
+      new:
+        title: '새 애플리케이션'
+      show:
+        title: '애플리케이션: %{name}'
+        application_id: '애플리케이션 ID'
+        secret: '비밀 키'
+        scopes: '스코프'
+        callback_urls: '콜백 URL'
+        actions: '액션'
+
+    authorizations:
+      buttons:
+        authorize: '허가'
+        deny: '불허'
+      error:
+        title: '오류가 발생했습니다'
+      new:
+        title: '허가가 필요합니다'
+        prompt: '%{client_name}이 당신의 계정을 사용하는 것을 허락하시겠습니까?'
+        able_to: '이 애플리케이션은 다음의 것들을 할 수 있게 됩니다:'
+      show:
+        title: '인증 코드'
+
+    authorized_applications:
+      confirmations:
+        revoke: '정말 허가를 철회하시겠습니까?'
+      buttons:
+        revoke: '철회'
+      index:
+        title: '당신이 허가한 애플리케이션'
+        application: '애플리케이션'
+        created_at: '생성일시'
+        date_format: '%Y년 %-m월 %-d일 %H:%M:%S'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: '요청에 필수 매개변수가 빠져있거나, 지원하지 않는 매개변수를 포함하거나, 형식이 잘못되었습니다.'
+        invalid_redirect_uri: '포함된 리다이렉트 URI가 유효하지 않습니다.'
+        unauthorized_client: '클라이언트가 이 메서드로 요청하는 것이 허가되지 않았습니다.'
+        access_denied: '리소스의 소유자 혹은 인증 서버가 요청을 거부했습니다.'
+        invalid_scope: '요청된 스코프는 유효하지 않거나, 알려지지 않았거나, 형식이 잘못되었습니다.'
+        server_error: '인증 서버가 요청을 처리하던 도중 예기치 못한 오류가 발생했습니다.'
+        temporarily_unavailable: '인증 서버의 일시적인 부하 또는 점검으로 요청을 처리하지 못하고 있습니다.'
+
+        #configuration error messages
+        credential_flow_not_configured: 'Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.'
+        resource_owner_authenticator_not_configured: 'Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.'
+
+        # Access grant errors
+        unsupported_response_type: '인증 서버가 해당 응답 형식을 지원하지 않습니다.'
+
+        # Access token errors
+        invalid_client: '알려지지 않은 클라이언트이거나, 인증 정보가 누락됐거나, 해당 인증 방식이 지원되지 않아 클라이언트가 인증에 실패했습니다.'
+        invalid_grant: '주어진 허가 그랜트(authorization grant)가 유효하지 않거나, 이미 만료됐거나, 철회됐거나, 인가 요청시 쓰였던 리다이렉트 URI에 부합하지 않거나, 다른 클라이언트에게 부여됐습니다.'
+        unsupported_grant_type: '인증 서버가 주어진 허가 그랜트(authorization type) 종류를 지원하지 않습니다.'
+
+        # Password Access token errors
+        invalid_resource_owner: '주어진 리소스 주인에 관한 위임(resource owner credential)이 유효하지 않거나, 해당하는 리소스 주인을 찾을 수 없습니다'
+
+        invalid_token:
+          revoked: "접근 토큰이 철회됐습니다"
+          expired: "접근 토큰이 만료됐습니다"
+          unknown: "접근 토큰이 유효하지 않습니다"
+
+    flash:
+      applications:
+        create:
+          notice: '애플리케이션이 만들어졌습니다.'
+        destroy:
+          notice: '애플리케이션이 삭제됐습니다.'
+        update:
+          notice: '애플리케이션이 수정됐습니다.'
+      authorized_applications:
+        destroy:
+          notice: '애플리케이션에 대한 허가가 철회됐습니다.'
+
+    layouts:
+      admin:
+        nav:
+          oauth2_provider: 'OAuth2 프로바이더'
+          applications: '애플리케이션'
+          home: '첫 페이지'
+      application:
+        title: 'OAuth 인가가 필요합니다'

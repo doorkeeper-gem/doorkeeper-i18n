@@ -60,6 +60,7 @@ zh-CN:
         able_to: '此应用将能够'
       show:
         title: '授权代码'
+
     authorized_applications:
       confirmations:
         revoke: '确定要撤销对此应用的授权吗？'
