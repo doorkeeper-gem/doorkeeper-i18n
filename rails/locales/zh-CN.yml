@@ -4,13 +4,13 @@ zh-CN:
       doorkeeper/application:
         name: '名称'
         redirect_uri: '登录回调地址'
-        scopes: 'Scopes'
+        scopes: '权限范围'
     errors:
       models:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: '不能包含片段(#)'
+              fragment_present: '不能包含片段（#）'
               invalid_uri: '必须是有效的 URL 格式'
               relative_uri: '必须是绝对的 URL 地址'
               secured_uri: '必须是 HTTPS/SSL 的 URL 地址'
@@ -30,7 +30,7 @@ zh-CN:
       help:
         redirect_uri: '每行只能有一个 URL'
         native_redirect_uri: '使用 %{native_redirect_uri} 作为本地测试'
-        scopes: '用空格隔开scope，留空则使用默认设置'
+        scopes: '用空格隔开权限范围，留空则使用默认设置'
       edit:
         title: '修改应用'
       index:
@@ -41,10 +41,10 @@ zh-CN:
       new:
         title: '创建新应用'
       show:
-        title: '应用: %{name}'
+        title: '应用：%{name}'
         application_id: '应用 ID'
         secret: '私钥'
-        scopes: 'Scopes'
+        scopes: '权限范围'
         callback_urls: '登录回调地址'
         actions: '操作'
 
@@ -81,14 +81,14 @@ zh-CN:
         access_denied: '用户或服务器拒绝了请求'
         invalid_scope: '请求范围无效、未知或格式不正确'
         server_error: '服务器异常，无法处理请求'
-        temporarily_unavailable: '服务器维护中，无法处理请求'
+        temporarily_unavailable: '服务器维护中或负载过高，暂时无法处理请求'
 
         #configuration error messages
-        credential_flow_not_configured: 'Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.'
-        resource_owner_authenticator_not_configured: 'Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.'
+        credential_flow_not_configured: 'Resource Owner Password Credentials flow failed，原因是 Doorkeeper.configure.resource_owner_from_credentials 尚未设置。'
+        resource_owner_authenticator_not_configured: 'Resource Owner find failed，原因是 Doorkeeper.configure.resource_owner_authenticator 尚未设置。'
 
         # Access grant errors
-        unsupported_response_type: '服务器不支持这种 response type'
+        unsupported_response_type: '服务器不支持这种响应类型'
 
         # Access token errors
         invalid_client: '由于未知、不支持或没有客户端，认证失败'
@@ -99,9 +99,9 @@ zh-CN:
         invalid_resource_owner: '资源所有者认证无效或没有所有者'
 
         invalid_token:
-          revoked: "Access Token 已被注销"
-          expired: "Access Token 已过期"
-          unknown: "Access Token 无效"
+          revoked: "访问令牌已被吊销"
+          expired: "访问令牌已过期"
+          unknown: "访问令牌无效"
 
     flash:
       applications:
@@ -118,7 +118,7 @@ zh-CN:
     layouts:
       admin:
         nav:
-          oauth2_provider: 'OAuth2 Provider'
+          oauth2_provider: 'OAuth2 提供商'
           applications: '应用'
           home: '首页'
       application:
