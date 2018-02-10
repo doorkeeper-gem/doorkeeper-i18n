@@ -95,9 +95,6 @@ ko:
         invalid_grant: '주어진 허가 그랜트(authorization grant)가 유효하지 않거나, 이미 만료됐거나, 철회됐거나, 인가 요청시 쓰였던 리다이렉트 URI에 부합하지 않거나, 다른 클라이언트에게 부여됐습니다.'
         unsupported_grant_type: '인증 서버가 주어진 허가 그랜트(authorization type) 종류를 지원하지 않습니다.'
 
-        # Password Access token errors
-        invalid_resource_owner: '주어진 리소스 주인에 관한 위임(resource owner credential)이 유효하지 않거나, 해당하는 리소스 주인을 찾을 수 없습니다'
-
         invalid_token:
           revoked: "접근 토큰이 철회됐습니다"
           expired: "접근 토큰이 만료됐습니다"

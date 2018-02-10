@@ -95,9 +95,6 @@ zh-HK:
         invalid_grant: "授權申請 (authorization grant) 不正確、過期、已被取消，或者無法對應授權請求 (authorization request) 內的轉接 URI，或者屬於別的用戶程式。"
         unsupported_grant_type: "授權伺服器不支援這個授權類型 (grant type)。"
 
-        # Password Access token errors
-        invalid_resource_owner: "資源擁有者的登入資訊錯誤、或者無法找到該資源擁有者。"
-
         invalid_token:
           expired: "access token 已經過期"
           revoked: "access token 已被取消"

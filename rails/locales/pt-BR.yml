@@ -95,9 +95,6 @@ pt-BR:
         invalid_grant: 'A permissão de autorização (authorization grant) provida é inválida, expirada, revogada, não bate com a URI de redirecionamento usada na requisição de autorização, ou foi dada a outro cliente.'
         unsupported_grant_type: 'O tipo de permissão de autorização (authorization grant) não é suportado pelo servidor de autorização(authorization server) The authorization grant type is not supported by the authorization server.'
 
-        # Password Access token errors
-        invalid_resource_owner: 'As credenciais do dono de recurso (resource owner) dadas não são válidas, ou o dono de recurso (resource owner) não foi achado.'
-
         invalid_token:
           revoked: "O token de acesso (access token) foi revogado"
           expired: "O token de acesso (access token) expirou"

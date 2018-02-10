@@ -95,9 +95,6 @@ de:
         invalid_grant: 'Die bereitgestellte Autorisierung ist inkorrekt, abgelaufen, widerrufen, ist mit einem anderen Client verknüpft oder der Redirection URI stimmt nicht mit der Autorisierungs-Anfrage überein.'
         unsupported_grant_type: 'Der Autorisierungs-Typ wird nicht vom Autorisierungs-Server unterstützt.'
 
-        # Password Access token errors
-        invalid_resource_owner: 'Die angegebenen Zugangsdaten für den "Resource Owner" sind inkorrekt oder dieser Benutzer existiert nicht.'
-
         invalid_token:
           revoked: "Der Access Token wurde annuliert"
           expired: "Der Access Token ist abgelaufen"

@@ -95,9 +95,6 @@ zh-TW:
         invalid_grant: '授權許可型態無效，或者轉向網址的授權許可無效、過期或已被撤銷'
         unsupported_grant_type: '授權伺服器不支援此授權許可型態'
 
-        # Password Access token errors
-        invalid_resource_owner: '資源擁有者認證無效或無此擁有者'
-
         invalid_token:
           revoked: "Access Token 已被撤銷"
           expired: "Access Token 已過期"

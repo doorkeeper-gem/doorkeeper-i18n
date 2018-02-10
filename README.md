@@ -32,6 +32,7 @@ Currently supported locales:
 * Portuguese (pt-BR)
 * Chinese (zh-CN)
 * Taiwan (zh-TW)
+* Russian (ru)
 
 ## License
 

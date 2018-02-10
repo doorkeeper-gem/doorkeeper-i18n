@@ -95,9 +95,6 @@ fi:
         invalid_grant: 'Toimitettu valtuutus on virheellinen, vanhentunut, evätty, se ei vastaa valtuutuspyynnön uudelleenohjauksen URI:a tai sen on myöntänyt toinen asiakasohjelma.'
         unsupported_grant_type: 'Valtuutuspalvelin ei tue tämän tyyppisiä valtuutuksia.'
 
-        # Password Access token errors
-        invalid_resource_owner: 'Toimitetut resurssin omistajan pääsytiedot ovat virheelliset tai resurssin omistajaa ei löydy.'
-
         invalid_token:
           revoked: "Pääsyoikeus evätty"
           expired: "Pääsyoikeus vanhentunut"

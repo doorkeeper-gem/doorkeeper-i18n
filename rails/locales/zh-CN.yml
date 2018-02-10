@@ -95,9 +95,6 @@ zh-CN:
         invalid_grant: '授权方式无效、过期或已被撤销、与授权请求中的回调地址不一致，或使用了其他应用的回调地址。'
         unsupported_grant_type: '服务器不支持此类型的授权方式。'
 
-        # Password Access token errors
-        invalid_resource_owner: '资源所有者认证无效，或找不到所有者'
-
         invalid_token:
           revoked: "访问令牌已被吊销"
           expired: "访问令牌已过期"

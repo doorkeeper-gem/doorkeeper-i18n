@@ -95,9 +95,6 @@ it:
         invalid_grant: "L'autorizzazione richiesta non è valida, scaduta, revocata, non corrisponde all'uri di redirezione usato nella richiesta di autorizzazione, o è stata richiesta da un altro client."
         unsupported_grant_type: "Il tipo di autorizzazione richista non è supportato dal server di autorizzazione."
 
-        # Password Access token errors
-        invalid_resource_owner: "Le credenziali non sono valide, o l'utente non è stato trovato"
-
         invalid_token:
           revoked: "Il token di accesso è stato revocato"
           expired: "Il token di accesso è scaduto"
