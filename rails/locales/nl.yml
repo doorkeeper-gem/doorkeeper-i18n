@@ -14,6 +14,7 @@ nl:
               invalid_uri: 'moet een geldige URI zijn.'
               relative_uri: 'moet een absolute URI zijn.'
               secured_uri: 'moet een HTTPS/SSL URI zijn.'
+              forbidden_uri: 'is forbidden by the server.'
 
   doorkeeper:
     applications:

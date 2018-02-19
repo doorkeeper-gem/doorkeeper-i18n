@@ -14,6 +14,7 @@ ko:
               invalid_uri: '는 유효한 URI가 아닙니다.'
               relative_uri: '는 절대 경로 URI여야 합니다..'
               secured_uri: '는 HTTPS/SSL URI여야 합니다.'
+              forbidden_uri: 'is forbidden by the server.'
 
   doorkeeper:
     applications:

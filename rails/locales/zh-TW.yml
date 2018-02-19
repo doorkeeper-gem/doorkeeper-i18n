@@ -14,6 +14,7 @@ zh-TW:
               invalid_uri: '必須是有效的網址'
               relative_uri: '必須是絕對的網址'
               secured_uri: '必須是有 HTTPS/SSL 的網址'
+              forbidden_uri: 'is forbidden by the server.'
 
   doorkeeper:
     applications:

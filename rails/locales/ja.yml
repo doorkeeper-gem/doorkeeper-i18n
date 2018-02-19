@@ -14,6 +14,7 @@ ja:
               invalid_uri: 'は有効なURIではありません。'
               relative_uri: 'は絶対URIでなければなりません。'
               secured_uri: 'はHTTPS/SSL URIでなければなりません。'
+              forbidden_uri: 'is forbidden by the server.'
 
   doorkeeper:
     applications:

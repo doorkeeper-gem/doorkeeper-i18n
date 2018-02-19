@@ -14,6 +14,7 @@ pt-BR:
               invalid_uri: 'deve ser uma URI válida.'
               relative_uri: 'dever ser uma URI absoluta.'
               secured_uri: 'deve ser uma URI HTTPS/SSL.'
+              forbidden_uri: 'is forbidden by the server.'
 
   doorkeeper:
     applications:

@@ -14,6 +14,7 @@ it:
               invalid_uri: 'deve essere un URI valido.'
               relative_uri: 'deve essere un URI assoluto.'
               secured_uri: 'deve essere un URI HTTPS/SSL.'
+              forbidden_uri: 'è vietato dal server.'
 
   doorkeeper:
     applications:
