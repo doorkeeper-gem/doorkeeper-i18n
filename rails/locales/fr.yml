@@ -96,9 +96,6 @@ fr:
         invalid_grant: "Le consentement d'autorisation accordé n'est pas valide, a expiré, est annulé, ne concorde pas avec l'URL de redirection utilisée dans la demande d'autorisation, ou a été émis à un autre client."
         unsupported_grant_type: "Le type de consentement d'autorisation n'est pas pris en charge par le serveur d'autorisation."
 
-        # Password Access token errors
-        invalid_resource_owner: "Les identifiants fournis du propriétaire de la ressource ne sont pas valides, ou le propriétaire de la ressource ne peut être trouvé"
-
         invalid_token:
           revoked: "Le jeton d'accès a été annulé"
           expired: "Le jeton d'accès a expiré"

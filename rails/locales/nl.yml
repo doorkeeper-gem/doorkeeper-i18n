@@ -96,9 +96,6 @@ nl:
         invalid_grant: 'De verstrekte authorisatie is ongeldig, verlopen, ingetrokken, komt niet overeen met de redirect uri die is opgegeven, of werd uitgegeven aan een andere klant.'
         unsupported_grant_type: 'Het type authorisatie is niet ondersteund door de authorisatie-server'
 
-        # Password Access token errors
-        invalid_resource_owner: 'De verstrekte resource eigenaar gegevens zijn niet geldig of de resource eigenaar kan niet worden gevonden'
-
         invalid_token:
           revoked: "Het toegangstoken is geweigerd"
           expired: "Het toegangstoken is verlopen"

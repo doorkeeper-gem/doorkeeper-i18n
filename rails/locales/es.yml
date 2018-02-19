@@ -96,9 +96,6 @@ es:
         invalid_grant: 'La autorización proporcionada no es válida, ha expirado, se ha revocado, no coincide con la URI de redirección utilizada en la petición de autorización, o ha sido solicitada por otro cliente.'
         unsupported_grant_type: 'El tipo de autorización no está soportada por el servidor de autorización.'
 
-        # Password Access token errors
-        invalid_resource_owner: 'Las credenciales del propietario del recurso proporcionado no son válidas, o el propietario del recurso no ha sido encontrado'
-
         invalid_token:
           revoked: "El token de acceso ha sido revocado"
           expired: "El token de acceso ha expirado"

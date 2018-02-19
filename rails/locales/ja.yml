@@ -96,9 +96,6 @@ ja:
         invalid_grant: '指定された認可グラントは不正か、有効期限切れか、無効か、リダイレクトURIが異なるか、もしくは別のクライアントに適用されています。'
         unsupported_grant_type: 'この認可グラントのタイプは認可サーバではサポートされていません。'
 
-        # Password Access token errors
-        invalid_resource_owner: '指定されたリソースオーナークレデンシャルが不正か、もしくはリソースオーナーが見つかりません。'
-
         invalid_token:
           revoked: "アクセストークンが取り消されました"
           expired: "アクセストークンの有効期限が切れました"

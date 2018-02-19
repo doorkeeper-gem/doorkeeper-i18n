@@ -96,9 +96,6 @@ nb:
         invalid_grant: 'Den medfølgende autoriseringsinnvilgelsen er ugyldig, utgått, tilbakekalt, er ulik videresendings URI-en brukt i autoriseringsforespørselen, eller tilhører en annen klient.'
         unsupported_grant_type: 'Autoriseringsinnvilgelsens type er ikke støttet av autorisasjonsserveren'
 
-        # Password Access token errors
-        invalid_resource_owner: 'Den medfølgende ressurseierens legitimasjon er ikke gyldig, eller ressurseier er ikke funnet.'
-
         invalid_token:
           revoked: "Tilgangspolletten var tilbakekalt"
           expired: "Tilgangspolletten er utgått"
