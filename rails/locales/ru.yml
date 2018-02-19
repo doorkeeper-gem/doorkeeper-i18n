@@ -14,6 +14,7 @@ ru:
               invalid_uri: 'должен быть корректным URI'
               relative_uri: 'должен быть абсолютным URI'
               secured_uri: 'должен быть HTTPS/SSL URI'
+              forbidden_uri: 'заблокирован со стороны сервера.'
 
   doorkeeper:
     applications:
