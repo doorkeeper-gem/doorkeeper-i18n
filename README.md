@@ -33,6 +33,7 @@ Currently supported locales:
 * Chinese (zh-CN)
 * Taiwan (zh-TW)
 * Russian (ru)
+* Catalan (ca)
 
 ## License
 
