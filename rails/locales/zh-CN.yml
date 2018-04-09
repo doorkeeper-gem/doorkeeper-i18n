@@ -15,6 +15,8 @@ zh-CN:
               relative_uri: '必须是绝对的 URI 地址'
               secured_uri: '必须是 HTTPS/SSL 的 URI 地址'
               forbidden_uri: 'is forbidden by the server.'
+            scopes:
+              not_match_configured: "doesn't match configured on the server."
 
   doorkeeper:
     applications:
@@ -29,6 +31,7 @@ zh-CN:
       form:
         error: '抱歉! 提交信息的时候遇到了下面的错误'
       help:
+        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: '每行只能有一个 URI'
         native_redirect_uri: '本地测试请使用 %{native_redirect_uri}'
         scopes: '用空格分割权限范围，留空则使用默认设置'
@@ -39,13 +42,19 @@ zh-CN:
         new: '创建新应用'
         name: '名称'
         callback_url: '回调 URL'
+        actions: 'Actions'
+        confidential: 'Confidential?'
+        confidentiality:
+          yes: 'Yes'
+          no: 'No'
       new:
         title: '创建新应用'
       show:
         title: '应用：%{name}'
-        application_id: '应用 ID'
+        application_id: '应用 UID'
         secret: '应用密钥'
         scopes: '权限范围'
+        confidential: 'Confidential'
         callback_urls: '回调 URL'
         actions: '操作'
 
@@ -115,6 +124,7 @@ zh-CN:
 
     layouts:
       admin:
+        title: 'Doorkeeper'
         nav:
           oauth2_provider: 'OAuth2 提供商'
           applications: '应用'

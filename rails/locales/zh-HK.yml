@@ -15,6 +15,8 @@ zh-HK:
               relative_uri: "必需為絕對 URI。"
               secured_uri: "必需使用有 HTTPS/SSL 加密的 URI。"
               forbidden_uri: 'is forbidden by the server.'
+            scopes:
+              not_match_configured: "doesn't match configured on the server."
 
   doorkeeper:
     applications:
@@ -31,23 +33,30 @@ zh-HK:
       form:
         error: "噢！請檢查你表格的錯誤訊息"
       help:
+        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         native_redirect_uri: "使用 %{native_redirect_uri} 作局部測試"
         redirect_uri: "每行輸入一個 URI"
         scopes: "請用半形空格分開權限範圍 (scope)。留空表示使用預設的權限範圍"
       index:
-        callback_url: "回傳網址"
         name: "名稱"
         new: "新增應用程式"
         title: "你的應用程式"
+        callback_url: "回傳網址"
+        actions: 'Actions'
+        confidential: 'Confidential?'
+        confidentiality:
+          yes: 'Yes'
+          no: 'No'
       new:
         title: "新增應用程式"
       show:
-        actions: "操作"
-        application_id: "應用程式 ID"
-        callback_urls: "回傳網址"
-        scopes: "權限範圍"
-        secret: "密碼"
         title: "應用程式︰ %{name}"
+        application_id: "應用程式 UID"
+        secret: "密碼"
+        scopes: "權限範圍"
+        confidential: 'Confidential'
+        callback_urls: "回傳網址"
+        actions: "操作"
 
     authorizations:
       buttons:
@@ -115,6 +124,7 @@ zh-HK:
 
     layouts:
       admin:
+        title: 'Doorkeeper'
         nav:
           applications: "應用程式"
           oauth2_provider: "OAuth2 供應者"

@@ -15,6 +15,8 @@ zh-TW:
               relative_uri: '必須是絕對的網址'
               secured_uri: '必須是有 HTTPS/SSL 的網址'
               forbidden_uri: 'is forbidden by the server.'
+            scopes:
+              not_match_configured: "doesn't match configured on the server."
 
   doorkeeper:
     applications:
@@ -29,6 +31,7 @@ zh-TW:
       form:
         error: 'Whoops! 確認表單內可能的錯誤'
       help:
+        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: '每個網址必須只有一行'
         native_redirect_uri: '使用 %{native_redirect_uri} 作本地端測試'
         scopes: ~
@@ -39,13 +42,19 @@ zh-TW:
         new: '新應用'
         name: '名稱'
         callback_url: '回應網址'
+        actions: 'Actions'
+        confidential: 'Confidential?'
+        confidentiality:
+          yes: 'Yes'
+          no: 'No'
       new:
         title: '新應用'
       show:
         title: '應用: %{name}'
-        application_id: '應用 ID'
+        application_id: '應用 UID'
         secret: '私鑰'
         scopes: ~
+        confidential: 'Confidential'
         callback_urls: '回應網址'
         actions: '動作'
 
@@ -115,6 +124,7 @@ zh-TW:
 
     layouts:
       admin:
+        title: 'Doorkeeper'
         nav:
           oauth2_provider: 'OAuth2 Provider'
           applications: '應用'

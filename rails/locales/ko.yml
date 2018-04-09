@@ -15,6 +15,8 @@ ko:
               relative_uri: '는 절대 경로 URI여야 합니다..'
               secured_uri: '는 HTTPS/SSL URI여야 합니다.'
               forbidden_uri: 'is forbidden by the server.'
+            scopes:
+              not_match_configured: "doesn't match configured on the server."
 
   doorkeeper:
     applications:
@@ -29,6 +31,7 @@ ko:
       form:
         error: '잘못된 입력이 있는지 확인해주세요'
       help:
+        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: '각 줄에 하나의 URI씩 써주세요'
         native_redirect_uri: '로컬 테스트 용도로는 %{native_redirect_uri} 주소를 써주세요'
         scopes: '스코프들을 띄어쓰기로 구분하여 나열해주세요. 비어두면 기본값을 사용합니다.'
@@ -39,13 +42,19 @@ ko:
         new: '새 애플리케이션'
         name: '앱 이름'
         callback_url: '콜백 URL'
+        actions: 'Actions'
+        confidential: 'Confidential?'
+        confidentiality:
+          yes: 'Yes'
+          no: 'No'
       new:
         title: '새 애플리케이션'
       show:
         title: '애플리케이션: %{name}'
-        application_id: '애플리케이션 ID'
+        application_id: '애플리케이션 UID'
         secret: '비밀 키'
         scopes: '스코프'
+        confidential: 'Confidential'
         callback_urls: '콜백 URL'
         actions: '액션'
 
@@ -115,6 +124,7 @@ ko:
 
     layouts:
       admin:
+        title: 'Doorkeeper'
         nav:
           oauth2_provider: 'OAuth2 프로바이더'
           applications: '애플리케이션'

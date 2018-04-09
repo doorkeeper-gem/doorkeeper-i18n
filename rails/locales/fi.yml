@@ -15,6 +15,8 @@ fi:
               relative_uri: 'täytyy olla absoluuttinen URI.'
               secured_uri: 'täytyy olla HTTPS/SSL URI.'
               forbidden_uri: 'is forbidden by the server.'
+            scopes:
+              not_match_configured: "doesn't match configured on the server."
 
   doorkeeper:
     applications:
@@ -29,6 +31,7 @@ fi:
       form:
         error: 'Hups! Tarkasta lomakkeesi mahdollisten virheiden varalta.'
       help:
+        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: 'Yksi URI riviä kohden'
         native_redirect_uri: 'Käytä %{native_redirect_uri} paikallisia testejä varten'
         scopes: 'Erottele näkyvyysalueet välilyönnein. Jätä tyhjäksi, mikäli haluat käyttää oletusnäkyvyysalueita.'
@@ -39,13 +42,19 @@ fi:
         new: 'Uusi sovellus'
         name: 'Nimi'
         callback_url: 'Callback URL'
+        actions: 'Actions'
+        confidential: 'Confidential?'
+        confidentiality:
+          yes: 'Yes'
+          no: 'No'
       new:
         title: 'Uusi sovellus'
       show:
         title: 'Sovellus: %{name}'
-        application_id: 'Sovelluksen ID'
+        application_id: 'Sovelluksen UID'
         secret: 'Salainen avain'
         scopes: 'Näkyvyysalueet'
+        confidential: 'Confidential'
         callback_urls: 'Callback URL:t'
         actions: 'Toiminnot'
 
@@ -115,6 +124,7 @@ fi:
 
     layouts:
       admin:
+        title: 'Doorkeeper'
         nav:
           oauth2_provider: 'OAuth2 tarjoaja'
           applications: 'Sovellukset'

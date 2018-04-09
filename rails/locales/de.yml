@@ -15,6 +15,8 @@ de:
               relative_uri: 'muss ein absoluter URI (Identifier) sein.'
               secured_uri: 'muss ein HTTPS/SSL URI (Identifier) sein.'
               forbidden_uri: 'ist vom server verboten.'
+            scopes:
+              not_match_configured: "doesn't match configured on the server."
 
   doorkeeper:
     applications:
@@ -29,6 +31,7 @@ de:
       form:
         error: 'Whoops! Bitte überprüfe das Formular auf Fehler!'
       help:
+        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: 'Bitte benutze eine Zeile pro URI'
         native_redirect_uri: '%{native_redirect_uri} für lokale Tests benutzen'
         scopes: 'Bitte die "Scopes" mit Leerzeichen trennen. Bitte frei lassen für die Verwendung der Default-Werte.'
@@ -39,6 +42,11 @@ de:
         new: 'Neue Applikation'
         name: 'Name'
         callback_url: 'Callback URL'
+        actions: 'Actions'
+        confidential: 'Confidential?'
+        confidentiality:
+          yes: 'Yes'
+          no: 'No'
       new:
         title: 'Neue Applikation'
       show:
@@ -46,6 +54,7 @@ de:
         application_id: 'Applikations-ID'
         secret: 'Secret'
         scopes: 'Scopes'
+        confidential: 'Confidential'
         callback_urls: 'Callback URLs'
         actions: 'Aktionen'
 
@@ -115,6 +124,7 @@ de:
 
     layouts:
       admin:
+        title: 'Doorkeeper'
         nav:
           oauth2_provider: 'OAuth2 Provider'
           applications: 'Applikationen'

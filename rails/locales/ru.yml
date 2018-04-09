@@ -15,6 +15,8 @@ ru:
               relative_uri: 'должен быть абсолютным URI'
               secured_uri: 'должен быть HTTPS/SSL URI'
               forbidden_uri: 'заблокирован со стороны сервера.'
+            scopes:
+              not_match_configured: "не соответствуют конфигурации сервера."
 
   doorkeeper:
     applications:
@@ -29,6 +31,7 @@ ru:
       form:
         error: 'Возникли ошибки! Проверьте правильность заполнения полей'
       help:
+        confidential: 'Приложение будет использоваться там, где секретный ключ защищён от просмотра. Мобильные приложения и одностраничные веб-приложения (SPA) рассматриваются как незащищённые.'
         redirect_uri: 'Указывайте каждый URI в отдельной строке'
         native_redirect_uri: 'Используйте %{native_redirect_uri} для локального тестирования'
         scopes: 'Записывайте скоупы через пробел. Оставьте поле пустым для использования значений по-умолчанию'
@@ -39,6 +42,11 @@ ru:
         new: 'Новое приложение'
         name: 'Наименование'
         callback_url: 'URL обратного вызова'
+        actions: 'Действия'
+        confidential: 'Конфиденциально?'
+        confidentiality:
+          yes: 'Да'
+          no: 'Нет'
       new:
         title: 'Новое приложение'
       show:
@@ -46,6 +54,7 @@ ru:
         application_id: 'ID приложения'
         secret: 'Секретный ключ'
         scopes: 'Скоупы'
+        confidential: 'Конфиденциально'
         callback_urls: 'Список URL обратного вызова'
         actions: 'Действия'
 
@@ -115,6 +124,7 @@ ru:
 
     layouts:
       admin:
+        title: 'Doorkeeper'
         nav:
           oauth2_provider: 'OAuth 2 провайдер'
           applications: 'Приложения'

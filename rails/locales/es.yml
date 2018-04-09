@@ -15,6 +15,8 @@ es:
               relative_uri: 'debe ser una URI absoluta.'
               secured_uri: 'debe ser una URI HTTPS/SSL.'
               forbidden_uri: 'está prohibido por el servidor.'
+            scopes:
+              not_match_configured: "doesn't match configured on the server."
 
   doorkeeper:
     applications:
@@ -29,6 +31,7 @@ es:
       form:
         error: 'Ups! Verifica tu formulario por posibles errores'
       help:
+        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: 'Usa una linea por URI'
         native_redirect_uri: 'Usa %{native_redirect_uri} para test locales'
         scopes: 'Separa los ámbitos con espacios. Deja en blanco para usar los ámbitos predeterminados.'
@@ -39,6 +42,11 @@ es:
         new: 'Nueva aplicación'
         name: 'Nombre'
         callback_url: 'Callback URL'
+        actions: 'Actions'
+        confidential: 'Confidential?'
+        confidentiality:
+          yes: 'Yes'
+          no: 'No'
       new:
         title: 'Nueva aplicación'
       show:
@@ -46,6 +54,7 @@ es:
         application_id: 'Identificador de aplicación'
         secret: 'Secret'
         scopes: 'Ámbitos'
+        confidential: 'Confidential'
         callback_urls: 'Callback urls'
         actions: 'Acciones'
 
@@ -115,6 +124,7 @@ es:
 
     layouts:
       admin:
+        title: 'Doorkeeper'
         nav:
           oauth2_provider: 'Proveedor OAuth2'
           applications: 'Aplicaciones'
