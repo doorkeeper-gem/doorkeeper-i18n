@@ -45,8 +45,8 @@ ru:
         actions: 'Действия'
         confidential: 'Конфиденциально?'
         confidentiality:
-          yes: 'Да'
-          no: 'Нет'
+          'yes': 'Да'
+          'no': 'Нет'
       new:
         title: 'Новое приложение'
       show:

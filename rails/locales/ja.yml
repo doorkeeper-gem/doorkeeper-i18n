@@ -45,8 +45,8 @@ ja:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': 'はい'
+          'no': 'いいえ'
       new:
         title: 'アプリケーションの作成'
       show:

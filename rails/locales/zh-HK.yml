@@ -45,8 +45,8 @@ zh-HK:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': 'Yes'
+          'no': 'No'
       new:
         title: "新增應用程式"
       show:

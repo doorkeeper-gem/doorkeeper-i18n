@@ -45,8 +45,8 @@ zh-CN:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': '是'
+          'no': '沒有'
       new:
         title: '创建新应用'
       show:

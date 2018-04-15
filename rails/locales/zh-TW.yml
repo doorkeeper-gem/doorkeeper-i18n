@@ -45,8 +45,8 @@ zh-TW:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': 'Yes'
+          'no': 'No'
       new:
         title: '新應用'
       show:

@@ -45,8 +45,8 @@ nb:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': 'Yes'
+          'no': 'No'
       new:
         title: 'Ny Applikasjon'
       show:

@@ -45,8 +45,8 @@ fr:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': 'Oui'
+          'no': 'Non'
       new:
         title: "Nouvelle application"
       show:

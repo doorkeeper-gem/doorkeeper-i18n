@@ -45,8 +45,8 @@ pt-BR:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': 'Sim'
+          'no': 'Não'
       new:
         title: 'Nova Aplicação'
       show:

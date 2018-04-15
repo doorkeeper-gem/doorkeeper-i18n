@@ -45,8 +45,8 @@ ko:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': '예'
+          'no': '아니'
       new:
         title: '새 애플리케이션'
       show:

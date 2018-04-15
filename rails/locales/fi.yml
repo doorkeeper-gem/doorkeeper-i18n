@@ -45,8 +45,8 @@ fi:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': 'Joo'
+          'no': 'Ei'
       new:
         title: 'Uusi sovellus'
       show:

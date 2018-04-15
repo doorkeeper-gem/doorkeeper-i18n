@@ -45,8 +45,8 @@ nl:
         actions: 'Actions'
         confidential: 'Confidential?'
         confidentiality:
-          yes: 'Yes'
-          no: 'No'
+          'yes': 'Ja'
+          'no': 'Nee'
       new:
         title: 'Nieuwe applicatie'
       show:
