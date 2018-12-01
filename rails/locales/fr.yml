@@ -17,14 +17,13 @@ fr:
               forbidden_uri: 'est interdit par le serveur.'
             scopes:
               not_match_configured: "doesn't match configured on the server."
-
   doorkeeper:
     applications:
       confirmations:
         destroy: "Êtes-vous certain?"
       buttons:
         edit: "Modifier"
-        destroy: "Détruire"
+        destroy: "Supprimer"
         submit: "Envoyer"
         cancel: "Annuler"
         authorize: "Autoriser"
