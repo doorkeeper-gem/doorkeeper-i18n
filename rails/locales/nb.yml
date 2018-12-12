@@ -42,19 +42,19 @@ nb:
         new: 'Ny applikasjon'
         name: 'Navn'
         callback_url: 'Callback URL'
-        actions: 'Actions'
-        confidential: 'Confidential?'
+        actions: 'Handlinger'
+        confidential: 'Konfidensiell?'
         confidentiality:
-          'yes': 'Yes'
-          'no': 'No'
+          'yes': 'Ja'
+          'no': 'Nei'
       new:
         title: 'Ny Applikasjon'
       show:
         title: 'Applikasjon: %{name}'
-        application_id: 'Application UID'
+        application_id: 'Applikasjoner UID'
         secret: 'Secret'
         scopes: 'Tagger'
-        confidential: 'Confidential'
+        confidential: 'Konfidensiell'
         callback_urls: 'Callback url-er'
         actions: 'Handlinger'
 
