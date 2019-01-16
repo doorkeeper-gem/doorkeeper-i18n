@@ -30,10 +30,13 @@ fr:
       form:
         error: "Oups! Vérifier votre formulaire pour des erreurs possibles"
       help:
-        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
+        confidential: |
+          L'application sera utilisée quand la confidentialité du secret pourra
+          être maintenue. Les application mobile native, et les Applications
+          mono-page ne sont pas considérées comme sûr.
         redirect_uri: "Utiliser une ligne par URL"
         native_redirect_uri: "Utiliser %{native_redirect_uri} pour les tests locaux"
-        scopes: "Utilisez une espace entre chaque portée. Laissez vide pour utiliser la portée par defaut"
+        scopes: "Utilisez un espace entre chaque portée. Laissez vide pour utiliser la portée par defaut"
       edit:
         title: "Modifier l'application"
       index:
