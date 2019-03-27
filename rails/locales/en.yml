@@ -33,7 +33,7 @@ en:
       help:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: 'Use one line per URI'
-        native_redirect_uri: 'Use %{native_redirect_uri} for local tests'
+        native_redirect_uri: 'Use %{native_redirect_uri} if you want to add localhost URIs for development purposes'
         scopes: 'Separate scopes with spaces. Leave blank to use the default scopes.'
       edit:
         title: 'Edit application'
@@ -42,8 +42,8 @@ en:
         new: 'New Application'
         name: 'Name'
         callback_url: 'Callback URL'
-        actions: 'Actions'
         confidential: 'Confidential?'
+        actions: 'Actions'
         confidentiality:
           'yes': 'Yes'
           'no': 'No'
@@ -82,6 +82,9 @@ en:
         created_at: 'Created At'
         date_format: '%Y-%m-%d %H:%M:%S'
 
+    pre_authorization:
+      status: 'Pre-authorization'
+
     errors:
       messages:
         # Common error messages
@@ -90,12 +93,14 @@ en:
         unauthorized_client: 'The client is not authorized to perform this request using this method.'
         access_denied: 'The resource owner or authorization server denied the request.'
         invalid_scope: 'The requested scope is invalid, unknown, or malformed.'
+        invalid_code_challenge_method: 'The code challenge method must be plain or S256.'
         server_error: 'The authorization server encountered an unexpected condition which prevented it from fulfilling the request.'
         temporarily_unavailable: 'The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.'
 
-        #configuration error messages
+        # Configuration error messages
         credential_flow_not_configured: 'Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.'
-        resource_owner_authenticator_not_configured: 'Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.'
+        resource_owner_authenticator_not_configured: 'Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfigured.'
+        admin_authenticator_not_configured: 'Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.'
 
         # Access grant errors
         unsupported_response_type: 'The authorization server does not support this response type.'

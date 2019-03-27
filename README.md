@@ -34,6 +34,7 @@ Currently supported locales:
 * Taiwan (zh-TW)
 * Russian (ru)
 * Catalan (ca)
+* Belarusian (be)
 
 ## License
 

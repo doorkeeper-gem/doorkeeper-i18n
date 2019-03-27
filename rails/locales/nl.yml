@@ -82,6 +82,9 @@ nl:
         created_at: 'Aangemaakt op'
         date_format: '%d-%m-%Y %H:%M:%S'
 
+    pre_authorization:
+      status: 'Pre-authorization'
+
     errors:
       messages:
         # Common error messages
@@ -90,12 +93,14 @@ nl:
         unauthorized_client: 'De client is niet bevoegd om dit verzoek met deze methode uit te voeren.'
         access_denied: 'De resource eigenaar of authorisatie-server weigerde het verzoek.'
         invalid_scope: 'De opgevraagde scope is niet geldig, onbekend of onjuist.'
+        invalid_code_challenge_method: 'The code challenge method must be plain or S256.'
         server_error: 'De authorisatie server is een onverwachte voorwaarde tegengekomen die het verzoek verhinderd.'
         temporarily_unavailable: 'De authorisatie-server is momenteel niet in staat het verzoek te behandelen als gevolg van een tijdelijke overbelasting of onderhoud aan de server.'
 
-        #configuration error messages
+        # Configuration error messages
         credential_flow_not_configured: 'Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.'
         resource_owner_authenticator_not_configured: 'Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.'
+        admin_authenticator_not_configured: 'Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.'
 
         # Access grant errors
         unsupported_response_type: 'De authorisatie server ondersteund dit response type niet'

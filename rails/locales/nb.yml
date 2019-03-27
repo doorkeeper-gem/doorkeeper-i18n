@@ -82,6 +82,9 @@ nb:
         created_at: 'Opprettet'
         date_format: '%Y-%m-%d %H:%M:%S'
 
+    pre_authorization:
+      status: 'Pre-authorization'
+
     errors:
       messages:
         # Common error messages
@@ -90,12 +93,14 @@ nb:
         unauthorized_client: 'Klienten er ikke autorisert til å utføre denne forespørselen ved å bruke denne metoden.'
         access_denied: 'Ressurs-eieren eller autorisasjonsserveren nektet forespørelsen fra å fullføre.'
         invalid_scope: 'Forespørselens omfang er ugyldig, ukjent, eller feilskrevet.'
+        invalid_code_challenge_method: 'The code challenge method must be plain or S256.'
         server_error: 'Autoriseringsserveren har møtt en uforventet betingelse som har forhindret serveren fra å fullføre forespørselen.'
         temporarily_unavailable: 'Autorisasjonsserveren er for øyeblikket utilgjengelig på grunn av en foreløpig overlasting eller vedlikehold av serveren.'
 
-        #configuration error messages
+        # Configuration error messages
         credential_flow_not_configured: 'Ressurseierens Passord legitimasjonsflyt feilet på grunn av at Doorkeeper.configure.resource_owner_from_credentials ikke var konfigurert.'
         resource_owner_authenticator_not_configured: 'Resource Owner find feilet på grunn av Doorkeeper.configure.resource_owner_authenticator ikke var konfigurert.'
+        admin_authenticator_not_configured: 'Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.'
 
         # Access grant errors
         unsupported_response_type: 'Autoriseringsserveren har ikke støtte for denne responstypen.'

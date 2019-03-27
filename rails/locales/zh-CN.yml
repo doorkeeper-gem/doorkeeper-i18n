@@ -97,7 +97,7 @@ zh-CN:
         server_error: '服务器异常，无法处理请求。'
         temporarily_unavailable: '服务器维护中或负载过高，暂时无法处理请求。'
 
-        #configuration error messages
+        # Configuration error messages
         credential_flow_not_configured: '由于 Doorkeeper.configure.resource_owner_from_credentials 尚未配置，应用验证授权流程失败。'
         resource_owner_authenticator_not_configured: '由于 Doorkeeper.configure.resource_owner_authenticator 尚未配置，查找资源所有者失败。'
         admin_authenticator_not_configured: '由于 Doorkeeper.configure.admin_authenticator 尚未配置，禁止访问管理员面板。'
