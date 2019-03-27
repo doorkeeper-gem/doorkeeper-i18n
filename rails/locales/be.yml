@@ -1,0 +1,138 @@
+be:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Назва'
+        redirect_uri: 'URI для перанакіравання'
+        scopes: 'Скоупы'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'не павінен утрымліваць фрагменты'
+              invalid_uri: 'павінен быць карэктным URI'
+              relative_uri: 'павінен быць абсалютным URI'
+              secured_uri: 'павінен быць HTTPS/SSL URI'
+              forbidden_uri: 'заблакаваны серверам'
+            scopes:
+              not_match_configured: "не адпавядаюць канфігурацыі сервера."
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Вы ўпэўнены?'
+      buttons:
+        edit: 'Рэдагаваць'
+        destroy: 'Выдаліць'
+        submit: 'Захаваць'
+        cancel: 'Адмяніць'
+        authorize: 'Аўтарызаваць'
+      form:
+        error: 'Паўсталі памылкі! Праверце правільнасць запаўнення палёў'
+      help:
+        confidential: 'Праграма будзе выкарыстоўвацца там, дзе сакрэтны ключ абаронены ад прагляду. Мабільныя праграммы і аднастаронкавыя вэб-праграммы (SPA) разглядаюцца як неабароненыя.'
+        redirect_uri: 'Указвайце кожны URI у асобным радку'
+        native_redirect_uri: 'Выкарыстоўвайце %{native_redirect_uri} для лакальнага тэставання'
+        scopes: 'Запісвайце скоупы праз прабел. Пакіньце поле пустым для выкарыстання значэнняў па-змаўчанню'
+      edit:
+        title: 'Рэдагаваць праграму'
+      index:
+        title: 'Вашы праграмы'
+        new: 'Новая програма'
+        name: 'Назва'
+        callback_url: 'URL зваротнага выкліку'
+        actions: 'Дзеянні'
+        confidential: 'Прыватна?'
+        confidentiality:
+          'yes': 'Так'
+          'no': 'Не'
+      new:
+        title: 'Новая праграма'
+      show:
+        title: 'Праграма: %{name}'
+        application_id: 'ID праграмы'
+        secret: 'Сакрэтны ключ'
+        scopes: 'Скоупы'
+        confidential: 'Прыватна'
+        callback_urls: 'Спіс URL зваротнага выкліку'
+        actions: 'Дзеянні'
+
+    authorizations:
+      buttons:
+        authorize: 'Дазволіць'
+        deny: 'Адхіліць'
+      error:
+        title: 'Адбылася абмыла'
+      new:
+        title: 'Патрабуецца аўтарызацыя'
+        prompt: 'Дазволіць %{client_name} выкарыстоўваць звесткі Вашага ўліковага запісу?'
+        able_to: 'Дадзеная праграма патрабуе наступныя дазволы:'
+      show:
+        title: 'Код аўтарызацыі'
+
+    authorized_applications:
+      confirmations:
+        revoke: 'Вы ўпэўнены?'
+      buttons:
+        revoke: 'Адазваць аўтарызацыю'
+      index:
+        title: 'Вашы аўтарызаваныя праграмы'
+        application: 'Праграма'
+        created_at: 'Створана'
+        date_format: '%d-%m-%Y %H:%M:%S'
+
+    pre_authorization:
+      status: 'Папярэдняя аўтарызацыя'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'У запыце адсутнічаюць патрэбныя параметры ці яны некарэктныя'
+        invalid_redirect_uri: 'Некарэктны URI для перанакіравання'
+        unauthorized_client: 'Кліент не аўтарызаваны для выканання дадзенага запыту'
+        access_denied: 'Доступ забаронены: сервер ці ўладальнік рэсурсу адхіліў запыт'
+        invalid_scope: 'Няверны скоуп'
+        invalid_code_challenge_method: 'Code challenge method павінен быць plain альбо S256.'
+        server_error: 'На аўтарызацыйным серверы адбылася абмыла; запыт не выкананы'
+        temporarily_unavailable: 'Зараз аўтарызацыйны сервер не можа апрацаваць запыт у сілу высокай загружанасці або тэхнічных работ'
+
+        # Configuration error messages
+        credential_flow_not_configured: 'Resource Owner Password Credentials ня сканфігураваны, патрэбна канфігурацыя опцыі Doorkeeper.configure.resource_owner_from_credentials'
+        resource_owner_authenticator_not_configured: 'Resource Owner не знойдзены, патрэбна канфігурацыя опцыі Doorkeeper.configure.resource_owner_authenticator'
+        admin_authenticator_not_configured: 'Доступ да панэлі адміністратара заблакаваны, патрэбна канфігурацыя опцыі Doorkeeper.configure.admin_authenticator.'
+
+        # Access grant errors
+        unsupported_response_type: 'Сервер аўтарызацыі не падтрымвае дадзены тып запыту'
+
+        # Access token errors
+        invalid_client: 'Абмыла аўтэнтыфікацыі кліента: няверны токен, невядомы кліент ці непадтрымоўваны метад аўтэнтыфікацыі'
+        invalid_grant: 'Права на аўтарызацыю мінула ці адазвана'
+        unsupported_grant_type: 'Аўтарызацыйны сервер не падтрымвае дадзены спосаб аўтарызацыі'
+
+        invalid_token:
+          revoked: "Токен доступу адазваны"
+          expired: "Токен доступу састарэў"
+          unknown: "Няверны токен доступу"
+
+    flash:
+      applications:
+        create:
+          notice: 'Праграма створана'
+        destroy:
+          notice: 'Праграма выдалена'
+        update:
+          notice: 'Праграма абноўлена'
+      authorized_applications:
+        destroy:
+          notice: 'Праграма адазвана'
+
+    layouts:
+      admin:
+        title: 'Doorkeeper'
+        nav:
+          oauth2_provider: 'OAuth 2 правайдар'
+          applications: 'Праграмы'
+          home: 'Галоўная'
+      application:
+        title: 'Патрэбна аўтарызацыя'

@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name        = "doorkeeper-i18n"
   s.version     = "5.0.0"
   s.authors     = ["Tute Costa", 'Nikita Bulai']
-  s.email       = %w(bulaj.nikita@gmail.com)
+  s.email       = %w[bulaj.nikita@gmail.com]
   s.homepage    = "https://github.com/doorkeeper-gem/doorkeeper-i18n"
   s.summary     = "Translations for doorkeeper rubygem."
   s.description = "Translations for doorkeeper rubygem."

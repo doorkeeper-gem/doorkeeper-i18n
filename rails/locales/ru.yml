@@ -82,6 +82,9 @@ ru:
         created_at: 'Создано'
         date_format: '%d-%m-%Y %H:%M:%S'
 
+    pre_authorization:
+      status: 'Предварительная авторизация'
+
     errors:
       messages:
         # Common error messages
@@ -90,12 +93,14 @@ ru:
         unauthorized_client: 'Клиент не авторизован для выполнения данного запроса'
         access_denied: 'Доступ запрещен: сервер или владелец ресурса отклонил запрос'
         invalid_scope: 'Неверный скоуп'
+        invalid_code_challenge_method: 'Code challenge method должен быть plain или S256.'
         server_error: 'На авторизационном сервере произошла ошибка; запрос не выполнен'
         temporarily_unavailable: 'В настоящее время авторизационный сервер не может обработать запрос в силу высокой загруженности или тех. работ'
 
-        #configuration error messages
+        # Configuration error messages
         credential_flow_not_configured: 'Resource Owner Password Credentials не сконфигурированы, необходимо настроить Doorkeeper.configure.resource_owner_from_credentials'
         resource_owner_authenticator_not_configured: 'Resource Owner не найден, необходима конфигурация Doorkeeper.configure.resource_owner_authenticator'
+        admin_authenticator_not_configured: 'Доступ к панели администратора заблокирован в связи настройкой опции Doorkeeper.configure.admin_authenticator.'
 
         # Access grant errors
         unsupported_response_type: 'Сервер авторизации не поддерживает данный тип запроса'
