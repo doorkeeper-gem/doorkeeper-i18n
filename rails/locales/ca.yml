@@ -33,6 +33,7 @@ ca:
       help:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: 'Utilitza una línia per URI'
+        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
         native_redirect_uri: 'Utilitza %{native_redirect_uri} per a tests en local'
         scopes: 'Separa els àmbits amb espais. Deixa-ho en blanc per utilitzar els àmbits per defecte.'
       edit:

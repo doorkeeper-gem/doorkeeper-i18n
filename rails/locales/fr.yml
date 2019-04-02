@@ -35,6 +35,7 @@ fr:
           être maintenue. Les application mobile native, et les Applications
           mono-page ne sont pas considérées comme sûr.
         redirect_uri: "Utiliser une ligne par URL"
+        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
         native_redirect_uri: "Utiliser %{native_redirect_uri} pour les tests locaux"
         scopes: "Utilisez un espace entre chaque portée. Laissez vide pour utiliser la portée par defaut"
       edit:

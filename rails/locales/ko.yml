@@ -33,6 +33,7 @@ ko:
       help:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: '각 줄에 하나의 URI씩 써주세요'
+        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
         native_redirect_uri: '로컬 테스트 용도로는 %{native_redirect_uri} 주소를 써주세요'
         scopes: '스코프들을 띄어쓰기로 구분하여 나열해주세요. 비어두면 기본값을 사용합니다.'
       edit:

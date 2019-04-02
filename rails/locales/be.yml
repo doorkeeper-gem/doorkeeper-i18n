@@ -33,6 +33,7 @@ be:
       help:
         confidential: 'Праграма будзе выкарыстоўвацца там, дзе сакрэтны ключ абаронены ад прагляду. Мабільныя праграммы і аднастаронкавыя вэб-праграммы (SPA) разглядаюцца як неабароненыя.'
         redirect_uri: 'Указвайце кожны URI у асобным радку'
+        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
         native_redirect_uri: 'Выкарыстоўвайце %{native_redirect_uri} для лакальнага тэставання'
         scopes: 'Запісвайце скоупы праз прабел. Пакіньце поле пустым для выкарыстання значэнняў па-змаўчанню'
       edit:

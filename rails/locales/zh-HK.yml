@@ -36,6 +36,7 @@ zh-HK:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         native_redirect_uri: "使用 %{native_redirect_uri} 作局部測試"
         redirect_uri: "每行輸入一個 URI"
+        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
         scopes: "請用半形空格分開權限範圍 (scope)。留空表示使用預設的權限範圍"
       index:
         name: "名稱"

@@ -33,6 +33,7 @@ fi:
       help:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: 'Yksi URI riviä kohden'
+        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
         native_redirect_uri: 'Käytä %{native_redirect_uri} paikallisia testejä varten'
         scopes: 'Erottele näkyvyysalueet välilyönnein. Jätä tyhjäksi, mikäli haluat käyttää oletusnäkyvyysalueita.'
       edit:
