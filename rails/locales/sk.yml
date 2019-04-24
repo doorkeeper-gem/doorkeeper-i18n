@@ -4,6 +4,7 @@ sk:
       doorkeeper/application:
         name: 'Meno'
         redirect_uri: 'URI presmerovania'
+        scopes: 'Scopes'
     errors:
       models:
         doorkeeper/application:

@@ -4,6 +4,7 @@ cs:
       doorkeeper/application:
         name: 'Jméno'
         redirect_uri: 'URI přesměrování'
+        scopes: 'Scopes'
     errors:
       models:
         doorkeeper/application:
