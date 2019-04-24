@@ -1,0 +1,140 @@
+sk:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Meno'
+        redirect_uri: 'URI presmerovania'
+        scopes: 'Scopes'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present:  'nemôže obsahovať fragment.'
+              invalid_uri: 'musí byť platná URI.'
+              relative_uri: 'musí byť absolútna URI.'
+              secured_uri: 'musí byť HTTPS / SSL URI.'
+              forbidden_uri: 'je serverom zakázaná.'
+            scopes:
+              not_match_configured: "nezodpovedá nastavenému serveru."
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Naozaj zmazať?'
+      buttons:
+        edit: 'Upraviť'
+        destroy: 'Zmazať'
+        submit: 'Odoslať'
+        cancel: 'Zrušiť'
+        authorize: 'Autorizovať'
+      form:
+        error: 'Chyba! Skontrolujte a opravte chyby vo formulári.'
+      help:
+        confidential: 'Aplikácia bude použitá tam, kde je možné zachovať dôvernosť klienta. Natívne mobilné aplikácie a aplikácie s jednou stránkou sú považované za nedôverné.'
+        redirect_uri: 'Na každý riadok jedna URI'
+        blank_redirect_uri: "Ponechajte prázdne, ak ste nakonfigurovali svojho poskytovateľa, aby používal poverenia klienta, poverenia vlastníka hesla alebo iný typ grantu, ktorý nevyžaduje presmerovanie URI."
+        native_redirect_uri: 'Použite %{native_redirect_uri} ak chcete použiť localhost URI pre vývojové prostredie'
+        scopes: 'Oddeľte Scope medzerami. Nechajte prázdne pre použitie default scope.'
+      edit:
+        title: 'Upraviť aplikáciu'
+      index:
+        title: 'Vaše aplikácie'
+        new: 'Nová aplikácia'
+        name: 'Názov'
+        callback_url: 'Callback URL'
+        confidential: 'Dôverné?'
+        actions: 'Akcia'
+        confidentiality:
+          'yes': 'Áno'
+          'no': 'Nie'
+      new:
+        title: 'Nová aplikácia'
+      show:
+        title: 'Aplikácia: %{name}'
+        application_id: 'UID aplikácie'
+        secret: 'Secret'
+        scopes: 'Scopes'
+        confidential: 'Dôverné'
+        callback_urls: 'Url presmerovanie'
+        actions: 'Akcia'
+
+    authorizations:
+      buttons:
+        authorize:  'Autorizovať'
+        deny: 'Odmietnuť'
+      error:
+        title: 'Vyskytla se chyba'
+      new:
+        title: 'Nutná autorizácie'
+        prompt: 'Autorizovať %{client_name} k prístupu k vášmu účtu?'
+        able_to: 'Táto aplikácia bude mať tieto oprávnenia'
+      show:
+        title: 'Autorizačný kód'
+
+    authorized_applications:
+      confirmations:
+        revoke: 'Naozaj autorizovať?'
+      buttons:
+        revoke: 'Odstrániť autorizáciu'
+      index:
+        title: 'Vaše autorizované aplikácie'
+        application: 'Aplikácia'
+        created_at: 'Vytvorené'
+        date_format: '%H:%M:%S %d.%m.%T'
+
+    pre_authorization:
+      status: 'Pre-autorizácie'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'Požiadavke chýba požadovaný parameter, obsahuje nepodporovanú hodnotu parametra, alebo je inak poškodený.'
+        invalid_redirect_uri: "Požadované presmerovanie uri je chybne formátované alebo nezodpovedá presmerovania URI klienta."
+        unauthorized_client: 'Klient nie je oprávnený vykonávať túto požiadavku touto metódou.'
+        access_denied:  'Vlastník zdroje alebo autorizačný server požiadavku odmietol.'
+        invalid_scope:  'Požadovaný rozsah je neplatný, neznámy alebo poškodený.'
+        invalid_code_challenge_method: 'Metóda výzvy kódu musí byť prostá alebo S256.'
+        server_error: 'Autorizačný server narazil na neočakávanú podmienku, ktorá mu znemožnila splniť požiadavku.'
+        temporarily_unavailable: 'Autorizačný server nie je v súčasnej dobe schopný spracovať požiadavku z dôvodu dočasného preťaženia alebo údržby serveru.'
+
+        # Configuration error messages
+        credential_flow_not_configured: 'Flow poverenia vlastníka zdroja zlyhal kvôli tomu, že Doorkeeper.configure.resource_owner_from_credentials nie je nakonfigurovaný.'
+        resource_owner_authenticator_not_configured:  'Vyhľadanie zdroja zlyhalo z dôvodu, že Doorkeeper.configure.resource_owner_authenticator nie je nakonfigurované.'
+        admin_authenticator_not_configured: 'Prístup k panelu admin je zakázaný kvôli tomu, že Doorkeeper.configure.admin_authenticator nie je nakonfigurované.'
+
+        # Access grant errors
+        unsupported_response_type: 'Autorizačný server nepodporuje tento typ odpovede.'
+
+        # Access token errors
+        invalid_client: 'Autentizácia klienta zlyhala kvôli neznámemu klientovi, žiadnemu overovanie klienta alebo nepodporované metóde overovania.'
+        invalid_grant: 'Udelený grant pre udelenie oprávnenia je neplatný, jeho platnosť vypršala, zrušená, nezodpovedá URI presmerovania použitého v žiadosti o autorizáciu alebo bola vydaná inému klientovi.'
+        unsupported_grant_type: 'Autorizačný Server nepodporuje typ autorizačného grantu.'
+
+        invalid_token:
+          revoked: "Tento prístupový token bol zrušený"
+          expired: "Tento prístupový token vypršal"
+          unknown: "Tento prístupový token je neplatný"
+
+
+    flash:
+      applications:
+        create:
+          notice: 'Aplikácia vytvorená.'
+        destroy:
+          notice: 'Aplikácia zmazaná.'
+        update:
+          notice: 'Aplikácia aktualizovaná.'
+      authorized_applications:
+        destroy:
+          notice: 'Aplikácii bolo odňaté povolenie.'
+
+    layouts:
+      admin:
+        title: 'Doorkeeper'
+        nav:
+          oauth2_provider: 'OAuth2 poskytovateľ'
+          applications: 'Aplikácia'
+          home: 'Domov'
+      application:
+        title: 'OAuth vyžaduje autorizáciu'
