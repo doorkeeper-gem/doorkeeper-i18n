@@ -35,6 +35,8 @@ Currently supported locales:
 * Russian (ru)
 * Catalan (ca)
 * Belarusian (be)
+* Czech (cs)
+* Slovak (sk)
 
 ## License
 
