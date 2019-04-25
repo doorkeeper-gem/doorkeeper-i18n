@@ -16,7 +16,7 @@ de:
               secured_uri: 'muss ein HTTPS/SSL URI (Identifier) sein.'
               forbidden_uri: 'ist vom server verboten.'
             scopes:
-              not_match_configured: "doesn't match configured on the server."
+              not_match_configured: "stimmen nicht mit denen am server hinterlegten überein."
 
   doorkeeper:
     applications:
