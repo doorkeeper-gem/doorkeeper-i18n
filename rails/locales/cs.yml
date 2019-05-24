@@ -12,6 +12,7 @@ cs:
             redirect_uri:
               fragment_present: 'nemůže obsahovat fragment.'
               invalid_uri: 'musí být platná URI.'
+              unspecified_scheme: 'must specify a scheme.'
               relative_uri: 'musí být absolutní URI.'
               secured_uri: 'musí být HTTPS/SSL URI.'
               forbidden_uri: 'je serverem zakázána.'

@@ -12,9 +12,10 @@ fi:
             redirect_uri:
               fragment_present: 'ei voi sisältää URI fragmenttia.'
               invalid_uri: 'täytyy olla validi URI.'
+              unspecified_scheme: 'täytyy määrittää järjestelmä.'
               relative_uri: 'täytyy olla absoluuttinen URI.'
               secured_uri: 'täytyy olla HTTPS/SSL URI.'
-              forbidden_uri: 'is forbidden by the server.'
+              forbidden_uri: 'on kielletty palvelimella.'
             scopes:
               not_match_configured: "doesn't match configured on the server."
 
@@ -99,8 +100,8 @@ fi:
         temporarily_unavailable: 'Valtuutuspalvelin ei tällä hetkellä pysty suorittamaan pyyntöä väliaikaisen ylikuormituksen tai palvelinhuollon takia.'
 
         # Configuration error messages
-        credential_flow_not_configured: '"Resource Owner Password Credentials flow" -proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_from_credentials -asetusta ei ole konfiguroitu.'
-        resource_owner_authenticator_not_configured: '"Resource Owner find" -proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_authenticator -asetusta ei ole konfiguroitu.'
+        credential_flow_not_configured: '"Resource Owner Password Credentials flow" - proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_from_credentials -asetusta ei ole konfiguroitu.'
+        resource_owner_authenticator_not_configured: '"Resource Owner find" - proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_authenticator -asetusta ei ole konfiguroitu.'
         admin_authenticator_not_configured: 'Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.'
 
         # Access grant errors

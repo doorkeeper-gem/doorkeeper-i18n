@@ -12,6 +12,7 @@ zh-HK:
             redirect_uri:
               fragment_present: "URI 不可包含 \"#fragment\" 部份"
               invalid_uri: "必需有正確的 URI。"
+              unspecified_scheme: 'must specify a scheme.'
               relative_uri: "必需為絕對 URI。"
               secured_uri: "必需使用有 HTTPS/SSL 加密的 URI。"
               forbidden_uri: 'is forbidden by the server.'

@@ -12,6 +12,7 @@ nb:
             redirect_uri:
               fragment_present: 'kan ikke inneholde et fragment.'
               invalid_uri: 'må være en gyldig URI.'
+              unspecified_scheme: 'must specify a scheme.'
               relative_uri: 'må være en fullstendig URI.'
               secured_uri: 'må være en HTTPS/SSL URI.'
               forbidden_uri: 'is forbidden by the server.'

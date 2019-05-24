@@ -12,6 +12,7 @@ zh-CN:
             redirect_uri:
               fragment_present: '不能包含网址片段（#）'
               invalid_uri: '必须是有效的 URI 格式'
+              unspecified_scheme: 'must specify a scheme.'
               relative_uri: '必须是绝对的 URI 地址'
               secured_uri: '必须是 HTTPS/SSL 的 URI 地址'
               forbidden_uri: '被服务器禁止。'

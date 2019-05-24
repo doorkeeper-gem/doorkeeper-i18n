@@ -12,6 +12,7 @@ fr:
             redirect_uri:
               fragment_present: "ne peut contenir un fragment."
               invalid_uri: "doit être une URL valide."
+              unspecified_scheme: 'doit spécifier un schéma.'
               relative_uri: "doit être une URL absolue."
               secured_uri: "doit être une URL HTTP/SSL."
               forbidden_uri: 'est interdit par le serveur.'

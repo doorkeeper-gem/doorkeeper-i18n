@@ -12,6 +12,7 @@ de:
             redirect_uri:
               fragment_present: 'darf kein Fragment enthalten.'
               invalid_uri: 'muss ein valider URI (Identifier) sein.'
+              unspecified_scheme: 'muss ein Schema angeben.'
               relative_uri: 'muss ein absoluter URI (Identifier) sein.'
               secured_uri: 'muss ein HTTPS/SSL URI (Identifier) sein.'
               forbidden_uri: 'ist vom server verboten.'
@@ -43,8 +44,8 @@ de:
         new: 'Neue Applikation'
         name: 'Name'
         callback_url: 'Callback URL'
-        actions: 'Actions'
-        confidential: 'Confidential?'
+        actions: 'Aktionen'
+        confidential: 'Vertraulich?'
         confidentiality:
           'yes': 'Ja'
           'no': 'Nein'
@@ -55,7 +56,7 @@ de:
         application_id: 'Applikations-ID'
         secret: 'Secret'
         scopes: 'Scopes'
-        confidential: 'Confidential'
+        confidential: 'Vertraulich'
         callback_urls: 'Callback URLs'
         actions: 'Aktionen'
 

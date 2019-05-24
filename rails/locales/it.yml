@@ -12,6 +12,7 @@ it:
             redirect_uri:
               fragment_present: 'non può contenere un fragment.'
               invalid_uri: 'deve essere un URI valido.'
+              unspecified_scheme: 'deve specificare uno schema.'
               relative_uri: 'deve essere un URI assoluto.'
               secured_uri: 'deve essere un URI HTTPS/SSL.'
               forbidden_uri: 'è vietato dal server.'

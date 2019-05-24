@@ -12,6 +12,7 @@ ru:
             redirect_uri:
               fragment_present: 'не должен содержать фрагменты'
               invalid_uri: 'должен быть корректным URI'
+              unspecified_scheme: 'должать содержать схему.'
               relative_uri: 'должен быть абсолютным URI'
               secured_uri: 'должен быть HTTPS/SSL URI'
               forbidden_uri: 'заблокирован со стороны сервера.'
