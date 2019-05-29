@@ -12,6 +12,7 @@ sk:
             redirect_uri:
               fragment_present:  'nemôže obsahovať fragment.'
               invalid_uri: 'musí byť platná URI.'
+              unspecified_scheme: 'musí špecifikovať schému.'
               relative_uri: 'musí byť absolútna URI.'
               secured_uri: 'musí byť HTTPS / SSL URI.'
               forbidden_uri: 'je serverom zakázaná.'

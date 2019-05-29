@@ -12,6 +12,7 @@ nl:
             redirect_uri:
               fragment_present: 'kan geen fragment bevatten.'
               invalid_uri: 'moet een geldige URI zijn.'
+              unspecified_scheme: 'moet een schema specificeren.'
               relative_uri: 'moet een absolute URI zijn.'
               secured_uri: 'moet een HTTPS/SSL URI zijn.'
               forbidden_uri: 'is forbidden by the server.'

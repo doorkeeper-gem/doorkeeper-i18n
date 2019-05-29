@@ -12,9 +12,10 @@ ko:
             redirect_uri:
               fragment_present: '는 프래그먼트(# 이후의 부분)를 포함할 수 없습니다.'
               invalid_uri: '는 유효한 URI가 아닙니다.'
+              unspecified_scheme: '스키마를 지정해야합니다.'
               relative_uri: '는 절대 경로 URI여야 합니다..'
               secured_uri: '는 HTTPS/SSL URI여야 합니다.'
-              forbidden_uri: 'is forbidden by the server.'
+              forbidden_uri: '서버에 의해 금지되어있다.'
             scopes:
               not_match_configured: "doesn't match configured on the server."
 
@@ -43,8 +44,8 @@ ko:
         new: '새 애플리케이션'
         name: '앱 이름'
         callback_url: '콜백 URL'
-        actions: 'Actions'
-        confidential: 'Confidential?'
+        actions: '거등'
+        confidential: '기밀?'
         confidentiality:
           'yes': '예'
           'no': '아니'
@@ -55,7 +56,7 @@ ko:
         application_id: '애플리케이션 UID'
         secret: '비밀 키'
         scopes: '스코프'
-        confidential: 'Confidential'
+        confidential: '기밀'
         callback_urls: '콜백 URL'
         actions: '액션'
 

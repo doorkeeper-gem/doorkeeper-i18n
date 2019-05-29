@@ -12,6 +12,7 @@ ca:
             redirect_uri:
               fragment_present: 'no pot contenir un fragment.'
               invalid_uri: 'ha de ser una URI vàlid.'
+              unspecified_scheme: 'must specify a scheme.'
               relative_uri: 'ha de ser una URI absoluta.'
               secured_uri: 'ha de ser una URI HTTPS/SSL.'
               forbidden_uri: 'està prohibida pel servidor'

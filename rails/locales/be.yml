@@ -12,6 +12,7 @@ be:
             redirect_uri:
               fragment_present: 'не павінен утрымліваць фрагменты'
               invalid_uri: 'павінен быць карэктным URI'
+              unspecified_scheme: 'павінен мець схему'
               relative_uri: 'павінен быць абсалютным URI'
               secured_uri: 'павінен быць HTTPS/SSL URI'
               forbidden_uri: 'заблакаваны серверам'
