@@ -21,6 +21,7 @@ Currently supported locales:
 
 * English (en)
 * German (de)
+* Danish (da)
 * Spanish (es)
 * Finnish (fi)
 * French (fr)
