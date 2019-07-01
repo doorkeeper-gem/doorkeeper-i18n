@@ -1,0 +1,140 @@
+bg:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Име'
+        redirect_uri: 'УРИ за обратна връзка (Redirect URI)'
+        scopes: 'Обхвати'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'не може да съдържа фрагмент.'
+              invalid_uri: 'трябва да бъде валиден УРИ.'
+              unspecified_scheme: 'трябва да посочва схема.'
+              relative_uri: 'трябва да бъде абсолютен УРИ.'
+              secured_uri: 'трябва да бъде HTTPS/SSL УРИ.'
+              forbidden_uri: 'не е позволен от доставчика на упълномощаване.'
+            scopes:
+              not_match_configured: "не съвпадат с конфигурираните на доставчика на упълномощаване."
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Сигурни ли сте?'
+      buttons:
+        edit: 'Промени'
+        destroy: 'Премахни'
+        submit: 'Изпрати'
+        cancel: 'Откажи'
+        authorize: 'Упълномощи'
+      form:
+        error: 'Възника грешка! Проверете формуляра за неточности'
+      help:
+        confidential: 'Приложението ще бъде използвано в среда, в която тайната на клиента може да бъде запазена конфиденциална. Native мобилни приложения и едностраничните уеб приложения (SPA) не се считат за поверителни.'
+        redirect_uri: 'Въвеждайте по един УРИ на ред.'
+        blank_redirect_uri: "Оставете празно, ако доставчикът е настроен да предоставя пълномощно на базата на удостоверяване на самоличността на клиента (Client Credentials), парола на собственика на ресурса (Resource Owner Password Credentials) или всеки друг тип пълномощно, което не изисква УРИ за обратна връзка."
+        native_redirect_uri: 'Използвайте %{native_redirect_uri}, ако желаете за целите на разработката да добавите локален УРИ.'
+        scopes: 'Разделяйте обхватите с интервали. Оставете празно, за да използвате обхватите по подразбиране.'
+      edit:
+        title: 'Промяна на приложение'
+      index:
+        title: 'Вашите приложения'
+        new: 'Ново приложение'
+        name: 'Име'
+        callback_url: 'УРЛ за обратна връзка'
+        confidential: 'Поверително?'
+        actions: 'Действия'
+        confidentiality:
+          'yes': 'Да'
+          'no': 'Не'
+      new:
+        title: 'Ново приложение'
+      show:
+        title: 'Приложение: %{name}'
+        application_id: 'УИД на приложение'
+        secret: 'Тайна'
+        scopes: 'Обхвати'
+        confidential: 'Поверително'
+        callback_urls: 'УРЛ-и за обратна връзка'
+        actions: 'Действия'
+
+    authorizations:
+      buttons:
+        authorize: 'Упълномощи'
+        deny: 'Откажи'
+      error:
+        title: 'Възникна грешка'
+      new:
+        title: 'Нужно е упълномощаване'
+        prompt: 'Бихте ли упълномощили %{client_name} да използва вашия акаунт?'
+        able_to: 'Това приложение ще може да'
+      show:
+        title: 'Код за упълномощаване'
+
+    authorized_applications:
+      confirmations:
+        revoke: 'Сигурни ли сте?'
+      buttons:
+        revoke: 'Отмени'
+      index:
+        title: 'Упълномощените от вас приложения'
+        application: 'Приложение'
+        created_at: 'Упълномощено на'
+        date_format: '%d.%m.%Y г. %H:%M:%S'
+
+    pre_authorization:
+      status: 'Предварително упълномощаване'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'В заявката липсва необходим параметър, присъства неподдържана стойност на параметър или съдържа друга грешка.'
+        invalid_redirect_uri: "Заявеният УРИ за обратна връзка е грешен или не съвпада с УРИ за обратна връзка на клиента."
+        unauthorized_client: 'Клиентът не е упълномощен да изпълни заявката чрез този метод.'
+        access_denied: 'Собственикът на ресурса или доставчикът отхвърлиха тази заявка.'
+        invalid_scope: 'Заявеният обхват е невалиден, непознат или сгрешен.'
+        invalid_code_challenge_method: 'Методът за удостоверяване чрез код (code challenge) трябва да бъде или „plain“, или „S256“.'
+        server_error: 'Доставчикът на упълномощаване срещна неочакван проблем, който му попречи да изпълни заявката.'
+        temporarily_unavailable: 'Доставчикът на упълномощаване в момента не може да обработи заявката ви поради временно претоварване или техническа профилактика.'
+
+        # Configuration error messages
+        credential_flow_not_configured: 'Потокът за удостоверяване с парола на собственик на ресурс се провали поради това, че липсва имплементация на Doorkeeper.configure.resource_owner_from_credentials.'
+        resource_owner_authenticator_not_configured: 'Откриването на собственика на ресурса се провали, защото липсва имплементация на Doorkeeper.configure.resource_owner_authenticator.'
+        admin_authenticator_not_configured: 'Достъпът до административния панел е забранен, защото липсва имплементация на Doorkeeper.configure.admin_authenticator.'
+
+        # Access grant errors
+        unsupported_response_type: 'Доставчикът на упълномощаване не поддържа този вид отговор.'
+
+        # Access token errors
+        invalid_client: 'Удостоверяването на самоличността на клиента се провали, поради това, че той е непознат, не е изпратил удостоверение или използваният метод на удостоверяване не се поддържа.'
+        invalid_grant: 'Предоставеното пълномощно не е валидно, изтекло е, отменено е, не притежава съвпадащ с посочения в заявката за упълномощаване УРИ за обратна връзка или е било издадено на друг клиент.'
+        unsupported_grant_type: 'Типът на пълномощното не се поддържа от доставчика на упълномощаване. '
+
+        invalid_token:
+          revoked: "Кодът за достъп беше анулиран"
+          expired: "Кодът за достъп е с изтекъл срок на валидност"
+          unknown: "Кодът за достъп е невалиден"
+
+    flash:
+      applications:
+        create:
+          notice: 'Приложението беше създадено.'
+        destroy:
+          notice: 'Приложението беше премахнато.'
+        update:
+          notice: 'Приложението беше обновено.'
+      authorized_applications:
+        destroy:
+          notice: 'Достъпът на приложението беше отменен.'
+
+    layouts:
+      admin:
+        title: 'Doorkeeper'
+        nav:
+          oauth2_provider: 'OAuth2 доставчик'
+          applications: 'Приложения'
+          home: 'Начало'
+      application:
+        title: 'Необходимо е OAuth2 упълномощаване'
