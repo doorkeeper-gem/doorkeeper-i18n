@@ -38,6 +38,7 @@ Currently supported locales:
 * Belarusian (be)
 * Czech (cs)
 * Slovak (sk)
+* Bulgarian (bg)
 
 ## License
 
