@@ -35,7 +35,6 @@ bg:
         confidential: 'Приложението ще бъде използвано в среда, в която тайната на клиента може да бъде запазена конфиденциална. Native мобилни приложения и едностраничните уеб приложения (SPA) не се считат за поверителни.'
         redirect_uri: 'Въвеждайте по един УРИ на ред.'
         blank_redirect_uri: "Оставете празно, ако доставчикът е настроен да предоставя пълномощно на базата на удостоверяване на самоличността на клиента (Client Credentials), парола на собственика на ресурса (Resource Owner Password Credentials) или всеки друг тип пълномощно, което не изисква УРИ за обратна връзка."
-        native_redirect_uri: 'Използвайте %{native_redirect_uri}, ако желаете за целите на разработката да добавите локален УРИ.'
         scopes: 'Разделяйте обхватите с интервали. Оставете празно, за да използвате обхватите по подразбиране.'
       edit:
         title: 'Промяна на приложение'
@@ -90,7 +89,11 @@ bg:
     errors:
       messages:
         # Common error messages
-        invalid_request: 'В заявката липсва необходим параметър, присъства неподдържана стойност на параметър или съдържа друга грешка.'
+        invalid_request:
+          unknown: 'В заявката липсва необходим параметър, присъства неподдържана стойност на параметър или съдържа друга грешка.'
+          missing_param: 'Missing required parameter: #{value}.'
+          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
+          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: "Заявеният УРИ за обратна връзка е грешен или не съвпада с УРИ за обратна връзка на клиента."
         unauthorized_client: 'Клиентът не е упълномощен да изпълни заявката чрез този метод.'
         access_denied: 'Собственикът на ресурса или доставчикът отхвърлиха тази заявка.'
@@ -116,6 +119,8 @@ bg:
           revoked: "Кодът за достъп беше анулиран"
           expired: "Кодът за достъп е с изтекъл срок на валидност"
           unknown: "Кодът за достъп е невалиден"
+        revoke:
+          unauthorized: "You are not authorized to revoke this token"
 
     flash:
       applications:

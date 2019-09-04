@@ -35,7 +35,6 @@ fi:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: 'Yksi URI riviä kohden'
         blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
-        native_redirect_uri: 'Käytä %{native_redirect_uri} paikallisia testejä varten'
         scopes: 'Erottele näkyvyysalueet välilyönnein. Jätä tyhjäksi, mikäli haluat käyttää oletusnäkyvyysalueita.'
       edit:
         title: 'Muokkaa sovellusta'
@@ -90,7 +89,11 @@ fi:
     errors:
       messages:
         # Common error messages
-        invalid_request: 'Pyynnöstä puuttuu vaadittu parametri, se sisältää virheellisen parametrin arvon tai on muutoin väärin muodostettu.'
+        invalid_request:
+          unknown: 'Pyynnöstä puuttuu vaadittu parametri, se sisältää virheellisen parametrin arvon tai on muutoin väärin muodostettu.'
+          missing_param: 'Missing required parameter: #{value}.'
+          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
+          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: 'Uudelleenohjauksen URI ei ole validi.'
         unauthorized_client: 'Asiakasohjelmaa ei ole valtuutettu suorittamaan haluttua pyyntöä käyttäen tätä metodia.'
         access_denied: 'Resurssin omistaja tai valtuutuspalvelin kieltäytyi suorittamasta pyyntöä.'
@@ -116,6 +119,8 @@ fi:
           revoked: "Pääsyoikeus evätty"
           expired: "Pääsyoikeus vanhentunut"
           unknown: "Pääsyoikeus virheellinen"
+        revoke:
+          unauthorized: "You are not authorized to revoke this token"
 
     flash:
       applications:

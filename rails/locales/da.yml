@@ -35,7 +35,6 @@ da:
         confidential: 'Applikationen vil blive brugt, hvor kundens fortroligt materiale kan holdes fortroligt. Mobile apps og Single Page Apps betragtes som ikke-fortrolige.'
         redirect_uri: 'Brug en linje pr. URI'
         blank_redirect_uri: 'Efterlad feltet tomt, hvis du har konfigureret din udbyder til at bruge Client Credentials, Resource Owner Password Credentials eller en anden adgangskontrol, der ikke kræver omdirigering af URI.'
-        native_redirect_uri: "Brug %{native_redirect_uri} hvis du vil tilføje localhost URI'er til udviklingsformål"
         scopes: 'Separate afgrænsningen med mellemrum. Efterlad feltet blank for at bruge standard afgrænsning.'
       edit:
         title: 'Rediger applikation'
@@ -90,7 +89,11 @@ da:
     errors:
       messages:
         # Common error messages
-        invalid_request: 'Forespørgslen mangler en påkrævet parameter, indeholder en ikke-understøttet parameterværdi eller er fejlbehæftet.'
+        invalid_request:
+          unknown: 'Forespørgslen mangler en påkrævet parameter, indeholder en ikke-understøttet parameterværdi eller er fejlbehæftet.'
+          missing_param: 'Missing required parameter: #{value}.'
+          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
+          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: 'Den ønskede omdirigering URI er fejl behæftet eller svarer ikke til kundens omdirigering af URI.'
         unauthorized_client: 'Kunden er ikke autoriseret til at udføre denne anmodning ved hjælp af denne metode.'
         access_denied: 'Resource-ejeren eller autorisationsserveren nægtede anmodningen.'
@@ -116,6 +119,8 @@ da:
           revoked: 'Adgangs tokenet blev tilbagekaldt'
           expired: 'Adgangs tokenet er udløbet'
           unknown: 'Adgangs tokenet er ugyldigt'
+        revoke:
+          unauthorized: "You are not authorized to revoke this token"
 
     flash:
       applications:

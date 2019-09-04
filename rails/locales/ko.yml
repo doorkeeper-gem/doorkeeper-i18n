@@ -35,7 +35,6 @@ ko:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: '각 줄에 하나의 URI씩 써주세요'
         blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
-        native_redirect_uri: '로컬 테스트 용도로는 %{native_redirect_uri} 주소를 써주세요'
         scopes: '스코프들을 띄어쓰기로 구분하여 나열해주세요. 비어두면 기본값을 사용합니다.'
       edit:
         title: '애플리케이션 수정'
@@ -90,7 +89,11 @@ ko:
     errors:
       messages:
         # Common error messages
-        invalid_request: '요청에 필수 매개변수가 빠져있거나, 지원하지 않는 매개변수를 포함하거나, 형식이 잘못되었습니다.'
+        invalid_request:
+          unknown: '요청에 필수 매개변수가 빠져있거나, 지원하지 않는 매개변수를 포함하거나, 형식이 잘못되었습니다.'
+          missing_param: 'Missing required parameter: #{value}.'
+          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
+          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: '포함된 리다이렉트 URI가 유효하지 않습니다.'
         unauthorized_client: '클라이언트가 이 메서드로 요청하는 것이 허가되지 않았습니다.'
         access_denied: '리소스의 소유자 혹은 인증 서버가 요청을 거부했습니다.'
@@ -116,6 +119,8 @@ ko:
           revoked: "접근 토큰이 철회됐습니다"
           expired: "접근 토큰이 만료됐습니다"
           unknown: "접근 토큰이 유효하지 않습니다"
+        revoke:
+          unauthorized: "You are not authorized to revoke this token"
 
     flash:
       applications:

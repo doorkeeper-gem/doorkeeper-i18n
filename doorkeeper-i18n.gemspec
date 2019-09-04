@@ -2,8 +2,8 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "doorkeeper-i18n"
-  s.version     = "5.0.3"
-  s.authors     = ["Tute Costa", 'Nikita Bulai']
+  s.version     = "5.2.0"
+  s.authors     = ["Tute Costa", "Nikita Bulai"]
   s.email       = %w[bulaj.nikita@gmail.com]
   s.homepage    = "https://github.com/doorkeeper-gem/doorkeeper-i18n"
   s.summary     = "Translations for doorkeeper rubygem."
@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- test/*`.split("\n")
   s.require_paths = ["lib"]
+
+  s.add_runtime_dependency "doorkeeper", ">= 5.2"
 
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"

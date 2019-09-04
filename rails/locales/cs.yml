@@ -35,7 +35,6 @@ cs:
         confidential: 'Aplikace bude použita tam, kde je možné zachovat důvěrnost klienta. Nativní mobilní aplikace a aplikace s jednou stránkou jsou považovány za nedůvěrné.'
         redirect_uri: 'Na každý řádek jedna URI'
         blank_redirect_uri: "Ponechte prázdné, pokud jste nakonfigurovali svého poskytovatele, aby používal pověření klienta, pověření vlastníka hesla nebo jiný typ grantu, který nevyžaduje přesměrování identifikátoru URI."
-        native_redirect_uri: 'Použijte %{native_redirect_uri} pokud chcete použít localhost URI pro vývojové prostředí'
         scopes: 'Oddělte scopy mezerami. Nechte prázdné pro použití default scopu.'
       edit:
         title: 'Upravit aplikaci'
@@ -90,7 +89,11 @@ cs:
     errors:
       messages:
         # Common error messages
-        invalid_request: 'Požadavku chybí požadovaný parametr, obsahuje nepodporovanou hodnotu parametru, nebo je jinak poškozen.'
+        invalid_request:
+          unknown: 'Požadavku chybí požadovaný parametr, obsahuje nepodporovanou hodnotu parametru, nebo je jinak poškozen.'
+          missing_param: 'Missing required parameter: #{value}.'
+          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
+          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: "Požadované přesměrování uri je chybně formátováno nebo neodpovídá přesměrování URI klienta."
         unauthorized_client: 'Klient není oprávněn provádět tento požadavek touto metodou.'
         access_denied: 'Vlastník zdroje nebo autorizační server požadavek odmítl.'
@@ -116,6 +119,8 @@ cs:
           revoked: "Tento přístupový token byl zneplatněn"
           expired: "Tento přístupový token vypršel"
           unknown: "Tento přístupový token je neplatný"
+        revoke:
+          unauthorized: "You are not authorized to revoke this token"
 
     flash:
       applications:
