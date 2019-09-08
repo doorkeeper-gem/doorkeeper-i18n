@@ -35,7 +35,6 @@ nl:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: 'Gebruik één regel per URI. '
         blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
-        native_redirect_uri: 'Gebruik %{native_redirect_uri} voor lokale tests'
         scopes: 'Scheid scopes met spaties. Laat leeg om de standaard scopes te gebruiken.'
       edit:
         title: 'Bewerk applicatie'
@@ -90,7 +89,11 @@ nl:
     errors:
       messages:
         # Common error messages
-        invalid_request: 'Het verzoek mist een vereiste parameter, bevat een niet-ondersteunde parameter waarde of is anderszins onjuist.'
+        invalid_request:
+          unknown: 'Het verzoek mist een vereiste parameter, bevat een niet-ondersteunde parameter waarde of is anderszins onjuist.'
+          missing_param: 'Missing required parameter: #{value}.'
+          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
+          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: 'De opgegeven redirect uri is niet geldig.'
         unauthorized_client: 'De client is niet bevoegd om dit verzoek met deze methode uit te voeren.'
         access_denied: 'De resource eigenaar of authorisatie-server weigerde het verzoek.'
@@ -116,6 +119,8 @@ nl:
           revoked: "Het toegangstoken is geweigerd"
           expired: "Het toegangstoken is verlopen"
           unknown: "Het toegangstoken is ongeldig"
+        revoke:
+          unauthorized: "You are not authorized to revoke this token"
 
     flash:
       applications:

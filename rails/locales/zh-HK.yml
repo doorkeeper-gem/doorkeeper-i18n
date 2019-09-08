@@ -35,7 +35,6 @@ zh-HK:
         error: "噢！請檢查你表格的錯誤訊息"
       help:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
-        native_redirect_uri: "使用 %{native_redirect_uri} 作局部測試"
         redirect_uri: "每行輸入一個 URI"
         blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
         scopes: "請用半形空格分開權限範圍 (scope)。留空表示使用預設的權限範圍"
@@ -90,7 +89,11 @@ zh-HK:
     errors:
       messages:
         # Common error messages
-        invalid_request: "請求缺少了必要的參數、包含了不支援的參數、或者其他輸入錯誤。"
+        invalid_request:
+          unknown: '請求缺少了必要的參數、包含了不支援的參數、或者其他輸入錯誤。'
+          missing_param: 'Missing required parameter: #{value}.'
+          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
+          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: "不正確的轉接網址。"
         unauthorized_client: "用戶程式無權用此方法 (method) 請行這個請求。"
         access_denied: "資源擁有者或授權伺服器不接受請求。"
@@ -116,6 +119,8 @@ zh-HK:
           expired: "access token 已經過期"
           revoked: "access token 已被取消"
           unknown: "access token 不正確"
+        revoke:
+          unauthorized: "You are not authorized to revoke this token"
 
     flash:
       applications:

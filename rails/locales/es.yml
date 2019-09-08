@@ -35,7 +35,6 @@ es:
         confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
         redirect_uri: 'Usa una linea por URI'
         blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
-        native_redirect_uri: 'Usa %{native_redirect_uri} para test locales'
         scopes: 'Separa los ámbitos con espacios. Deja en blanco para usar los ámbitos predeterminados.'
       edit:
         title: 'Editar aplicación'
@@ -90,7 +89,11 @@ es:
     errors:
       messages:
         # Common error messages
-        invalid_request: 'La petición no tiene un parámetro obligatorio, incluye un valor de parámetro incompatible, o tiene un formato incorrecto.'
+        invalid_request:
+          unknown: 'La petición no tiene un parámetro obligatorio, incluye un valor de parámetro incompatible, o tiene un formato incorrecto.'
+          missing_param: 'Missing required parameter: #{value}.'
+          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
+          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: 'La uri de redirección no es valida.'
         unauthorized_client: 'El cliente no tiene autorización para realizar esta petición utilizando este método.'
         access_denied: 'El propietario del recurso o el servidor de autorización han denegado la petición.'
@@ -116,6 +119,8 @@ es:
           revoked: "El token de acceso ha sido revocado"
           expired: "El token de acceso ha expirado"
           unknown: "El token de acceso es inválido"
+        revoke:
+          unauthorized: "No tiene autorización para revocar este token"
 
     flash:
       applications:
