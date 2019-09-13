@@ -12,17 +12,17 @@ ja:
             redirect_uri:
               fragment_present: 'はURLフラグメントを含めることはできません。'
               invalid_uri: 'は有効なURIではありません。'
-              unspecified_scheme: 'スキームを指定する必要があります.'
+              unspecified_scheme: 'スキームを指定する必要があります。'
               relative_uri: 'は絶対URIでなければなりません。'
               secured_uri: 'はHTTPS/SSL URIでなければなりません。'
-              forbidden_uri: 'サーバーによって禁止されています.'
+              forbidden_uri: 'はサーバーによって禁止されています。'
             scopes:
               not_match_configured: "はサーバーの設定と一致しません。"
 
   doorkeeper:
     applications:
       confirmations:
-        destroy: '本当に削除しますか?'
+        destroy: '本当に削除しますか？'
       buttons:
         edit: '編集'
         destroy: '削除'
@@ -30,7 +30,7 @@ ja:
         cancel: 'キャンセル'
         authorize: '認証'
       form:
-        error: 'おっと!フォームにエラーがないか確認してください'
+        error: 'おっと！フォームにエラーがないか確認してください'
       help:
         confidential: 'クライアントシークレットの機密を保持できるアプリケーションで使われます。'
         redirect_uri: 'URIごとに1行で入力してください'
@@ -44,7 +44,7 @@ ja:
         name: '名称'
         callback_url: 'コールバックURL'
         actions: '行動'
-        confidential: '機密?'
+        confidential: '機密？'
         confidentiality:
           'yes': 'はい'
           'no': 'いいえ'
@@ -67,14 +67,14 @@ ja:
         title: 'エラーが発生しました'
       new:
         title: '承認が必要です'
-        prompt: 'あなたのアカウントで %{client_name} 承認しますか?'
+        prompt: 'あなたのアカウントで %{client_name} を承認しますか？'
         able_to: 'このアプリケーションは次のことが可能です'
       show:
         title: '認可コード'
 
     authorized_applications:
       confirmations:
-        revoke: '本当に取消しますか?'
+        revoke: '本当に取消しますか？'
       buttons:
         revoke: '取消'
       index:
@@ -90,7 +90,7 @@ ja:
       messages:
         # Common error messages
         invalid_request:
-          unknown: '必須パラメータが不足しているか、サポートされていないパラメータが含まれているか、もしくはパラメータが不正であるため、リクエストを処理できませんでした。'
+          unknown: '必須パラメータが不足しているか、サポートされていないパラメータが含まれているか、もしくはパラメータが無効であるため、リクエストを処理できませんでした。'
           missing_param: '必須パラメーターが不足しています: #{value}'
           not_support_pkce: 'code_verifierパラメータが無効です。サーバーはPKCEをサポートしていません。'
           request_not_authorized: 'リクエストは認可が必要です。リクエストを認可するための必須パラメータが不足しているか無効です。'
@@ -112,7 +112,7 @@ ja:
 
         # Access token errors
         invalid_client: 'クライアントが不明か、クライアント認証が含まれていないか、もしくは認証メソッドがサポートされていないため、クライアント認証は失敗しました。'
-        invalid_grant: '指定された認可グラントは不正か、有効期限切れか、無効か、リダイレクトURIが異なるか、もしくは別のクライアントに適用されています。'
+        invalid_grant: '指定された認可グラントは無効か、有効期限切れか、無効か、リダイレクトURIが異なるか、もしくは別のクライアントに適用されています。'
         unsupported_grant_type: 'この認可グラントのタイプは認可サーバではサポートされていません。'
 
         invalid_token:
