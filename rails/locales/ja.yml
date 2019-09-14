@@ -12,17 +12,17 @@ ja:
             redirect_uri:
               fragment_present: 'はURLフラグメントを含めることはできません。'
               invalid_uri: 'は有効なURIではありません。'
-              unspecified_scheme: 'スキームを指定する必要があります.'
+              unspecified_scheme: 'スキームを指定する必要があります。'
               relative_uri: 'は絶対URIでなければなりません。'
               secured_uri: 'はHTTPS/SSL URIでなければなりません。'
-              forbidden_uri: 'サーバーによって禁止されています.'
+              forbidden_uri: 'はサーバーによって禁止されています。'
             scopes:
-              not_match_configured: "doesn't match configured on the server."
+              not_match_configured: "はサーバーの設定と一致しません。"
 
   doorkeeper:
     applications:
       confirmations:
-        destroy: '本当に削除しますか?'
+        destroy: '本当に削除しますか？'
       buttons:
         edit: '編集'
         destroy: '削除'
@@ -30,11 +30,11 @@ ja:
         cancel: 'キャンセル'
         authorize: '認証'
       form:
-        error: 'おっと!フォームにエラーがないか確認してください'
+        error: 'おっと！フォームにエラーがないか確認してください'
       help:
-        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
+        confidential: 'クライアントシークレットの機密を保持できるアプリケーションで使われます。'
         redirect_uri: 'URIごとに1行で入力してください'
-        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
+        blank_redirect_uri: "リダイレクトURIを必要としないクライアントクレデンシャル、リソースオーナークレデンシャル、その他のグラントタイプの場合は空白のままにします。"
         scopes: '各スコープをスペースで区切ってください。初期設定のスコープを使用する場合は、空白のままにしてください。'
       edit:
         title: 'アプリケーションの編集'
@@ -44,7 +44,7 @@ ja:
         name: '名称'
         callback_url: 'コールバックURL'
         actions: '行動'
-        confidential: '機密?'
+        confidential: '機密？'
         confidentiality:
           'yes': 'はい'
           'no': 'いいえ'
@@ -67,14 +67,14 @@ ja:
         title: 'エラーが発生しました'
       new:
         title: '承認が必要です'
-        prompt: 'あなたのアカウントで %{client_name} 承認しますか?'
+        prompt: 'あなたのアカウントで %{client_name} を承認しますか？'
         able_to: 'このアプリケーションは次のことが可能です'
       show:
         title: '認可コード'
 
     authorized_applications:
       confirmations:
-        revoke: '本当に取消しますか?'
+        revoke: '本当に取消しますか？'
       buttons:
         revoke: '取消'
       index:
@@ -90,29 +90,29 @@ ja:
       messages:
         # Common error messages
         invalid_request:
-          unknown: '必須パラメータが不足しているか、サポートされていないパラメータが含まれているか、もしくはパラメータが不正であるため、リクエストを処理できませんでした。'
-          missing_param: 'Missing required parameter: #{value}.'
-          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
-          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
+          unknown: '必須パラメータが不足しているか、サポートされていないパラメータが含まれているか、もしくはパラメータが無効であるため、リクエストを処理できませんでした。'
+          missing_param: '必須パラメーターが不足しています: #{value}'
+          not_support_pkce: 'code_verifierパラメータが無効です。サーバーはPKCEをサポートしていません。'
+          request_not_authorized: 'リクエストは認可が必要です。リクエストを認可するための必須パラメータが不足しているか無効です。'
         invalid_redirect_uri: '含まれるリダイレクトURIが正しくありません。'
         unauthorized_client: 'クライアントはこのメソッドを用いたリクエストを実行する権限がありません。'
         access_denied: 'リソースオーナーもしくは認可サーバがリクエストを拒否しました。'
         invalid_scope: '指定されたスコープが無効か、不明か、もしくは正しくありません。'
-        invalid_code_challenge_method: 'The code challenge method must be plain or S256.'
+        invalid_code_challenge_method: 'コードチャレンジメソッドはplainかS256でなければなりません。'
         server_error: '予期せぬ事態が発生したため、認可サーバはリクエストを処理できませんでした。'
         temporarily_unavailable: '認可サーバが一時的に高負荷な状態にあるか、もしくはメンテナンス中であるため、リクエストを処理できません。'
 
         # Configuration error messages
         credential_flow_not_configured: 'Doorkeeper.configure.resource_owner_from_credentials が設定されていないため、リソースオーナーパスワードクレデンシャルフローは失敗しました。'
         resource_owner_authenticator_not_configured: 'Doorkeeper.configure.resource_owner_authenticator が設定されていないため、リソースオーナーの取得に失敗しました。'
-        admin_authenticator_not_configured: 'Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.'
+        admin_authenticator_not_configured: 'Doorkeeper.configure.admin_authenticator being unconfigured が設定されていないため、管理者パネルへのアクセスが禁止されています。'
 
         # Access grant errors
         unsupported_response_type: '認可サーバは指定されたレスポンスタイプをサポートしていません。'
 
         # Access token errors
         invalid_client: 'クライアントが不明か、クライアント認証が含まれていないか、もしくは認証メソッドがサポートされていないため、クライアント認証は失敗しました。'
-        invalid_grant: '指定された認可グラントは不正か、有効期限切れか、無効か、リダイレクトURIが異なるか、もしくは別のクライアントに適用されています。'
+        invalid_grant: '指定された認可グラントは無効か、有効期限切れか、無効か、リダイレクトURIが異なるか、もしくは別のクライアントに適用されています。'
         unsupported_grant_type: 'この認可グラントのタイプは認可サーバではサポートされていません。'
 
         invalid_token:
@@ -120,7 +120,7 @@ ja:
           expired: "アクセストークンの有効期限が切れました"
           unknown: "アクセストークンが無効です"
         revoke:
-          unauthorized: "You are not authorized to revoke this token"
+          unauthorized: "このトークンを無効化する権限がありません"
 
     flash:
       applications:
