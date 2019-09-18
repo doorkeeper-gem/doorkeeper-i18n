@@ -91,7 +91,7 @@ ru:
         # Common error messages
         invalid_request:
           unknown: 'В запросе отсутствуют необходимые параметры или они некорректны.'
-          missing_param: 'Отсутствует обязательный параметр: #{value}.'
+          missing_param: 'Отсутствует обязательный параметр: %{value}.'
           not_support_pkce: 'Неверное значение параметра code_verifier. Сервер не поддерживает pkce.'
           request_not_authorized: 'Запрос должен быть авторизован. Необходимый параметр для авторизации отсутствует или неверный.'
         invalid_redirect_uri: 'Некорректный URI для перенаправления'

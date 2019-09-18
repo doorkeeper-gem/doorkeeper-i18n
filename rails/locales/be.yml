@@ -91,7 +91,7 @@ be:
         # Common error messages
         invalid_request:
           unknown: 'У запыце адсутнічаюць абавязковыя параметры ці яны некарэктныя.'
-          missing_param: 'Адсутнiчае абавязковы параметр: #{value}.'
+          missing_param: 'Адсутнiчае абавязковы параметр: %{value}.'
           not_support_pkce: 'Некарэктнае значэнне параметру code_verifier. Сервер не падтрымлівае pkce.'
           request_not_authorized: 'Запыт павінен быць аўтарызаваны. Патрэбны параметр для аўтарызацыі запыту адсутнічае ці няверны'
         invalid_redirect_uri: 'Некарэктны URI для перанакіравання'

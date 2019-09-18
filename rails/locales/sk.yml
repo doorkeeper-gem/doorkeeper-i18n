@@ -91,7 +91,7 @@ sk:
         # Common error messages
         invalid_request:
           unknown: 'Požiadavke chýba požadovaný parameter, obsahuje nepodporovanú hodnotu parametra, alebo je inak poškodený.'
-          missing_param: 'Missing required parameter: #{value}.'
+          missing_param: 'Missing required parameter: %{value}.'
           not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
           request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: "Požadované presmerovanie uri je chybne formátované alebo nezodpovedá presmerovania URI klienta."

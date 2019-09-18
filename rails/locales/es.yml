@@ -91,7 +91,7 @@ es:
         # Common error messages
         invalid_request:
           unknown: 'La petición no tiene un parámetro obligatorio, incluye un valor de parámetro incompatible, o tiene un formato incorrecto.'
-          missing_param: 'Missing required parameter: #{value}.'
+          missing_param: 'Missing required parameter: %{value}.'
           not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
           request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: 'La uri de redirección no es valida.'

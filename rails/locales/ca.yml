@@ -91,7 +91,7 @@ ca:
         # Common error messages
         invalid_request:
           unknown: 'A la petició li manca un paràmetre obligatori, inclou un valor de paràmetre incompatible, o té un format incorrecte.'
-          missing_param: 'Missing required parameter: #{value}.'
+          missing_param: 'Missing required parameter: %{value}.'
           not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
           request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: 'La URI de redirecció no és vàlida.'
