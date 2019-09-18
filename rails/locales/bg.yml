@@ -91,7 +91,7 @@ bg:
         # Common error messages
         invalid_request:
           unknown: 'В заявката липсва необходим параметър, присъства неподдържана стойност на параметър или съдържа друга грешка.'
-          missing_param: 'Missing required parameter: #{value}.'
+          missing_param: 'Missing required parameter: %{value}.'
           not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
           request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: "Заявеният УРИ за обратна връзка е грешен или не съвпада с УРИ за обратна връзка на клиента."

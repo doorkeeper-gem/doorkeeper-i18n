@@ -91,7 +91,7 @@ zh-TW:
         # Common error messages
         invalid_request:
           unknown: '這個請求少了一個必要的參數，可能是不支援的參數值或是其他格式錯誤'
-          missing_param: 'Missing required parameter: #{value}.'
+          missing_param: 'Missing required parameter: %{value}.'
           not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
           request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: '這個轉向網址無效'
