@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name = "doorkeeper-i18n"
-  gem.version = "5.2.0"
+  gem.version = "5.2.1"
   gem.authors = ["Tute Costa", "Nikita Bulai"]
   gem.email = %w[bulaj.nikita@gmail.com]
   gem.homepage = "https://github.com/doorkeeper-gem/doorkeeper-i18n"
