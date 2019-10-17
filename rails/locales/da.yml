@@ -67,7 +67,7 @@ da:
         title: 'Der er opstået en fejl'
       new:
         title: 'Tilladelse påkrævet'
-        prompt: 'Tillad% {client_name} for at bruge din konto?'
+        prompt: 'Tillad %{client_name} for at bruge din konto?'
         able_to: 'Denne applikation vil kunne'
       show:
         title: 'Godkendelseskode'
