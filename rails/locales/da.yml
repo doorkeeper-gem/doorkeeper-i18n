@@ -27,8 +27,8 @@ da:
         edit: 'Rediger'
         destroy: 'Slet'
         submit: 'Indsend'
-        cancel: 'Annullere'
-        authorize: 'Bemyndige'
+        cancel: 'Annuller'
+        authorize: 'Tillad'
       form:
         error: 'Oops! Tjek dit input for mulige fejl'
       help:
@@ -56,18 +56,18 @@ da:
         secret: 'Hemmelig'
         scopes: 'Afgrænsning'
         confidential: 'Fortroligt'
-        callback_urls: "Tilbage kald URL'er"
+        callback_urls: "Tilbagekald URL'er"
         actions: 'Handlinger'
 
     authorizations:
       buttons:
-        authorize: 'Bemyndige'
+        authorize: 'Tillad'
         deny: 'Afvis'
       error:
         title: 'Der er opstået en fejl'
       new:
         title: 'Tilladelse påkrævet'
-        prompt: 'Tillad %{client_name} for at bruge din konto?'
+        prompt: 'Giv %{client_name} tilladelse til at bruge din konto?'
         able_to: 'Denne applikation vil kunne'
       show:
         title: 'Godkendelseskode'
@@ -80,7 +80,7 @@ da:
       index:
         title: 'Dine autoriserede applikationer'
         application: 'Applikation'
-        created_at: 'Lavet den'
+        created_at: 'Oprettet den'
         date_format: '%Y-%m-%d %H:%M:%S'
 
     pre_authorization:
@@ -91,7 +91,7 @@ da:
         # Common error messages
         invalid_request:
           unknown: 'Forespørgslen mangler en påkrævet parameter, indeholder en ikke-understøttet parameterværdi eller er fejlbehæftet.'
-          missing_param: 'Missing required parameter: %{value}.'
+          missing_param: 'Manglende påkrævet parameter: %{value}.'
           not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
           request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: 'Den ønskede omdirigering URI er fejl behæftet eller svarer ikke til kundens omdirigering af URI.'
@@ -99,7 +99,7 @@ da:
         access_denied: 'Resource-ejeren eller autorisationsserveren nægtede anmodningen.'
         invalid_scope: 'Den ønskede afgrænsning er ugyldigt, ukendt eller fejlbehæftet.'
         invalid_code_challenge_method: 'Kodeudfordringsmetoden skal være klar eller S256.'
-        server_error: 'Der opstod en uventet fejl på Autorisationsserveren, som forhindrede den i at opfylde anmodningen.'
+        server_error: 'Der opstod en uventet fejl på Autorisationsserveren, som forhindrede den i at fuldføre anmodningen.'
         temporarily_unavailable: 'Autorisationsserveren kan ikke håndtere anmodningen på grund af midlertidig overbelastning eller vedligeholdelse af serveren.'
 
         # Configuration error messages
