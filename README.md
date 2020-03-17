@@ -26,7 +26,7 @@ Currently supported locales:
 * Finnish (fi)
 * French (fr)
 * Italian (it)
-* Japan (ja)
+* Japanese (ja)
 * Korean (ko)
 * Norwegian (nb)
 * Dutch (nl)
