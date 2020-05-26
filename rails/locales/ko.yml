@@ -92,7 +92,6 @@ ko:
         invalid_request:
           unknown: '요청에 필수 매개변수가 빠져있거나, 지원하지 않는 매개변수를 포함하거나, 형식이 잘못되었습니다.'
           missing_param: 'Missing required parameter: %{value}.'
-          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
           request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: '포함된 리다이렉트 URI가 유효하지 않습니다.'
         unauthorized_client: '클라이언트가 이 메서드로 요청하는 것이 허가되지 않았습니다.'

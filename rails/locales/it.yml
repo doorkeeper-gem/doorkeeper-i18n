@@ -92,7 +92,6 @@ it:
         invalid_request:
           unknown: 'Manca un parametro obbligatorio nella richiesta, include un valore non supportato, oppure è malformata.'
           missing_param: 'Missing required parameter: %{value}.'
-          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
           request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: "L'uri di redirect incluso non è valido."
         unauthorized_client: 'Il client non è autorizzato per effettuare questa richiesta utilizzando questo metodo.'

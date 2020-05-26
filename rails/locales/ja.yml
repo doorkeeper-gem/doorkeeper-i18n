@@ -92,7 +92,6 @@ ja:
         invalid_request:
           unknown: '必須パラメータが不足しているか、サポートされていないパラメータが含まれているか、もしくはパラメータが無効であるため、リクエストを処理できませんでした。'
           missing_param: '必須パラメーターが不足しています: %{value}'
-          not_support_pkce: 'code_verifierパラメータが無効です。サーバーはPKCEをサポートしていません。'
           request_not_authorized: 'リクエストは認可が必要です。リクエストを認可するための必須パラメータが不足しているか無効です。'
         invalid_redirect_uri: '含まれるリダイレクトURIが正しくありません。'
         unauthorized_client: 'クライアントはこのメソッドを用いたリクエストを実行する権限がありません。'
