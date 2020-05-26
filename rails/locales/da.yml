@@ -92,7 +92,6 @@ da:
         invalid_request:
           unknown: 'Forespørgslen mangler en påkrævet parameter, indeholder en ikke-understøttet parameterværdi eller er fejlbehæftet.'
           missing_param: 'Manglende påkrævet parameter: %{value}.'
-          not_support_pkce: 'Invalid code_verifier parameter. Server does not support pkce.'
           request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
         invalid_redirect_uri: 'Den ønskede omdirigering URI er fejl behæftet eller svarer ikke til kundens omdirigering af URI.'
         unauthorized_client: 'Kunden er ikke autoriseret til at udføre denne anmodning ved hjælp af denne metode.'
