@@ -17,7 +17,7 @@ nl:
               secured_uri: 'moet een HTTPS/SSL URI zijn.'
               forbidden_uri: 'is forbidden by the server.'
             scopes:
-              not_match_configured: "doesn't match configured on the server."
+              not_match_configured: 'komt niet overeen met server configuratie.'
 
   doorkeeper:
     applications:
@@ -32,9 +32,9 @@ nl:
       form:
         error: 'Oops! Controleer het formulier op fouten'
       help:
-        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
+        confidential: 'Toepassing zal worden gebruikt waar de client secret vertrouwelijk kan worden gehouden. Native mobile apps en Single Page Apps worden beschouwd als niet-vertrouwelijk.'
         redirect_uri: 'Gebruik één regel per URI. '
-        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
+        blank_redirect_uri: "Laat het leeg indien u uw provider heeft geconfigureerd voor het gebruik van Client Credentials, Resource Owner Password Credentials of een ander type authorisatie dat geen omleiding van URI vereist."
         scopes: 'Scheid scopes met spaties. Laat leeg om de standaard scopes te gebruiken.'
       edit:
         title: 'Bewerk applicatie'
@@ -55,7 +55,7 @@ nl:
         application_id: 'Applicatie UID'
         secret: 'Secret'
         scopes: 'Scopes'
-        confidential: 'Confidential'
+        confidential: 'Confidentieel'
         callback_urls: 'Callback urls'
         actions: 'Acties'
 
@@ -91,20 +91,20 @@ nl:
         # Common error messages
         invalid_request:
           unknown: 'Het verzoek mist een vereiste parameter, bevat een niet-ondersteunde parameter waarde of is anderszins onjuist.'
-          missing_param: 'Missing required parameter: %{value}.'
-          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
+          missing_param: 'Ontbrekende vereiste parameter: %{value}.'
+          request_not_authorized: 'Verzoek moet worden geautoriseerd. Vereiste parameter voor het autoriseren van de aanvraag ontbreekt of is ongeldig.'
         invalid_redirect_uri: 'De opgegeven redirect uri is niet geldig.'
         unauthorized_client: 'De client is niet bevoegd om dit verzoek met deze methode uit te voeren.'
         access_denied: 'De resource eigenaar of authorisatie-server weigerde het verzoek.'
         invalid_scope: 'De opgevraagde scope is niet geldig, onbekend of onjuist.'
-        invalid_code_challenge_method: 'The code challenge method must be plain or S256.'
+        invalid_code_challenge_method: 'De code-uitdaging-methode moet plain of S256 zijn.'
         server_error: 'De authorisatie server is een onverwachte voorwaarde tegengekomen die het verzoek verhinderd.'
         temporarily_unavailable: 'De authorisatie-server is momenteel niet in staat het verzoek te behandelen als gevolg van een tijdelijke overbelasting of onderhoud aan de server.'
 
         # Configuration error messages
-        credential_flow_not_configured: 'Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.'
-        resource_owner_authenticator_not_configured: 'Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.'
-        admin_authenticator_not_configured: 'Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.'
+        credential_flow_not_configured: 'Resource Owner Password Credentials flow is mislukt doordat Doorkeeper.configure.resource_owner_from_credentials niet geconfigureerd is.'
+        resource_owner_authenticator_not_configured: 'Resource Owner opzoeking mislukt doordat Doorkeeper.configure.resource_owner_authenticator niet is gevonden.'
+        admin_authenticator_not_configured: 'Toegang tot het adminpaneel is verboden omdat Doorkeeper.configure.admin_authenticator niet geconfigureerd is.'
 
         # Access grant errors
         unsupported_response_type: 'De authorisatie server ondersteunt dit response type niet'
@@ -119,7 +119,7 @@ nl:
           expired: "Het toegangstoken is verlopen"
           unknown: "Het toegangstoken is ongeldig"
         revoke:
-          unauthorized: "You are not authorized to revoke this token"
+          unauthorized: "U bent niet bevoegd om dit token in te trekken..."
 
     flash:
       applications:
