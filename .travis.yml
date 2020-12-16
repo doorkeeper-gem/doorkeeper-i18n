@@ -1,6 +1,9 @@
 cache: bundler
 language: ruby
 sudo: false
+arch:
+  - amd64
+  - ppc64le
 
 rvm:
   - 2.6.2
