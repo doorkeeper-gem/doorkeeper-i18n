@@ -121,6 +121,9 @@ ja:
         revoke:
           unauthorized: "このトークンを無効化する権限がありません"
 
+        forbidden_token:
+          missing_scope: "このリソースにアクセスするには次のスコープが必要です。%{oauth_scopes}"
+
     flash:
       applications:
         create:
