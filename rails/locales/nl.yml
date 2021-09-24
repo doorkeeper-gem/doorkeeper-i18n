@@ -2,145 +2,134 @@ nl:
   activerecord:
     attributes:
       doorkeeper/application:
-        name: 'Naam'
-        redirect_uri: 'Redirect URI'
-        scopes: 'Scopes'
+        name: Naam
+        redirect_uri: Redirect URI
     errors:
       models:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'kan geen fragment bevatten.'
-              invalid_uri: 'moet een geldige URI zijn.'
-              unspecified_scheme: 'moet een schema specificeren.'
-              relative_uri: 'moet een absolute URI zijn.'
-              secured_uri: 'moet een HTTPS/SSL URI zijn.'
-              forbidden_uri: 'is forbidden by the server.'
+              fragment_present: kan geen fragment bevatten.
+              invalid_uri: moet een geldige URI zijn.
+              unspecified_scheme: moet een schema specificeren.
+              relative_uri: moet een absolute URI zijn.
+              secured_uri: moet een HTTPS/SSL URI zijn.
+              forbidden_uri: is forbidden by the server.
             scopes:
-              not_match_configured: 'komt niet overeen met server configuratie.'
-
+              not_match_configured: komt niet overeen met server configuratie.
   doorkeeper:
     applications:
       confirmations:
-        destroy: 'Weet je het zeker?'
+        destroy: Weet je het zeker?
       buttons:
-        edit: 'Bewerken'
-        destroy: 'Verwijderen'
-        submit: 'Opslaan'
-        cancel: 'Annuleren'
-        authorize: 'Authoriseren'
+        edit: Bewerken
+        destroy: Verwijderen
+        submit: Opslaan
+        cancel: Annuleren
+        authorize: Authoriseren
       form:
-        error: 'Oops! Controleer het formulier op fouten'
+        error: Oops! Controleer het formulier op fouten
       help:
-        confidential: 'Toepassing zal worden gebruikt waar de client secret vertrouwelijk kan worden gehouden. Native mobile apps en Single Page Apps worden beschouwd als niet-vertrouwelijk.'
+        confidential: Toepassing zal worden gebruikt waar de client secret vertrouwelijk kan worden gehouden. Native mobile apps en Single Page Apps worden beschouwd als niet-vertrouwelijk.
         redirect_uri: 'Gebruik één regel per URI. '
-        blank_redirect_uri: "Laat het leeg indien u uw provider heeft geconfigureerd voor het gebruik van Client Credentials, Resource Owner Password Credentials of een ander type authorisatie dat geen omleiding van URI vereist."
-        scopes: 'Scheid scopes met spaties. Laat leeg om de standaard scopes te gebruiken.'
+        blank_redirect_uri: Laat het leeg indien u uw provider heeft geconfigureerd voor het gebruik van Client Credentials, Resource Owner Password Credentials of een ander type authorisatie dat geen omleiding van URI vereist.
+        scopes: Scheid scopes met spaties. Laat leeg om de standaard scopes te gebruiken.
       edit:
-        title: 'Bewerk applicatie'
+        title: Bewerk applicatie
       index:
-        title: 'Jouw applicaties'
-        new: 'Nieuwe applicatie'
-        name: 'Naam'
-        callback_url: 'Callback URL'
-        actions: 'Actions'
-        confidential: 'Confidential?'
+        title: Jouw applicaties
+        new: Nieuwe applicatie
+        name: Naam
+        callback_url: Callback URL
+        confidential: Confidential?
+        actions: Actions
         confidentiality:
-          'yes': 'Ja'
-          'no': 'Nee'
+          'yes': Ja
+          'no': Nee
       new:
-        title: 'Nieuwe applicatie'
+        title: Nieuwe applicatie
       show:
         title: 'Applicatie: %{name}'
-        application_id: 'Applicatie UID'
-        secret: 'Secret'
-        scopes: 'Scopes'
-        confidential: 'Confidentieel'
-        callback_urls: 'Callback urls'
-        actions: 'Acties'
-
+        application_id: Applicatie UID
+        secret: Secret
+        secret_hashed: Secret hashed
+        scopes: Scopes
+        confidential: Confidentieel
+        callback_urls: Callback urls
+        actions: Acties
+        not_defined: Not defined
     authorizations:
       buttons:
-        authorize: 'Authoriseren'
-        deny: 'Weigeren'
+        authorize: Authoriseren
+        deny: Weigeren
       error:
-        title: 'Er is een fout opgetreden'
+        title: Er is een fout opgetreden
       new:
-        title: 'Authorisatie vereist'
-        prompt: '%{client_name} authoriseren om uw account te gebruiken?'
-        able_to: 'Deze applicatie zal in staat zijn om'
+        title: Authorisatie vereist
+        prompt: "%{client_name} authoriseren om uw account te gebruiken?"
+        able_to: Deze applicatie zal in staat zijn om
       show:
-        title: 'Authorisatie code'
-
+        title: Authorisatie code
+      form_post:
+        title: Submit this form
     authorized_applications:
       confirmations:
-        revoke: 'Weet je het zeker?'
+        revoke: Weet je het zeker?
       buttons:
-        revoke: 'Intrekken'
+        revoke: Intrekken
       index:
-        title: 'Jouw geauthoriseerde applicaties'
-        application: 'Applicatie'
-        created_at: 'Aangemaakt op'
-        date_format: '%d-%m-%Y %H:%M:%S'
-
+        title: Jouw geauthoriseerde applicaties
+        application: Applicatie
+        created_at: Aangemaakt op
+        date_format: "%d-%m-%Y %H:%M:%S"
     pre_authorization:
-      status: 'Pre-authorization'
-
+      status: Pre-authorization
     errors:
       messages:
-        # Common error messages
         invalid_request:
-          unknown: 'Het verzoek mist een vereiste parameter, bevat een niet-ondersteunde parameter waarde of is anderszins onjuist.'
+          unknown: Het verzoek mist een vereiste parameter, bevat een niet-ondersteunde parameter waarde of is anderszins onjuist.
           missing_param: 'Ontbrekende vereiste parameter: %{value}.'
-          request_not_authorized: 'Verzoek moet worden geautoriseerd. Vereiste parameter voor het autoriseren van de aanvraag ontbreekt of is ongeldig.'
-        invalid_redirect_uri: 'De opgegeven redirect uri is niet geldig.'
-        unauthorized_client: 'De client is niet bevoegd om dit verzoek met deze methode uit te voeren.'
-        access_denied: 'De resource eigenaar of authorisatie-server weigerde het verzoek.'
-        invalid_scope: 'De opgevraagde scope is niet geldig, onbekend of onjuist.'
-        invalid_code_challenge_method: 'De code-uitdaging-methode moet plain of S256 zijn.'
-        server_error: 'De authorisatie server is een onverwachte voorwaarde tegengekomen die het verzoek verhinderd.'
-        temporarily_unavailable: 'De authorisatie-server is momenteel niet in staat het verzoek te behandelen als gevolg van een tijdelijke overbelasting of onderhoud aan de server.'
-
-        # Configuration error messages
-        credential_flow_not_configured: 'Resource Owner Password Credentials flow is mislukt doordat Doorkeeper.configure.resource_owner_from_credentials niet geconfigureerd is.'
-        resource_owner_authenticator_not_configured: 'Resource Owner opzoeking mislukt doordat Doorkeeper.configure.resource_owner_authenticator niet is gevonden.'
-        admin_authenticator_not_configured: 'Toegang tot het adminpaneel is verboden omdat Doorkeeper.configure.admin_authenticator niet geconfigureerd is.'
-
-        # Access grant errors
-        unsupported_response_type: 'De authorisatie server ondersteunt dit response type niet'
-
-        # Access token errors
-        invalid_client: 'Client verificatie is mislukt door onbekende klant, geen client authenticatie opgegeven, of een niet-ondersteunde authenticatie methode.'
-        invalid_grant: 'De verstrekte authorisatie is ongeldig, verlopen, ingetrokken, komt niet overeen met de redirect uri die is opgegeven, of werd uitgegeven aan een andere klant.'
-        unsupported_grant_type: 'Het type authorisatie is niet ondersteund door de authorisatie-server'
-
+          request_not_authorized: Verzoek moet worden geautoriseerd. Vereiste parameter voor het autoriseren van de aanvraag ontbreekt of is ongeldig.
+        invalid_redirect_uri: De opgegeven redirect uri is niet geldig.
+        unauthorized_client: De client is niet bevoegd om dit verzoek met deze methode uit te voeren.
+        access_denied: De resource eigenaar of authorisatie-server weigerde het verzoek.
+        invalid_scope: De opgevraagde scope is niet geldig, onbekend of onjuist.
+        invalid_code_challenge_method: De code-uitdaging-methode moet plain of S256 zijn.
+        server_error: De authorisatie server is een onverwachte voorwaarde tegengekomen die het verzoek verhinderd.
+        temporarily_unavailable: De authorisatie-server is momenteel niet in staat het verzoek te behandelen als gevolg van een tijdelijke overbelasting of onderhoud aan de server.
+        credential_flow_not_configured: Resource Owner Password Credentials flow is mislukt doordat Doorkeeper.configure.resource_owner_from_credentials niet geconfigureerd is.
+        resource_owner_authenticator_not_configured: Resource Owner opzoeking mislukt doordat Doorkeeper.configure.resource_owner_authenticator niet is gevonden.
+        admin_authenticator_not_configured: Toegang tot het adminpaneel is verboden omdat Doorkeeper.configure.admin_authenticator niet geconfigureerd is.
+        unsupported_response_type: De authorisatie server ondersteunt dit response type niet
+        unsupported_response_mode: The authorization server does not support this response mode.
+        invalid_client: Client verificatie is mislukt door onbekende klant, geen client authenticatie opgegeven, of een niet-ondersteunde authenticatie methode.
+        invalid_grant: De verstrekte authorisatie is ongeldig, verlopen, ingetrokken, komt niet overeen met de redirect uri die is opgegeven, of werd uitgegeven aan een andere klant.
+        unsupported_grant_type: Het type authorisatie is niet ondersteund door de authorisatie-server
         invalid_token:
-          revoked: "Het toegangstoken is geweigerd"
-          expired: "Het toegangstoken is verlopen"
-          unknown: "Het toegangstoken is ongeldig"
+          revoked: Het toegangstoken is geweigerd
+          expired: Het toegangstoken is verlopen
+          unknown: Het toegangstoken is ongeldig
         revoke:
-          unauthorized: "U bent niet bevoegd om dit token in te trekken..."
+          unauthorized: U bent niet bevoegd om dit token in te trekken...
         forbidden_token:
-          missing_scope: 'Access to this resource requires scope "%{oauth_scopes}".'
-
+          missing_scope: Access to this resource requires scope "%{oauth_scopes}".
     flash:
       applications:
         create:
-          notice: 'Applicatie aangemaakt.'
+          notice: Applicatie aangemaakt.
         destroy:
-          notice: 'Applicatie verwijderd.'
+          notice: Applicatie verwijderd.
         update:
-          notice: 'Applicatie bewerkt.'
+          notice: Applicatie bewerkt.
       authorized_applications:
         destroy:
-          notice: 'Applicatie ingetrokken.'
-
+          notice: Applicatie ingetrokken.
     layouts:
       admin:
-        title: 'Doorkeeper'
+        title: Doorkeeper
         nav:
-          oauth2_provider: 'OAuth2 Provider'
-          applications: 'Applicaties'
-          home: 'Home'
+          oauth2_provider: OAuth2 Provider
+          applications: Applicaties
+          home: Home
       application:
-        title: 'OAuth authorisatie vereist'
+        title: OAuth authorisatie vereist

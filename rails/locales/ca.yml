@@ -2,145 +2,134 @@ ca:
   activerecord:
     attributes:
       doorkeeper/application:
-        name: 'Nom'
-        redirect_uri: 'URI de redirecció'
-        scopes: 'Àmbits'
+        name: Nom
+        redirect_uri: URI de redirecció
     errors:
       models:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'no pot contenir un fragment.'
-              invalid_uri: 'ha de ser una URI vàlid.'
-              unspecified_scheme: 'must specify a scheme.'
-              relative_uri: 'ha de ser una URI absoluta.'
-              secured_uri: 'ha de ser una URI HTTPS/SSL.'
-              forbidden_uri: 'està prohibida pel servidor'
+              fragment_present: no pot contenir un fragment.
+              invalid_uri: ha de ser una URI vàlid.
+              unspecified_scheme: must specify a scheme.
+              relative_uri: ha de ser una URI absoluta.
+              secured_uri: ha de ser una URI HTTPS/SSL.
+              forbidden_uri: està prohibida pel servidor
             scopes:
-              not_match_configured: "doesn't match configured on the server."
-
+              not_match_configured: doesn't match configured on the server.
   doorkeeper:
     applications:
       confirmations:
-        destroy: "Segur que vols eliminar l'aplicació?"
+        destroy: Segur que vols eliminar l'aplicació?
       buttons:
-        edit: 'Editar'
-        destroy: 'Eliminar'
-        submit: 'Enviar'
-        cancel: 'Cancel·lar'
-        authorize: 'Autoritzar'
+        edit: Editar
+        destroy: Eliminar
+        submit: Enviar
+        cancel: Cancel·lar
+        authorize: Autoritzar
       form:
-        error: 'Ups! Sembla que hi ha errors al formulari'
+        error: Ups! Sembla que hi ha errors al formulari
       help:
-        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
-        redirect_uri: 'Utilitza una línia per URI'
-        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
-        scopes: 'Separa els àmbits amb espais. Deixa-ho en blanc per utilitzar els àmbits per defecte.'
+        confidential: Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.
+        redirect_uri: Utilitza una línia per URI
+        blank_redirect_uri: Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI.
+        scopes: Separa els àmbits amb espais. Deixa-ho en blanc per utilitzar els àmbits per defecte.
       edit:
-        title: 'Editar aplicació'
+        title: Editar aplicació
       index:
-        title: 'Les teves aplicacions'
-        new: 'Nova aplicació'
-        name: 'Nom'
-        callback_url: 'Callback URL'
-        actions: 'Actions'
-        confidential: 'Confidential?'
+        title: Les teves aplicacions
+        new: Nova aplicació
+        name: Nom
+        callback_url: Callback URL
+        confidential: Confidential?
+        actions: Actions
         confidentiality:
-          'yes': 'Sí'
+          'yes': Sí
           'no': 'No'
       new:
-        title: 'Nova aplicació'
+        title: Nova aplicació
       show:
         title: 'Aplicació: %{name}'
-        application_id: "Identificador d'aplicació"
-        secret: 'Secret'
-        scopes: 'Àmbits'
-        confidential: 'Confidential'
-        callback_urls: 'URLs de callback'
-        actions: 'Accions'
-
+        application_id: Identificador d'aplicació
+        secret: Secret
+        secret_hashed: Secret hashed
+        scopes: Àmbits
+        confidential: Confidential
+        callback_urls: URLs de callback
+        actions: Accions
+        not_defined: Not defined
     authorizations:
       buttons:
-        authorize: 'Autoritzar'
-        deny: 'Denegar'
+        authorize: Autoritzar
+        deny: Denegar
       error:
-        title: 'Hi ha hagut un error'
+        title: Hi ha hagut un error
       new:
-        title: 'Autorització necessària'
-        prompt: 'Autoritzes a %{client_name} per a que utilitzi el teu compte?'
-        able_to: 'Aquesta aplicació tindrà permisos per a'
+        title: Autorització necessària
+        prompt: Autoritzes a %{client_name} per a que utilitzi el teu compte?
+        able_to: Aquesta aplicació tindrà permisos per a
       show:
-        title: "Codi d'autorització"
-
+        title: Codi d'autorització
+      form_post:
+        title: Submit this form
     authorized_applications:
       confirmations:
-        revoke: 'Segur que vols anul·lar aquesta aplicació?'
+        revoke: Segur que vols anul·lar aquesta aplicació?
       buttons:
-        revoke: 'Anul·lar'
+        revoke: Anul·lar
       index:
-        title: 'Les teves aplicacions autoritzades'
-        application: 'Aplicació'
-        created_at: 'Data de creació'
-        date_format: '%d/%m/%Y %H:%M:%S'
-
+        title: Les teves aplicacions autoritzades
+        application: Aplicació
+        created_at: Data de creació
+        date_format: "%d/%m/%Y %H:%M:%S"
     pre_authorization:
-      status: 'Pre-authorization'
-
+      status: Pre-authorization
     errors:
       messages:
-        # Common error messages
         invalid_request:
-          unknown: 'A la petició li manca un paràmetre obligatori, inclou un valor de paràmetre incompatible, o té un format incorrecte.'
+          unknown: A la petició li manca un paràmetre obligatori, inclou un valor de paràmetre incompatible, o té un format incorrecte.
           missing_param: 'Missing required parameter: %{value}.'
-          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
-        invalid_redirect_uri: 'La URI de redirecció no és vàlida.'
-        unauthorized_client: 'El client no té autorització per a realitzar aquesta petició amb aquest mètode.'
-        access_denied: "El propietari del recurs o el servidor d'autorització han denegat la petició."
-        invalid_scope: "L'àmbit sol·licitat no és vàlid, és desconegut, o té un format incorrecte."
-        invalid_code_challenge_method: 'The code challenge method must be plain or S256.'
-        server_error: "El servidor d'autorització ha trobat una condició inesperada que le ha impedit completar la petició."
-        temporarily_unavailable: "El servidor d'autorització no ha pogut gestionar la petició per una sobrecàrrega temporal o per mantenimient del servidor."
-
-        # Configuration error messages
-        credential_flow_not_configured: 'El flux de credencials del propietari del recurs ha fallat per què Doorkeeper.configure.resource_owner_from_credentials no està configurat.'
-        resource_owner_authenticator_not_configured: 'La cerca del propietari del recurs ha fallat per què Doorkeeper.configure.resource_owner_authenticator no està configurat.'
-        admin_authenticator_not_configured: 'Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.'
-
-        # Access grant errors
-        unsupported_response_type: "El servidor d'autorització no permet aquest tipus de respuesta."
-
-        # Access token errors
-        invalid_client: "L'autenticació del client ha fallado ja que el client és desconegut, no està autenticat, o el mètode d'autenticació és incompatible."
-        invalid_grant: "L'autorització proporcionada no és vàlida, ha expirat, ha estat anul·lada, no coincideix amb la URI de redirecció utilitzada a la petició d'autorització, o ha estat sol·licitada per un altre client."
-        unsupported_grant_type: "El tipus d'autorització no està permesa per el servidor d'autorització."
-
+          request_not_authorized: Request need to be authorized. Required parameter for authorizing request is missing or invalid.
+        invalid_redirect_uri: La URI de redirecció no és vàlida.
+        unauthorized_client: El client no té autorització per a realitzar aquesta petició amb aquest mètode.
+        access_denied: El propietari del recurs o el servidor d'autorització han denegat la petició.
+        invalid_scope: L'àmbit sol·licitat no és vàlid, és desconegut, o té un format incorrecte.
+        invalid_code_challenge_method: The code challenge method must be plain or S256.
+        server_error: El servidor d'autorització ha trobat una condició inesperada que le ha impedit completar la petició.
+        temporarily_unavailable: El servidor d'autorització no ha pogut gestionar la petició per una sobrecàrrega temporal o per mantenimient del servidor.
+        credential_flow_not_configured: El flux de credencials del propietari del recurs ha fallat per què Doorkeeper.configure.resource_owner_from_credentials no està configurat.
+        resource_owner_authenticator_not_configured: La cerca del propietari del recurs ha fallat per què Doorkeeper.configure.resource_owner_authenticator no està configurat.
+        admin_authenticator_not_configured: Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.
+        unsupported_response_type: El servidor d'autorització no permet aquest tipus de respuesta.
+        unsupported_response_mode: The authorization server does not support this response mode.
+        invalid_client: L'autenticació del client ha fallado ja que el client és desconegut, no està autenticat, o el mètode d'autenticació és incompatible.
+        invalid_grant: L'autorització proporcionada no és vàlida, ha expirat, ha estat anul·lada, no coincideix amb la URI de redirecció utilitzada a la petició d'autorització, o ha estat sol·licitada per un altre client.
+        unsupported_grant_type: El tipus d'autorització no està permesa per el servidor d'autorització.
         invalid_token:
-          revoked: "El token d'accés ha estat anul·lat"
-          expired: "El token d'accés ha expirat"
-          unknown: "El token d'accés és invàlid"
+          revoked: El token d'accés ha estat anul·lat
+          expired: El token d'accés ha expirat
+          unknown: El token d'accés és invàlid
         revoke:
-          unauthorized: "You are not authorized to revoke this token"
+          unauthorized: You are not authorized to revoke this token
         forbidden_token:
-          missing_scope: 'Access to this resource requires scope "%{oauth_scopes}".'
-
+          missing_scope: Access to this resource requires scope "%{oauth_scopes}".
     flash:
       applications:
         create:
-          notice: 'Aplicació creada.'
+          notice: Aplicació creada.
         destroy:
-          notice: 'Aplicació eliminada.'
+          notice: Aplicació eliminada.
         update:
-          notice: 'Aplicació actualizada.'
+          notice: Aplicació actualizada.
       authorized_applications:
         destroy:
-          notice: 'Aplicació anul·lada.'
-
+          notice: Aplicació anul·lada.
     layouts:
       admin:
-        title: 'Doorkeeper'
+        title: Doorkeeper
         nav:
-          oauth2_provider: 'Proveïdor OAuth2'
-          applications: 'Aplicacions'
-          home: 'Inici'
+          oauth2_provider: Proveïdor OAuth2
+          applications: Aplicacions
+          home: Inici
       application:
-        title: 'Autorització OAuth necessària'
+        title: Autorització OAuth necessària

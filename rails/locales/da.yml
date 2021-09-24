@@ -2,145 +2,134 @@ da:
   activerecord:
     attributes:
       doorkeeper/application:
-        name: 'Navn'
-        redirect_uri: 'Omdiriger URI'
-        scopes: 'Afgrænsning'
+        name: Navn
+        redirect_uri: Omdiriger URI
     errors:
       models:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'må ikke indeholde et fragment'
-              invalid_uri: 'skal være en gyldig URI'
-              unspecified_scheme: 'skal angive en ordning'
-              relative_uri: 'skal være en absolut URI'
-              secured_uri: 'skal være en HTTPS/SSL URI'
-              forbidden_uri: 'er afvist af serveren'
+              fragment_present: må ikke indeholde et fragment
+              invalid_uri: skal være en gyldig URI
+              unspecified_scheme: skal angive en ordning
+              relative_uri: skal være en absolut URI
+              secured_uri: skal være en HTTPS/SSL URI
+              forbidden_uri: er afvist af serveren
             scopes:
-              not_match_configured: 'passer ikke med konfigurationen på serveren'
-
+              not_match_configured: passer ikke med konfigurationen på serveren
   doorkeeper:
     applications:
       confirmations:
-        destroy: 'Er du sikker?'
+        destroy: Er du sikker?
       buttons:
-        edit: 'Rediger'
-        destroy: 'Slet'
-        submit: 'Indsend'
-        cancel: 'Annuller'
-        authorize: 'Tillad'
+        edit: Rediger
+        destroy: Slet
+        submit: Indsend
+        cancel: Annuller
+        authorize: Tillad
       form:
-        error: 'Oops! Tjek dit input for mulige fejl'
+        error: Oops! Tjek dit input for mulige fejl
       help:
-        confidential: 'Applikationen vil blive brugt, hvor kundens fortroligt materiale kan holdes fortroligt. Mobile apps og Single Page Apps betragtes som ikke-fortrolige.'
-        redirect_uri: 'Brug en linje pr. URI'
-        blank_redirect_uri: 'Efterlad feltet tomt, hvis du har konfigureret din udbyder til at bruge Client Credentials, Resource Owner Password Credentials eller en anden adgangskontrol, der ikke kræver omdirigering af URI.'
-        scopes: 'Separate afgrænsningen med mellemrum. Efterlad feltet blank for at bruge standard afgrænsning.'
+        confidential: Applikationen vil blive brugt, hvor kundens fortroligt materiale kan holdes fortroligt. Mobile apps og Single Page Apps betragtes som ikke-fortrolige.
+        redirect_uri: Brug en linje pr. URI
+        blank_redirect_uri: Efterlad feltet tomt, hvis du har konfigureret din udbyder til at bruge Client Credentials, Resource Owner Password Credentials eller en anden adgangskontrol, der ikke kræver omdirigering af URI.
+        scopes: Separate afgrænsningen med mellemrum. Efterlad feltet blank for at bruge standard afgrænsning.
       edit:
-        title: 'Rediger applikation'
+        title: Rediger applikation
       index:
-        title: 'Dine applikationer'
-        new: 'Ny applikation'
-        name: 'Navn'
-        callback_url: 'Tilbage kald URL'
-        confidential: 'Fortrolig?'
-        actions: 'Handlinger'
+        title: Dine applikationer
+        new: Ny applikation
+        name: Navn
+        callback_url: Tilbage kald URL
+        confidential: Fortrolig?
+        actions: Handlinger
         confidentiality:
-          'yes': 'Ja'
-          'no': 'Nej'
+          'yes': Ja
+          'no': Nej
       new:
-        title: 'Ny Applikation'
+        title: Ny Applikation
       show:
         title: 'Applikation: %{name}'
-        application_id: 'Applikation UID'
-        secret: 'Hemmelig'
-        scopes: 'Afgrænsning'
-        confidential: 'Fortroligt'
-        callback_urls: "Tilbagekald URL'er"
-        actions: 'Handlinger'
-
+        application_id: Applikation UID
+        secret: Hemmelig
+        secret_hashed: Secret hashed
+        scopes: Afgrænsning
+        confidential: Fortroligt
+        callback_urls: Tilbagekald URL'er
+        actions: Handlinger
+        not_defined: Not defined
     authorizations:
       buttons:
-        authorize: 'Tillad'
-        deny: 'Afvis'
+        authorize: Tillad
+        deny: Afvis
       error:
-        title: 'Der er opstået en fejl'
+        title: Der er opstået en fejl
       new:
-        title: 'Tilladelse påkrævet'
-        prompt: 'Giv %{client_name} tilladelse til at bruge din konto?'
-        able_to: 'Denne applikation vil kunne'
+        title: Tilladelse påkrævet
+        prompt: Giv %{client_name} tilladelse til at bruge din konto?
+        able_to: Denne applikation vil kunne
       show:
-        title: 'Godkendelseskode'
-
+        title: Godkendelseskode
+      form_post:
+        title: Submit this form
     authorized_applications:
       confirmations:
-        revoke: 'Er du sikker?'
+        revoke: Er du sikker?
       buttons:
-        revoke: 'Tilbagekald'
+        revoke: Tilbagekald
       index:
-        title: 'Dine autoriserede applikationer'
-        application: 'Applikation'
-        created_at: 'Oprettet den'
-        date_format: '%Y-%m-%d %H:%M:%S'
-
+        title: Dine autoriserede applikationer
+        application: Applikation
+        created_at: Oprettet den
+        date_format: "%Y-%m-%d %H:%M:%S"
     pre_authorization:
-      status: 'før godkendelse'
-
+      status: før godkendelse
     errors:
       messages:
-        # Common error messages
         invalid_request:
-          unknown: 'Forespørgslen mangler en påkrævet parameter, indeholder en ikke-understøttet parameterværdi eller er fejlbehæftet.'
+          unknown: Forespørgslen mangler en påkrævet parameter, indeholder en ikke-understøttet parameterværdi eller er fejlbehæftet.
           missing_param: 'Manglende påkrævet parameter: %{value}.'
-          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
-        invalid_redirect_uri: 'Den ønskede omdirigering URI er fejl behæftet eller svarer ikke til kundens omdirigering af URI.'
-        unauthorized_client: 'Kunden er ikke autoriseret til at udføre denne anmodning ved hjælp af denne metode.'
-        access_denied: 'Resource-ejeren eller autorisationsserveren nægtede anmodningen.'
-        invalid_scope: 'Den ønskede afgrænsning er ugyldigt, ukendt eller fejlbehæftet.'
-        invalid_code_challenge_method: 'Kodeudfordringsmetoden skal være klar eller S256.'
-        server_error: 'Der opstod en uventet fejl på Autorisationsserveren, som forhindrede den i at fuldføre anmodningen.'
-        temporarily_unavailable: 'Autorisationsserveren kan ikke håndtere anmodningen på grund af midlertidig overbelastning eller vedligeholdelse af serveren.'
-
-        # Configuration error messages
-        credential_flow_not_configured: 'Ressource ejeren Password er fejlet på grund af Doorkeeper.configure.resource_owner_from_credentials er ukonfigureret.'
-        resource_owner_authenticator_not_configured: 'Kunne ikke finde ressource Ejeren da Doorkeeper.configure.resource_owner_from_credentials er ukonfigureret.'
-        admin_authenticator_not_configured: 'Der er ingen adgang til admin panelet da Doorkeeper.configure.resource_owner_from_credentials er ukonfigureret.'
-
-        # Access grant errors
-        unsupported_response_type: 'Autorisationsserveren understøtter ikke denne svartype'
-
-        # Access token errors
-        invalid_client: 'Kunde autentificering mislykkedes på grund af ukendt kunde, ingen kunde godkendelse inkluderet eller ingen understøttet godkendelsesmetode'
-        invalid_grant: 'Den tildelte godkendelse er ugyldig, udløbet, tilbagekaldt, svarer ikke til den omdirigerde URI, der blev anvendt i godkendelsesanmodningen, eller blev udstedt til en anden kunde.'
-        unsupported_grant_type: 'Godkendelsestypen understøttes ikke af autorisationsserveren'
-
+          request_not_authorized: Request need to be authorized. Required parameter for authorizing request is missing or invalid.
+        invalid_redirect_uri: Den ønskede omdirigering URI er fejl behæftet eller svarer ikke til kundens omdirigering af URI.
+        unauthorized_client: Kunden er ikke autoriseret til at udføre denne anmodning ved hjælp af denne metode.
+        access_denied: Resource-ejeren eller autorisationsserveren nægtede anmodningen.
+        invalid_scope: Den ønskede afgrænsning er ugyldigt, ukendt eller fejlbehæftet.
+        invalid_code_challenge_method: Kodeudfordringsmetoden skal være klar eller S256.
+        server_error: Der opstod en uventet fejl på Autorisationsserveren, som forhindrede den i at fuldføre anmodningen.
+        temporarily_unavailable: Autorisationsserveren kan ikke håndtere anmodningen på grund af midlertidig overbelastning eller vedligeholdelse af serveren.
+        credential_flow_not_configured: Ressource ejeren Password er fejlet på grund af Doorkeeper.configure.resource_owner_from_credentials er ukonfigureret.
+        resource_owner_authenticator_not_configured: Kunne ikke finde ressource Ejeren da Doorkeeper.configure.resource_owner_from_credentials er ukonfigureret.
+        admin_authenticator_not_configured: Der er ingen adgang til admin panelet da Doorkeeper.configure.resource_owner_from_credentials er ukonfigureret.
+        unsupported_response_type: Autorisationsserveren understøtter ikke denne svartype
+        unsupported_response_mode: The authorization server does not support this response mode.
+        invalid_client: Kunde autentificering mislykkedes på grund af ukendt kunde, ingen kunde godkendelse inkluderet eller ingen understøttet godkendelsesmetode
+        invalid_grant: Den tildelte godkendelse er ugyldig, udløbet, tilbagekaldt, svarer ikke til den omdirigerde URI, der blev anvendt i godkendelsesanmodningen, eller blev udstedt til en anden kunde.
+        unsupported_grant_type: Godkendelsestypen understøttes ikke af autorisationsserveren
         invalid_token:
-          revoked: 'Adgangs tokenet blev tilbagekaldt'
-          expired: 'Adgangs tokenet er udløbet'
-          unknown: 'Adgangs tokenet er ugyldigt'
+          revoked: Adgangs tokenet blev tilbagekaldt
+          expired: Adgangs tokenet er udløbet
+          unknown: Adgangs tokenet er ugyldigt
         revoke:
-          unauthorized: "You are not authorized to revoke this token"
+          unauthorized: You are not authorized to revoke this token
         forbidden_token:
-          missing_scope: 'Access to this resource requires scope "%{oauth_scopes}".'
-
+          missing_scope: Access to this resource requires scope "%{oauth_scopes}".
     flash:
       applications:
         create:
-          notice: 'Applikationen er dannet'
+          notice: Applikationen er dannet
         destroy:
-          notice: 'Applikationen er slettet'
+          notice: Applikationen er slettet
         update:
-          notice: 'Applikationen er opdateret'
+          notice: Applikationen er opdateret
       authorized_applications:
         destroy:
-          notice: 'Applikationen er tilbagekaldt'
-
+          notice: Applikationen er tilbagekaldt
     layouts:
       admin:
-        title: 'Dørvogter'
+        title: Dørvogter
         nav:
-          oauth2_provider: 'OAuth2 Udbyder'
-          applications: 'applikationer'
-          home: 'Hjem'
+          oauth2_provider: OAuth2 Udbyder
+          applications: applikationer
+          home: Hjem
       application:
-        title: 'OAuth autorisation kræves'
+        title: OAuth autorisation kræves

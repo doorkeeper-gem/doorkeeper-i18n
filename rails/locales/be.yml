@@ -2,145 +2,134 @@ be:
   activerecord:
     attributes:
       doorkeeper/application:
-        name: 'Назва'
-        redirect_uri: 'URI для перанакіравання'
-        scopes: 'Скоупы'
+        name: Назва
+        redirect_uri: URI для перанакіравання
     errors:
       models:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'не павінен утрымліваць фрагменты'
-              invalid_uri: 'павінен быць карэктным URI'
-              unspecified_scheme: 'павінен мець схему'
-              relative_uri: 'павінен быць абсалютным URI'
-              secured_uri: 'павінен быць HTTPS/SSL URI'
-              forbidden_uri: 'заблакаваны серверам'
+              fragment_present: не павінен утрымліваць фрагменты
+              invalid_uri: павінен быць карэктным URI
+              unspecified_scheme: павінен мець схему
+              relative_uri: павінен быць абсалютным URI
+              secured_uri: павінен быць HTTPS/SSL URI
+              forbidden_uri: заблакаваны серверам
             scopes:
-              not_match_configured: "не адпавядаюць канфігурацыі сервера."
-
+              not_match_configured: не адпавядаюць канфігурацыі сервера.
   doorkeeper:
     applications:
       confirmations:
-        destroy: 'Вы ўпэўнены?'
+        destroy: Вы ўпэўнены?
       buttons:
-        edit: 'Рэдагаваць'
-        destroy: 'Выдаліць'
-        submit: 'Захаваць'
-        cancel: 'Адмяніць'
-        authorize: 'Аўтарызаваць'
+        edit: Рэдагаваць
+        destroy: Выдаліць
+        submit: Захаваць
+        cancel: Адмяніць
+        authorize: Аўтарызаваць
       form:
-        error: 'Паўсталі памылкі! Праверце правільнасць запаўнення палёў'
+        error: Паўсталі памылкі! Праверце правільнасць запаўнення палёў
       help:
-        confidential: 'Праграма будзе выкарыстоўвацца там, дзе сакрэтны ключ абаронены ад прагляду. Мабільныя праграммы і аднастаронкавыя вэб-праграммы (SPA) разглядаюцца як неабароненыя.'
-        redirect_uri: 'Указвайце кожны URI у асобным радку'
-        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
-        scopes: 'Запісвайце скоупы праз прабел. Пакіньце поле пустым для выкарыстання значэнняў па-змаўчанню'
+        confidential: Праграма будзе выкарыстоўвацца там, дзе сакрэтны ключ абаронены ад прагляду. Мабільныя праграммы і аднастаронкавыя вэб-праграммы (SPA) разглядаюцца як неабароненыя.
+        redirect_uri: Указвайце кожны URI у асобным радку
+        blank_redirect_uri: Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI.
+        scopes: Запісвайце скоупы праз прабел. Пакіньце поле пустым для выкарыстання значэнняў па-змаўчанню
       edit:
-        title: 'Рэдагаваць праграму'
+        title: Рэдагаваць праграму
       index:
-        title: 'Вашы праграмы'
-        new: 'Новая програма'
-        name: 'Назва'
-        callback_url: 'URL зваротнага выкліку'
-        actions: 'Дзеянні'
-        confidential: 'Прыватна?'
+        title: Вашы праграмы
+        new: Новая програма
+        name: Назва
+        callback_url: URL зваротнага выкліку
+        confidential: Прыватна?
+        actions: Дзеянні
         confidentiality:
-          'yes': 'Так'
-          'no': 'Не'
+          'yes': Так
+          'no': Не
       new:
-        title: 'Новая праграма'
+        title: Новая праграма
       show:
         title: 'Праграма: %{name}'
-        application_id: 'ID праграмы'
-        secret: 'Сакрэтны ключ'
-        scopes: 'Скоупы'
-        confidential: 'Прыватна'
-        callback_urls: 'Спіс URL зваротнага выкліку'
-        actions: 'Дзеянні'
-
+        application_id: ID праграмы
+        secret: Сакрэтны ключ
+        secret_hashed: Сакрэтны ключ зашыфраваны
+        scopes: Скоупы
+        confidential: Прыватна
+        callback_urls: Спіс URL зваротнага выкліку
+        actions: Дзеянні
+        not_defined: Не вызначана
     authorizations:
       buttons:
-        authorize: 'Дазволіць'
-        deny: 'Адхіліць'
+        authorize: Дазволіць
+        deny: Адхіліць
       error:
-        title: 'Адбылася абмыла'
+        title: Адбылася абмыла
       new:
-        title: 'Патрабуецца аўтарызацыя'
-        prompt: 'Дазволіць %{client_name} выкарыстоўваць звесткі Вашага ўліковага запісу?'
+        title: Патрабуецца аўтарызацыя
+        prompt: Дазволіць %{client_name} выкарыстоўваць звесткі Вашага ўліковага запісу?
         able_to: 'Дадзеная праграма патрабуе наступныя дазволы:'
       show:
-        title: 'Код аўтарызацыі'
-
+        title: Код аўтарызацыі
+      form_post:
+        title: Адпраўце гэтую форму
     authorized_applications:
       confirmations:
-        revoke: 'Вы ўпэўнены?'
+        revoke: Вы ўпэўнены?
       buttons:
-        revoke: 'Адазваць аўтарызацыю'
+        revoke: Адазваць аўтарызацыю
       index:
-        title: 'Вашы аўтарызаваныя праграмы'
-        application: 'Праграма'
-        created_at: 'Створана'
-        date_format: '%d-%m-%Y %H:%M:%S'
-
+        title: Вашы аўтарызаваныя праграмы
+        application: Праграма
+        created_at: Створана
+        date_format: "%d-%m-%Y %H:%M:%S"
     pre_authorization:
-      status: 'Папярэдняя аўтарызацыя'
-
+      status: Папярэдняя аўтарызацыя
     errors:
       messages:
-        # Common error messages
         invalid_request:
-          unknown: 'У запыце адсутнічаюць абавязковыя параметры ці яны некарэктныя.'
+          unknown: У запыце адсутнічаюць абавязковыя параметры ці яны некарэктныя.
           missing_param: 'Адсутнiчае абавязковы параметр: %{value}.'
-          request_not_authorized: 'Запыт павінен быць аўтарызаваны. Патрэбны параметр для аўтарызацыі запыту адсутнічае ці няверны'
-        invalid_redirect_uri: 'Некарэктны URI для перанакіравання'
-        unauthorized_client: 'Кліент не аўтарызаваны для выканання дадзенага запыту'
+          request_not_authorized: Запыт павінен быць аўтарызаваны. Патрэбны параметр для аўтарызацыі запыту адсутнічае ці няверны
+        invalid_redirect_uri: Некарэктны URI для перанакіравання
+        unauthorized_client: Кліент не аўтарызаваны для выканання дадзенага запыту
         access_denied: 'Доступ забаронены: сервер ці ўладальнік рэсурсу адхіліў запыт'
-        invalid_scope: 'Няверны скоуп'
-        invalid_code_challenge_method: 'Code challenge method павінен быць plain альбо S256.'
-        server_error: 'На аўтарызацыйным серверы адбылася абмыла; запыт не выкананы'
-        temporarily_unavailable: 'Зараз аўтарызацыйны сервер не можа апрацаваць запыт у сілу высокай загружанасці або тэхнічных работ'
-
-        # Configuration error messages
-        credential_flow_not_configured: 'Resource Owner Password Credentials ня сканфігураваны, патрэбна канфігурацыя опцыі Doorkeeper.configure.resource_owner_from_credentials'
-        resource_owner_authenticator_not_configured: 'Resource Owner не знойдзены, патрэбна канфігурацыя опцыі Doorkeeper.configure.resource_owner_authenticator'
-        admin_authenticator_not_configured: 'Доступ да панэлі адміністратара заблакаваны, патрэбна канфігурацыя опцыі Doorkeeper.configure.admin_authenticator.'
-
-        # Access grant errors
-        unsupported_response_type: 'Сервер аўтарызацыі не падтрымвае дадзены тып запыту'
-
-        # Access token errors
+        invalid_scope: Няверны скоуп
+        invalid_code_challenge_method: Code challenge method павінен быць plain альбо S256.
+        server_error: На аўтарызацыйным серверы адбылася абмыла; запыт не выкананы
+        temporarily_unavailable: Зараз аўтарызацыйны сервер не можа апрацаваць запыт у сілу высокай загружанасці або тэхнічных работ
+        credential_flow_not_configured: Resource Owner Password Credentials ня сканфігураваны, патрэбна канфігурацыя опцыі Doorkeeper.configure.resource_owner_from_credentials
+        resource_owner_authenticator_not_configured: Resource Owner не знойдзены, патрэбна канфігурацыя опцыі Doorkeeper.configure.resource_owner_authenticator
+        admin_authenticator_not_configured: Доступ да панэлі адміністратара заблакаваны, патрэбна канфігурацыя опцыі Doorkeeper.configure.admin_authenticator.
+        unsupported_response_type: Сервер аўтарызацыі не падтрымвае дадзены тып запыту
+        unsupported_response_mode: The authorization server does not support this response mode.
         invalid_client: 'Абмыла аўтэнтыфікацыі кліента: няверны токен, невядомы кліент ці непадтрымоўваны метад аўтэнтыфікацыі'
-        invalid_grant: 'Права на аўтарызацыю мінула ці адазвана'
-        unsupported_grant_type: 'Аўтарызацыйны сервер не падтрымвае дадзены спосаб аўтарызацыі'
-
+        invalid_grant: Права на аўтарызацыю мінула ці адазвана
+        unsupported_grant_type: Аўтарызацыйны сервер не падтрымвае дадзены спосаб аўтарызацыі
         invalid_token:
-          revoked: "Токен доступу адазваны"
-          expired: "Токен доступу састарэў"
-          unknown: "Няверны токен доступу"
+          revoked: Токен доступу адазваны
+          expired: Токен доступу састарэў
+          unknown: Няверны токен доступу
         revoke:
-          unauthorized: "Вы не аўтарызаваны каб адазвать дадзены токен"
+          unauthorized: Вы не аўтарызаваны каб адазвать дадзены токен
         forbidden_token:
           missing_scope: 'Доступ да гэтага рэсурсу патрабуе наступны(я) скоуп(ы): "%{oauth_scopes}".'
-
     flash:
       applications:
         create:
-          notice: 'Праграма створана'
+          notice: Праграма створана
         destroy:
-          notice: 'Праграма выдалена'
+          notice: Праграма выдалена
         update:
-          notice: 'Праграма абноўлена'
+          notice: Праграма абноўлена
       authorized_applications:
         destroy:
-          notice: 'Праграма адазвана'
-
+          notice: Праграма адазвана
     layouts:
       admin:
-        title: 'Doorkeeper'
+        title: Doorkeeper
         nav:
-          oauth2_provider: 'OAuth 2 правайдар'
-          applications: 'Праграмы'
-          home: 'Галоўная'
+          oauth2_provider: OAuth 2 правайдар
+          applications: Праграмы
+          home: Галоўная
       application:
-        title: 'Патрэбна аўтарызацыя'
+        title: Патрэбна аўтарызацыя

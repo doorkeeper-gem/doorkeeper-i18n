@@ -2,145 +2,134 @@ cs:
   activerecord:
     attributes:
       doorkeeper/application:
-        name: 'Jméno'
-        redirect_uri: 'URI přesměrování'
-        scopes: 'Scopes'
+        name: Jméno
+        redirect_uri: URI přesměrování
     errors:
       models:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'nemůže obsahovat fragment.'
-              invalid_uri: 'musí být platná URI.'
-              unspecified_scheme: 'must specify a scheme.'
-              relative_uri: 'musí být absolutní URI.'
-              secured_uri: 'musí být HTTPS/SSL URI.'
-              forbidden_uri: 'je serverem zakázána.'
+              fragment_present: nemůže obsahovat fragment.
+              invalid_uri: musí být platná URI.
+              unspecified_scheme: must specify a scheme.
+              relative_uri: musí být absolutní URI.
+              secured_uri: musí být HTTPS/SSL URI.
+              forbidden_uri: je serverem zakázána.
             scopes:
-              not_match_configured: "neodpovídá nastavenému serveru."
-
+              not_match_configured: neodpovídá nastavenému serveru.
   doorkeeper:
     applications:
       confirmations:
-        destroy: 'Opravdu smazat?'
+        destroy: Opravdu smazat?
       buttons:
-        edit: 'Upravit'
-        destroy: 'Smazat'
-        submit: 'Odeslat'
-        cancel: 'Zrušit'
-        authorize: 'Autorizovat'
+        edit: Upravit
+        destroy: Smazat
+        submit: Odeslat
+        cancel: Zrušit
+        authorize: Autorizovat
       form:
-        error: 'Chyba! Zkontrolujte a opravte chyby ve formuláři'
+        error: Chyba! Zkontrolujte a opravte chyby ve formuláři
       help:
-        confidential: 'Aplikace bude použita tam, kde je možné zachovat důvěrnost klienta. Nativní mobilní aplikace a aplikace s jednou stránkou jsou považovány za nedůvěrné.'
-        redirect_uri: 'Na každý řádek jedna URI'
-        blank_redirect_uri: "Ponechte prázdné, pokud jste nakonfigurovali svého poskytovatele, aby používal pověření klienta, pověření vlastníka hesla nebo jiný typ grantu, který nevyžaduje přesměrování identifikátoru URI."
-        scopes: 'Oddělte scopy mezerami. Nechte prázdné pro použití default scopu.'
+        confidential: Aplikace bude použita tam, kde je možné zachovat důvěrnost klienta. Nativní mobilní aplikace a aplikace s jednou stránkou jsou považovány za nedůvěrné.
+        redirect_uri: Na každý řádek jedna URI
+        blank_redirect_uri: Ponechte prázdné, pokud jste nakonfigurovali svého poskytovatele, aby používal pověření klienta, pověření vlastníka hesla nebo jiný typ grantu, který nevyžaduje přesměrování identifikátoru URI.
+        scopes: Oddělte scopy mezerami. Nechte prázdné pro použití default scopu.
       edit:
-        title: 'Upravit aplikaci'
+        title: Upravit aplikaci
       index:
-        title: 'Vaše aplikace'
-        new: 'Nová aplikace'
-        name: 'Název'
-        callback_url: 'Callback URL'
-        confidential: 'Důvěrné?'
-        actions: 'Akce'
+        title: Vaše aplikace
+        new: Nová aplikace
+        name: Název
+        callback_url: Callback URL
+        confidential: Důvěrné?
+        actions: Akce
         confidentiality:
-          'yes': 'Ano'
-          'no': 'Ne'
+          'yes': Ano
+          'no': Ne
       new:
-        title: 'Nová aplikace'
+        title: Nová aplikace
       show:
         title: 'Aplikace: %{name}'
-        application_id: 'UID aplikace'
-        secret: 'Secret'
-        scopes: 'Scopes'
-        confidential: 'Důvěrné'
-        callback_urls: 'Url přesměrování'
-        actions: 'Akce'
-
+        application_id: UID aplikace
+        secret: Secret
+        secret_hashed: Secret hashed
+        scopes: Scopes
+        confidential: Důvěrné
+        callback_urls: Url přesměrování
+        actions: Akce
+        not_defined: Not defined
     authorizations:
       buttons:
-        authorize: 'Autorizovat'
-        deny: 'Odmítnout'
+        authorize: Autorizovat
+        deny: Odmítnout
       error:
-        title: 'Vyskytla se chyba'
+        title: Vyskytla se chyba
       new:
-        title: 'Nutná autorizace'
-        prompt: 'Autorizovat %{client_name} k přístupu k vašemu účtu?'
-        able_to: 'Tato aplikace bude mít tato oprávnění'
+        title: Nutná autorizace
+        prompt: Autorizovat %{client_name} k přístupu k vašemu účtu?
+        able_to: Tato aplikace bude mít tato oprávnění
       show:
-        title: 'Autorizační kód'
-
+        title: Autorizační kód
+      form_post:
+        title: Submit this form
     authorized_applications:
       confirmations:
-        revoke: 'Opravdu autorizovat?'
+        revoke: Opravdu autorizovat?
       buttons:
-        revoke: 'Odebrat autorizaci'
+        revoke: Odebrat autorizaci
       index:
-        title: 'Vaše autorizované aplikace'
-        application: 'Aplikace'
-        created_at: 'Vytvořeno'
-        date_format: '%H:%M:%S %d.%m.%T'
-
+        title: Vaše autorizované aplikace
+        application: Aplikace
+        created_at: Vytvořeno
+        date_format: "%H:%M:%S %d.%m.%T"
     pre_authorization:
-      status: 'Pre-autorizace'
-
+      status: Pre-autorizace
     errors:
       messages:
-        # Common error messages
         invalid_request:
-          unknown: 'Požadavku chybí požadovaný parametr, obsahuje nepodporovanou hodnotu parametru, nebo je jinak poškozen.'
+          unknown: Požadavku chybí požadovaný parametr, obsahuje nepodporovanou hodnotu parametru, nebo je jinak poškozen.
           missing_param: 'Missing required parameter: %{value}.'
-          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
-        invalid_redirect_uri: "Požadované přesměrování uri je chybně formátováno nebo neodpovídá přesměrování URI klienta."
-        unauthorized_client: 'Klient není oprávněn provádět tento požadavek touto metodou.'
-        access_denied: 'Vlastník zdroje nebo autorizační server požadavek odmítl.'
-        invalid_scope: 'Požadovaný rozsah je neplatný, neznámý nebo poškozený.'
-        invalid_code_challenge_method: 'Metoda výzvy kódu musí být prostá nebo S256.'
-        server_error: 'Autorizační server narazil na neočekávanou podmínku, která mu znemožnila splnit požadavek.'
-        temporarily_unavailable: 'Autorizační server není v současné době schopen zpracovat požadavek z důvodu dočasného přetížení nebo údržby serveru.'
-
-        # Configuration error messages
-        credential_flow_not_configured: 'Flow pověření vlastníka zdroje se nezdařil kvůli tomu, že Doorkeeper.configure.resource_owner_from_credentials není nakonfigurován.'
-        resource_owner_authenticator_not_configured: 'Vyhledání zdroje se nezdařilo z důvodu, že Doorkeeper.configure.resource_owner_authenticator je nekonfigurován.'
-        admin_authenticator_not_configured: 'Přístup k panelu admin je zakázán kvůli tomu, že Doorkeeper.configure.admin_authenticator je nekonfigurován.'
-
-        # Access grant errors
-        unsupported_response_type: 'Autorizační server nepodporuje tento typ odpovědi.'
-
-        # Access token errors
-        invalid_client: 'Autentizace klienta se nezdařila kvůli neznámému klientovi, žádnému ověřování klienta nebo nepodporované metodě ověřování.'
-        invalid_grant: 'Poskytnutý grant pro udělení oprávnění je neplatný, jeho platnost vypršela, zrušena, neodpovídá identifikátoru URI přesměrování použitého v žádosti o autorizaci nebo byla vydána jinému klientovi.'
-        unsupported_grant_type: 'Autorizační server nepodporuje typ autorizačního grantu.'
-
+          request_not_authorized: Request need to be authorized. Required parameter for authorizing request is missing or invalid.
+        invalid_redirect_uri: Požadované přesměrování uri je chybně formátováno nebo neodpovídá přesměrování URI klienta.
+        unauthorized_client: Klient není oprávněn provádět tento požadavek touto metodou.
+        access_denied: Vlastník zdroje nebo autorizační server požadavek odmítl.
+        invalid_scope: Požadovaný rozsah je neplatný, neznámý nebo poškozený.
+        invalid_code_challenge_method: Metoda výzvy kódu musí být prostá nebo S256.
+        server_error: Autorizační server narazil na neočekávanou podmínku, která mu znemožnila splnit požadavek.
+        temporarily_unavailable: Autorizační server není v současné době schopen zpracovat požadavek z důvodu dočasného přetížení nebo údržby serveru.
+        credential_flow_not_configured: Flow pověření vlastníka zdroje se nezdařil kvůli tomu, že Doorkeeper.configure.resource_owner_from_credentials není nakonfigurován.
+        resource_owner_authenticator_not_configured: Vyhledání zdroje se nezdařilo z důvodu, že Doorkeeper.configure.resource_owner_authenticator je nekonfigurován.
+        admin_authenticator_not_configured: Přístup k panelu admin je zakázán kvůli tomu, že Doorkeeper.configure.admin_authenticator je nekonfigurován.
+        unsupported_response_type: Autorizační server nepodporuje tento typ odpovědi.
+        unsupported_response_mode: The authorization server does not support this response mode.
+        invalid_client: Autentizace klienta se nezdařila kvůli neznámému klientovi, žádnému ověřování klienta nebo nepodporované metodě ověřování.
+        invalid_grant: Poskytnutý grant pro udělení oprávnění je neplatný, jeho platnost vypršela, zrušena, neodpovídá identifikátoru URI přesměrování použitého v žádosti o autorizaci nebo byla vydána jinému klientovi.
+        unsupported_grant_type: Autorizační server nepodporuje typ autorizačního grantu.
         invalid_token:
-          revoked: "Tento přístupový token byl zneplatněn"
-          expired: "Tento přístupový token vypršel"
-          unknown: "Tento přístupový token je neplatný"
+          revoked: Tento přístupový token byl zneplatněn
+          expired: Tento přístupový token vypršel
+          unknown: Tento přístupový token je neplatný
         revoke:
-          unauthorized: "You are not authorized to revoke this token"
+          unauthorized: You are not authorized to revoke this token
         forbidden_token:
-          missing_scope: 'Access to this resource requires scope "%{oauth_scopes}".'
-
+          missing_scope: Access to this resource requires scope "%{oauth_scopes}".
     flash:
       applications:
         create:
-          notice: 'Aplikace vytvořena.'
+          notice: Aplikace vytvořena.
         destroy:
-          notice: 'Aplikace smazána.'
+          notice: Aplikace smazána.
         update:
-          notice: 'Aplikace aktualizována.'
+          notice: Aplikace aktualizována.
       authorized_applications:
         destroy:
-          notice: 'Aplikaci bylo odebráno oprávnění.'
-
+          notice: Aplikaci bylo odebráno oprávnění.
     layouts:
       admin:
-        title: 'Doorkeeper'
+        title: Doorkeeper
         nav:
-          oauth2_provider: 'OAuth2 poskytovatel'
-          applications: 'Aplikace'
-          home: 'Domů'
+          oauth2_provider: OAuth2 poskytovatel
+          applications: Aplikace
+          home: Domů
       application:
-        title: 'OAuth vyžaduje autorizaci'
+        title: OAuth vyžaduje autorizaci

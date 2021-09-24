@@ -2,145 +2,134 @@ fi:
   activerecord:
     attributes:
       doorkeeper/application:
-        name: 'Nimi'
-        redirect_uri: 'Uudelleenohjauksen URI'
-        scopes: 'Näkyvyysalueet'
+        name: Nimi
+        redirect_uri: Uudelleenohjauksen URI
     errors:
       models:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: 'ei voi sisältää URI fragmenttia.'
-              invalid_uri: 'täytyy olla validi URI.'
-              unspecified_scheme: 'täytyy määrittää järjestelmä.'
-              relative_uri: 'täytyy olla absoluuttinen URI.'
-              secured_uri: 'täytyy olla HTTPS/SSL URI.'
-              forbidden_uri: 'on kielletty palvelimella.'
+              fragment_present: ei voi sisältää URI fragmenttia.
+              invalid_uri: täytyy olla validi URI.
+              unspecified_scheme: täytyy määrittää järjestelmä.
+              relative_uri: täytyy olla absoluuttinen URI.
+              secured_uri: täytyy olla HTTPS/SSL URI.
+              forbidden_uri: on kielletty palvelimella.
             scopes:
-              not_match_configured: "doesn't match configured on the server."
-
+              not_match_configured: doesn't match configured on the server.
   doorkeeper:
     applications:
       confirmations:
-        destroy: 'Oletko varma?'
+        destroy: Oletko varma?
       buttons:
-        edit: 'Muokkaa'
-        destroy: 'Poista'
-        submit: 'Lähetä'
-        cancel: 'Peruuta'
-        authorize: 'Valtuuta'
+        edit: Muokkaa
+        destroy: Poista
+        submit: Lähetä
+        cancel: Peruuta
+        authorize: Valtuuta
       form:
-        error: 'Hups! Tarkasta lomakkeesi mahdollisten virheiden varalta.'
+        error: Hups! Tarkasta lomakkeesi mahdollisten virheiden varalta.
       help:
-        confidential: 'Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.'
-        redirect_uri: 'Yksi URI riviä kohden'
-        blank_redirect_uri: "Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI."
-        scopes: 'Erottele näkyvyysalueet välilyönnein. Jätä tyhjäksi, mikäli haluat käyttää oletusnäkyvyysalueita.'
+        confidential: Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.
+        redirect_uri: Yksi URI riviä kohden
+        blank_redirect_uri: Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI.
+        scopes: Erottele näkyvyysalueet välilyönnein. Jätä tyhjäksi, mikäli haluat käyttää oletusnäkyvyysalueita.
       edit:
-        title: 'Muokkaa sovellusta'
+        title: Muokkaa sovellusta
       index:
-        title: 'Omat sovellukset'
-        new: 'Uusi sovellus'
-        name: 'Nimi'
-        callback_url: 'Callback URL'
-        actions: 'Actions'
-        confidential: 'Confidential?'
+        title: Omat sovellukset
+        new: Uusi sovellus
+        name: Nimi
+        callback_url: Callback URL
+        confidential: Confidential?
+        actions: Actions
         confidentiality:
-          'yes': 'Joo'
-          'no': 'Ei'
+          'yes': Joo
+          'no': Ei
       new:
-        title: 'Uusi sovellus'
+        title: Uusi sovellus
       show:
         title: 'Sovellus: %{name}'
-        application_id: 'Sovelluksen UID'
-        secret: 'Salainen avain'
-        scopes: 'Näkyvyysalueet'
-        confidential: 'Confidential'
-        callback_urls: 'Callback URL:t'
-        actions: 'Toiminnot'
-
+        application_id: Sovelluksen UID
+        secret: Salainen avain
+        secret_hashed: Secret hashed
+        scopes: Näkyvyysalueet
+        confidential: Confidential
+        callback_urls: Callback URL:t
+        actions: Toiminnot
+        not_defined: Not defined
     authorizations:
       buttons:
-        authorize: 'Valtuuta'
-        deny: 'Kiellä'
+        authorize: Valtuuta
+        deny: Kiellä
       error:
-        title: 'Virhe'
+        title: Virhe
       new:
-        title: 'Valtuutus vaadittu'
-        prompt: 'Valtuuta %{client_name} käyttämään tiliäsi?'
-        able_to: 'Tämä sovellus pystyy'
+        title: Valtuutus vaadittu
+        prompt: Valtuuta %{client_name} käyttämään tiliäsi?
+        able_to: Tämä sovellus pystyy
       show:
-        title: 'Valtuutuskoodi'
-
+        title: Valtuutuskoodi
+      form_post:
+        title: Submit this form
     authorized_applications:
       confirmations:
-        revoke: 'Oletko varma?'
+        revoke: Oletko varma?
       buttons:
-        revoke: 'Evää'
+        revoke: Evää
       index:
-        title: 'Valtuuttamasi sovellukset'
-        application: 'Sovellukset'
-        created_at: 'Valtuutettu'
-        date_format: '%d. %m. %Y klo %H:%M:%S'
-
+        title: Valtuuttamasi sovellukset
+        application: Sovellukset
+        created_at: Valtuutettu
+        date_format: "%d. %m. %Y klo %H:%M:%S"
     pre_authorization:
-      status: 'Pre-authorization'
-
+      status: Pre-authorization
     errors:
       messages:
-        # Common error messages
         invalid_request:
-          unknown: 'Pyynnöstä puuttuu vaadittu parametri, se sisältää virheellisen parametrin arvon tai on muutoin väärin muodostettu.'
+          unknown: Pyynnöstä puuttuu vaadittu parametri, se sisältää virheellisen parametrin arvon tai on muutoin väärin muodostettu.
           missing_param: 'Missing required parameter: %{value}.'
-          request_not_authorized: 'Request need to be authorized. Required parameter for authorizing request is missing or invalid.'
-        invalid_redirect_uri: 'Uudelleenohjauksen URI ei ole validi.'
-        unauthorized_client: 'Asiakasohjelmaa ei ole valtuutettu suorittamaan haluttua pyyntöä käyttäen tätä metodia.'
-        access_denied: 'Resurssin omistaja tai valtuutuspalvelin kieltäytyi suorittamasta pyyntöä.'
-        invalid_scope: 'Pyynnön näkyvyysalue on virheellinen, tuntematon tai väärin muodostettu.'
-        invalid_code_challenge_method: 'The code challenge method must be plain or S256.'
-        server_error: 'Valtuutuspalvelin kohtasi odottamattoman tilan, jonka seurauksena se ei pystynyt suorittamaan pyyntöä.'
-        temporarily_unavailable: 'Valtuutuspalvelin ei tällä hetkellä pysty suorittamaan pyyntöä väliaikaisen ylikuormituksen tai palvelinhuollon takia.'
-
-        # Configuration error messages
+          request_not_authorized: Request need to be authorized. Required parameter for authorizing request is missing or invalid.
+        invalid_redirect_uri: Uudelleenohjauksen URI ei ole validi.
+        unauthorized_client: Asiakasohjelmaa ei ole valtuutettu suorittamaan haluttua pyyntöä käyttäen tätä metodia.
+        access_denied: Resurssin omistaja tai valtuutuspalvelin kieltäytyi suorittamasta pyyntöä.
+        invalid_scope: Pyynnön näkyvyysalue on virheellinen, tuntematon tai väärin muodostettu.
+        invalid_code_challenge_method: The code challenge method must be plain or S256.
+        server_error: Valtuutuspalvelin kohtasi odottamattoman tilan, jonka seurauksena se ei pystynyt suorittamaan pyyntöä.
+        temporarily_unavailable: Valtuutuspalvelin ei tällä hetkellä pysty suorittamaan pyyntöä väliaikaisen ylikuormituksen tai palvelinhuollon takia.
         credential_flow_not_configured: '"Resource Owner Password Credentials flow" - proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_from_credentials -asetusta ei ole konfiguroitu.'
         resource_owner_authenticator_not_configured: '"Resource Owner find" - proseduuri epäonnistui, koska Doorkeeper.configure.resource_owner_authenticator -asetusta ei ole konfiguroitu.'
-        admin_authenticator_not_configured: 'Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.'
-
-        # Access grant errors
-        unsupported_response_type: 'Valtuutuspalvelin ei tue tämän tyyppisiä vastauksia.'
-
-        # Access token errors
-        invalid_client: 'Asiakasohjelman valtuutus epäonnistui tuntemattoman asiakasohjelman, virheellisen valtuutuksen tai tukemattoman valtuutusmetodin takia.'
-        invalid_grant: 'Toimitettu valtuutus on virheellinen, vanhentunut, evätty, se ei vastaa valtuutuspyynnön uudelleenohjauksen URI:a tai sen on myöntänyt toinen asiakasohjelma.'
-        unsupported_grant_type: 'Valtuutuspalvelin ei tue tämän tyyppisiä valtuutuksia.'
-
+        admin_authenticator_not_configured: Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.
+        unsupported_response_type: Valtuutuspalvelin ei tue tämän tyyppisiä vastauksia.
+        unsupported_response_mode: The authorization server does not support this response mode.
+        invalid_client: Asiakasohjelman valtuutus epäonnistui tuntemattoman asiakasohjelman, virheellisen valtuutuksen tai tukemattoman valtuutusmetodin takia.
+        invalid_grant: Toimitettu valtuutus on virheellinen, vanhentunut, evätty, se ei vastaa valtuutuspyynnön uudelleenohjauksen URI:a tai sen on myöntänyt toinen asiakasohjelma.
+        unsupported_grant_type: Valtuutuspalvelin ei tue tämän tyyppisiä valtuutuksia.
         invalid_token:
-          revoked: "Pääsyoikeus evätty"
-          expired: "Pääsyoikeus vanhentunut"
-          unknown: "Pääsyoikeus virheellinen"
+          revoked: Pääsyoikeus evätty
+          expired: Pääsyoikeus vanhentunut
+          unknown: Pääsyoikeus virheellinen
         revoke:
-          unauthorized: "You are not authorized to revoke this token"
+          unauthorized: You are not authorized to revoke this token
         forbidden_token:
-          missing_scope: 'Access to this resource requires scope "%{oauth_scopes}".'
-
+          missing_scope: Access to this resource requires scope "%{oauth_scopes}".
     flash:
       applications:
         create:
-          notice: 'Sovellus luotu.'
+          notice: Sovellus luotu.
         destroy:
-          notice: 'Sovellus poistettu.'
+          notice: Sovellus poistettu.
         update:
-          notice: 'Sovellus päivitetty.'
+          notice: Sovellus päivitetty.
       authorized_applications:
         destroy:
-          notice: 'Sovellus evätty.'
-
+          notice: Sovellus evätty.
     layouts:
       admin:
-        title: 'Doorkeeper'
+        title: Doorkeeper
         nav:
-          oauth2_provider: 'OAuth2 tarjoaja'
-          applications: 'Sovellukset'
-          home: 'Etusivu'
+          oauth2_provider: OAuth2 tarjoaja
+          applications: Sovellukset
+          home: Etusivu
       application:
-        title: 'OAuth valtuutus vaadittu.'
+        title: OAuth valtuutus vaadittu.
