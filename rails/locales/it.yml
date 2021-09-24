@@ -120,6 +120,8 @@ it:
           unknown: "Il token di accesso non è valido"
         revoke:
           unauthorized: "Non sei autorizzato a revocare questo token"
+        forbidden_token:
+          missing_scope: 'Access to this resource requires scope "%{oauth_scopes}".'
 
     flash:
       applications:

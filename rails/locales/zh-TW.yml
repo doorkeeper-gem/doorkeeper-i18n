@@ -120,6 +120,8 @@ zh-TW:
           unknown: "Access Token 是無效的"
         revoke:
           unauthorized: "You are not authorized to revoke this token"
+        forbidden_token:
+          missing_scope: 'Access to this resource requires scope "%{oauth_scopes}".'
 
     flash:
       applications:

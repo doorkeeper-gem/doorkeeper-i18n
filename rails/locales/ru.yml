@@ -120,6 +120,8 @@ ru:
           unknown: "Неверный токен доступа"
         revoke:
           unauthorized: "Вы не авторизованы для удаления данного токена доступа"
+        forbidden_token:
+          missing_scope: 'Для доступа к данному ресурсу необходим(ы) скоуп(ы): "%{oauth_scopes}".'
 
     flash:
       applications:

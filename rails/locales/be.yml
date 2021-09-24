@@ -120,6 +120,8 @@ be:
           unknown: "Няверны токен доступу"
         revoke:
           unauthorized: "Вы не аўтарызаваны каб адазвать дадзены токен"
+        forbidden_token:
+          missing_scope: 'Доступ да гэтага рэсурсу патрабуе наступны(я) скоуп(ы): "%{oauth_scopes}".'
 
     flash:
       applications:

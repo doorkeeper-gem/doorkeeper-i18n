@@ -122,6 +122,8 @@ fr:
           unknown: "Le jeton d'accès n'est pas valide"
         revoke:
           unauthorized: "Vous n'êtes pas autorisé à révoquer ce jeton"
+        forbidden_token:
+          missing_scope: "L'accès à cette ressource nécessite une étendue "%{oauth_scopes}"."
 
     flash:
       applications:

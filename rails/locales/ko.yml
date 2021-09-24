@@ -120,6 +120,8 @@ ko:
           unknown: "접근 토큰이 유효하지 않습니다"
         revoke:
           unauthorized: "You are not authorized to revoke this token"
+        forbidden_token:
+          missing_scope: 'Access to this resource requires scope "%{oauth_scopes}".'
 
     flash:
       applications:

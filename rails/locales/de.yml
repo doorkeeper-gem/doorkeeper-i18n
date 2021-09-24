@@ -120,6 +120,8 @@ de:
           unknown: "Der Access Token ist nicht gültig/korrekt"
         revoke:
           unauthorized: "Sie sind nicht berechtigt, dieses Token zu widerrufen"
+        forbidden_token:
+          missing_scope: 'Der zugriff auf diese ressource erfordert umfang "%{oauth_scopes}".'
 
     flash:
       applications:
