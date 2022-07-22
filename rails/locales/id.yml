@@ -1,0 +1,135 @@
+id:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Nama'
+        redirect_uri: 'Mengalihkan URI'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'tidak boleh mengandung fragmen.'
+              invalid_uri: 'harus berupa URI yang valid.'
+              unspecified_scheme: 'harus menentukan suatu skema.'
+              relative_uri: 'harus berupa URI absolut.'
+              secured_uri: 'must be an HTTPS/SSL URI.'
+              forbidden_uri: 'harus berupa URI HTTPS/SSL.'
+            scopes:
+              not_match_configured: "tidak cocok dengan yang dikonfigurasi di server."
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Apakah Anda yakin?'
+      buttons:
+        edit: 'Ubah'
+        destroy: 'Hapus'
+        submit: 'Kirim'
+        cancel: 'Batal'
+        authorize: 'Izinkan'
+      form:
+        error: 'Ups! Periksa formulir Anda untuk kesalahan yang mungkin terjadi'
+      help:
+        confidential: 'Aplikasi akan digunakan di mana kunci rahasia klien dapat dijaga kerahasiaannya. Aplikasi seluler asli dan Aplikasi Satu Halaman dianggap tidak rahasia.'
+        redirect_uri: 'Gunakan satu baris per URI'
+        blank_redirect_uri: "Biarkan kosong jika Anda mengonfigurasi penyedia Anda untuk menggunakan Kredensial Klien, Kredensial Kata Sandi Pemilik Resource, atau jenis pemberian lainnya yang tidak memerlukan URI pengalihan."
+        scopes: 'Pisahkan cakupan dengan spasi. Biarkan kosong untuk menggunakan cakupan bawaan.'
+      edit:
+        title: 'Ubah aplikasi'
+      index:
+        title: 'Aplikasi anda'
+        new: 'Aplikasi Baru'
+        name: 'Nama'
+        callback_url: 'URL Panggilan Balik'
+        confidential: 'Konfidensial?'
+        actions: 'Tindakan'
+        confidentiality:
+          'yes': 'Ya'
+          'no': 'Tidak'
+      new:
+        title: 'Aplikasi Baru'
+      show:
+        title: 'Aplikasi: %{name}'
+        application_id: 'UID'
+        secret: 'Kunci rahasia'
+        secret_hashed: 'Kunci rahasia yang dihash'
+        scopes: 'Cakupan'
+        confidential: 'Konfidensial'
+        callback_urls: 'Url-url panggil balik'
+        actions: 'Tindakan'
+        not_defined: 'Tidak terdefinisi'
+    authorizations:
+      buttons:
+        authorize: 'Izinkan'
+        deny: 'Tolak'
+      error:
+        title: 'Telah terjadi kesalahan'
+      new:
+        title: 'Membutuhkan otorisasi '
+        prompt: 'Izinkan %{client_name} untuk memakai akun anda?'
+        able_to: 'Aplikasi ini dapat melakukan'
+      show:
+        title: 'Kode otorisasi'
+      form_post:
+        title: 'Kirim form ini'
+    authorized_applications:
+      confirmations:
+        revoke: 'Apakah anda yakin?'
+      buttons:
+        revoke: 'Cabut'
+      index:
+        title: 'Aplikasi anda yang terotorisasi'
+        application: 'Aplikasi'
+        created_at: 'Dibuat Pada'
+        date_format: '%Y-%m-%d %H:%M:%S'
+    pre_authorization:
+      status: 'Sebelum-otorisasi'
+    errors:
+      messages:
+        invalid_request:
+          unknown: 'Permintaan tidak memiliki parameter yang diperlukan, termasuk nilai parameter yang tidak didukung, atau formatnya salah.'
+          missing_param: 'Parameter yang diperlukan tidak ada: %{value}.'
+          request_not_authorized: 'Permintaan harus diotorisasi. Parameter yang diperlukan untuk permintaan otorisasi tidak ada atau tidak valid.'
+        invalid_redirect_uri: "Format uri redirect yang diminta salah atau tidak cocok dengan URI redirect klien."
+        unauthorized_client: 'Klien tidak diizinkan untuk melakukan permintaan ini menggunakan metode ini.'
+        access_denied: 'Pemilik resource atau server otorisasi menolak permintaan tersebut.'
+        invalid_scope: 'Cakupan yang diminta tidak valid, tidak diketahui, atau salah format'
+        invalid_code_challenge_method: 'Metode tantangan kode harus polos atau S256.'
+        server_error: 'Server otorisasi mengalami kondisi tak terduga yang mencegahnya memenuhi permintaan.'
+        temporarily_unavailable: 'Server otorisasi saat ini tidak dapat menangani permintaan karena kelebihan beban sementara atau pemeliharaan server'
+        credential_flow_not_configured: 'Alur Kredensial Kata Sandi Pemilik Resource gagal karena Doorkeeper.configure.resource_owner_from_credentials belum dikonfigurasi.'
+        resource_owner_authenticator_not_configured: 'Penemuan Pemilik Resource Daya gagal karena Doorkeeper.configure.resource_owner_authenticator belum dikonfigurasi'
+        admin_authenticator_not_configured: 'Akses ke panel admin dilarang karena Doorkeeper.configure.admin_authenticator belum dikonfigurasi.'
+        unsupported_response_type: 'Server otorisasi tidak mendukung jenis respons ini.'
+        unsupported_response_mode: 'Server otorisasi tidak mendukung mode respons ini.'
+        invalid_client: 'Otentikasi klien gagal karena klien tidak dikenal, tidak ada autentikasi klien yang disertakan, atau metode autentikasi yang tidak didukung.'
+        invalid_grant: 'Pemberian otorisasi yang diberikan tidak valid, kedaluwarsa, dicabut, tidak cocok dengan URI pengalihan yang digunakan dalam permintaan otorisasi, atau diberikan kepada klien lain.'
+        unsupported_grant_type: 'Jenis pemberian otorisasi tidak didukung oleh server otorisasi.'
+        invalid_token:
+          revoked: "Token akses telah dicabut"
+          expired: "Token akses telah kadaluwarsa"
+          unknown: "Token akses tidak valid"
+        revoke:
+          unauthorized: "Anda tidak berwenang untuk mencabut token ini"
+        forbidden_token:
+          missing_scope: 'Akses ke resource ini memerlukan cakupan "%{oauth_scopes}".'
+    flash:
+      applications:
+        create:
+          notice: 'Aplikasi telah dibuat.'
+        destroy:
+          notice: 'Aplikasi telah dihapus.'
+        update:
+          notice: 'Aplikasi telah diubah.'
+      authorized_applications:
+        destroy:
+          notice: 'Aplikasi telah dihapus.'
+    layouts:
+      admin:
+        title: 'Doorkeeper'
+        nav:
+          oauth2_provider: 'Penyedia OAuth2'
+          applications: 'Aplikasi'
+          home: 'Home'
+      application:
+        title: 'Membutuhkan otorisasi OAuth'
