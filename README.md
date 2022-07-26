@@ -1,6 +1,6 @@
 # doorkeeper-i18n
 [![Gem Version](https://badge.fury.io/rb/doorkeeper-i18n.svg)](http://badge.fury.io/rb/doorkeeper-i18n)
-[![Build Status](https://travis-ci.org/doorkeeper-gem/doorkeeper-i18n.svg?branch=master)](https://travis-ci.org/doorkeeper-gem/doorkeeper-i18n)
+[![CI](https://github.com/doorkeeper-gem/doorkeeper-i18n/actions/workflows/ci.yml/badge.svg)](https://github.com/doorkeeper-gem/doorkeeper-i18n/actions/workflows/ci.yml)
 
 Locales for [Doorkeeper](https://github.com/doorkeeper-gem/doorkeeper) gem.
 
@@ -39,6 +39,7 @@ Currently supported locales:
 * Czech (cs)
 * Slovak (sk)
 * Bulgarian (bg)
+* Indonesian (id)
 
 ## License
 
