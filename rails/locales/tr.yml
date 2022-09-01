@@ -52,7 +52,7 @@ tr:
         title: "Uygulama: %{name}"
         application_id: 'UID'
         secret: 'Gizli'
-        secret_hashed: 'Gizli hashed'
+        secret_hashed: 'Gizli karma'
         scopes: 'Yetkiler'
         confidential: 'Gizli'
         callback_urls: 'Yönlendirme URLleri'
