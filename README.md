@@ -40,6 +40,7 @@ Currently supported locales:
 * Slovak (sk)
 * Bulgarian (bg)
 * Indonesian (id)
+* Turkish (tr)
 
 ## License
 
