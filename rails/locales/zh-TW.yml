@@ -11,12 +11,12 @@ zh-TW:
             redirect_uri:
               fragment_present: 不能包含片段(#)
               invalid_uri: 必須是有效的網址
-              unspecified_scheme: must specify a scheme.
+              unspecified_scheme: 必須指定 URI scheme
               relative_uri: 必須是絕對的網址
               secured_uri: 必須是有 HTTPS/SSL 的網址
-              forbidden_uri: is forbidden by the server.
+              forbidden_uri: 被伺服器拒絕
             scopes:
-              not_match_configured: doesn't match configured on the server.
+              not_match_configured: 與伺服器設定不符
   doorkeeper:
     applications:
       confirmations:
@@ -30,10 +30,10 @@ zh-TW:
       form:
         error: Whoops! 確認表單內可能的錯誤
       help:
-        confidential: Application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential.
+        confidential: 應用將被使用在 client secret 可以保持機密的地方。手機原生 app 和 SPA 應被視為無法保持機密。
         redirect_uri: 每個網址必須只有一行
-        blank_redirect_uri: Leave it blank if you configured your provider to use Client Credentials, Resource Owner Password Credentials or any other grant type that doesn't require redirect URI.
-        scopes: Separate scopes with spaces. Leave blank to use the default scopes.
+        blank_redirect_uri: 如果你將 provider 設定為使用 Client Credentials、Resource Owner Password Credentials、或其他不需要 redirect URI 的 grant type，請將其留空。
+        scopes: scopes 之間要以空格分開。也可以是空的來使用 default scopes。
       edit:
         title: 編輯應用
       index:
@@ -71,7 +71,7 @@ zh-TW:
       show:
         title: 授權碼
       form_post:
-        title: Submit this form
+        title: 送出表單
     authorized_applications:
       confirmations:
         revoke: 確認嗎?
@@ -88,20 +88,20 @@ zh-TW:
       messages:
         invalid_request:
           unknown: 這個請求少了一個必要的參數，可能是不支援的參數值或是其他格式錯誤
-          missing_param: 'Missing required parameter: %{value}.'
-          request_not_authorized: Request need to be authorized. Required parameter for authorizing request is missing or invalid.
+          missing_param: '缺少必要的參數: %{value}.'
+          request_not_authorized: 請求需要被授權。可能是授權缺少必要參數、或是參數為無效數值
         invalid_redirect_uri: 這個轉向網址無效
         unauthorized_client: 這個應用並無被授權可以執行這個請求的方法
         access_denied: 擁有者或認證伺服器拒絕此需求
         invalid_scope: 請求範圍無效、未知或格式錯誤
-        invalid_code_challenge_method: The code challenge method must be plain or S256.
+        invalid_code_challenge_method: code challenge method 必須是純文字或 S256
         server_error: 授權伺服器因不明原因無法完成此請求
         temporarily_unavailable: 授權伺服器超載或維護中，無法處理此項請求
         credential_flow_not_configured: 資源擁有者密碼認證流程失敗，因為 Doorkeeper.configure.resource_owner_from_credentials 並未設定
         resource_owner_authenticator_not_configured: 資源擁有者查詢失敗，因為 Doorkeeper.configure.resource_owner_authenticator 並未設定
-        admin_authenticator_not_configured: Access to admin panel is forbidden due to Doorkeeper.configure.admin_authenticator being unconfigured.
-        unsupported_response_type: 授權伺服器並不支援此回應
-        unsupported_response_mode: The authorization server does not support this response mode.
+        admin_authenticator_not_configured: 禁止進入 admin 後台，因為 Doorkeeper.configure.admin_authenticator 並未設定.
+        unsupported_response_type: 不支援回應此 type.
+        unsupported_response_mode: 不支援回應此 mode.
         invalid_client: 由於未知、不支援或是沒有客戶端認證而失敗
         invalid_grant: 授權許可型態無效，或者轉向網址的授權許可無效、過期或已被撤銷
         unsupported_grant_type: 授權伺服器不支援此授權許可型態
@@ -110,9 +110,9 @@ zh-TW:
           expired: Access Token 已過期
           unknown: Access Token 是無效的
         revoke:
-          unauthorized: You are not authorized to revoke this token
+          unauthorized: 你並沒有被授權可撤銷此 token
         forbidden_token:
-          missing_scope: Access to this resource requires scope "%{oauth_scopes}".
+          missing_scope: 取用此資源必須要有 scope "%{oauth_scopes}".
     flash:
       applications:
         create:
