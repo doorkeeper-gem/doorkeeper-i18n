@@ -41,6 +41,7 @@ Currently supported locales:
 * Bulgarian (bg)
 * Indonesian (id)
 * Turkish (tr)
+* Vietnamese (vi)
 
 ## License
 
