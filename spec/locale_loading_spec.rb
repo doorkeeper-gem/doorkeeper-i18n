@@ -27,7 +27,7 @@ describe 'Locale loading' do
       expected_translations = <<-EOS.gsub(/^  */, '')
         In French: Fournisseur OAuth2
         In Italian: OAuth2 Provider
-        In Japanese: translation missing: ja.doorkeeper.layouts.admin.nav.oauth2_provider
+        In Japanese: Translation missing: ja.doorkeeper.layouts.admin.nav.oauth2_provider
       EOS
 
       expect(translations).to eq(expected_translations)
@@ -44,8 +44,8 @@ describe 'Locale loading' do
     it 'loads only this locale' do
       expected_translations = <<-EOS.gsub(/^  */, '')
         In French: Fournisseur OAuth2
-        In Italian: translation missing: it.doorkeeper.layouts.admin.nav.oauth2_provider
-        In Japanese: translation missing: ja.doorkeeper.layouts.admin.nav.oauth2_provider
+        In Italian: Translation missing: it.doorkeeper.layouts.admin.nav.oauth2_provider
+        In Japanese: Translation missing: ja.doorkeeper.layouts.admin.nav.oauth2_provider
       EOS
 
       expect(translations).to eq(expected_translations)
