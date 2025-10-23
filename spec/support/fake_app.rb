@@ -12,6 +12,7 @@ module DoorkeeperI18n
         app = Class.new(Rails::Application)
         app.config.eager_load = false
         app.config.i18n.enforce_available_locales = false
+        app.config.active_support.to_time_preserves_timezone = :zone
 
         yield(app.config) if block_given?
 
