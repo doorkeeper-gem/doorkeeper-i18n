@@ -42,6 +42,7 @@ Currently supported locales:
 * Indonesian (id)
 * Turkish (tr)
 * Vietnamese (vi)
+* Sweden (sv)
 
 ## License
 
