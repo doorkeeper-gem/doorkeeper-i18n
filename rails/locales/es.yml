@@ -67,7 +67,7 @@ es:
       new:
         title: Autorización requerida
         prompt: "¿Autorizas a %{client_name} para usar tu cuenta?"
-        able_to: Está aplicación tendrá permisos para
+        able_to: 'Está aplicación tendrá permisos para:'
       show:
         title: Código de autorización
       form_post:

@@ -67,7 +67,7 @@ da:
       new:
         title: Tilladelse påkrævet
         prompt: Giv %{client_name} tilladelse til at bruge din konto?
-        able_to: Denne applikation vil kunne
+        able_to: 'Denne applikation vil kunne:'
       show:
         title: Godkendelseskode
       form_post:

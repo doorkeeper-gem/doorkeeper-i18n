@@ -67,7 +67,7 @@ pt-BR:
       new:
         title: Autorização necessária
         prompt: Autorizar %{client_name} a usar sua conta?
-        able_to: Essa aplicação será capaz de
+        able_to: 'Essa aplicação será capaz de:'
       show:
         title: Código de autorização
       form_post:

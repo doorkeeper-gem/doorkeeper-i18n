@@ -67,7 +67,7 @@ nl:
       new:
         title: Authorisatie vereist
         prompt: "%{client_name} authoriseren om uw account te gebruiken?"
-        able_to: Deze applicatie zal in staat zijn om
+        able_to: 'Deze applicatie zal in staat zijn om:'
       show:
         title: Authorisatie code
       form_post:

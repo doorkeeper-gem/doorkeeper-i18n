@@ -67,7 +67,7 @@ ja:
       new:
         title: 承認が必要です
         prompt: あなたのアカウントで %{client_name} を承認しますか？
-        able_to: このアプリケーションは次のことが可能です
+        able_to: 'このアプリケーションは次のことが可能です:'
       show:
         title: 認可コード
       form_post:

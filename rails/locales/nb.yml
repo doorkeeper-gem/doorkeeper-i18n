@@ -67,7 +67,7 @@ nb:
       new:
         title: Autorisering nødvendig
         prompt: Autoriser %{client_name} til å bruke din bruker?
-        able_to: Denne applikasjonen vil ha tilgang til å gjøre følgende
+        able_to: 'Denne applikasjonen vil ha tilgang til å gjøre følgende:'
       show:
         title: Autorisasjonskode
       form_post:

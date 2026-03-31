@@ -67,7 +67,7 @@ id:
       new:
         title: 'Membutuhkan otorisasi '
         prompt: 'Izinkan %{client_name} untuk memakai akun anda?'
-        able_to: 'Aplikasi ini dapat melakukan'
+        able_to: 'Aplikasi ini dapat melakukan:'
       show:
         title: 'Kode otorisasi'
       form_post:

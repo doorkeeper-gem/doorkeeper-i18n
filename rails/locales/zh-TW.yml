@@ -67,7 +67,7 @@ zh-TW:
       new:
         title: 授權需求
         prompt: 授權 %{client_name} 使用您的帳戶?
-        able_to: 這個應用將會
+        able_to: '這個應用將會:'
       show:
         title: 授權碼
       form_post:

@@ -67,7 +67,7 @@ tr:
       new:
         title: 'Oturum zorunlu '
         prompt: "%{client_name} kullanıcı hesabınıza yetkilendirmek istiyor musunuz?"
-        able_to: 'Bu uygulama şunu yapabilir'
+        able_to: 'Bu uygulama şunu yapabilir:'
       show:
         title: 'Yetkilendirme kodu'
       form_post:

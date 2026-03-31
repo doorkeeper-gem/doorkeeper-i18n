@@ -67,7 +67,7 @@ sv:
       new:
         title: 'Auktorisering krävs'
         prompt: 'Auktorisera %{client_name} att använda ditt konto?'
-        able_to: 'Denna applikation kommer att kunna'
+        able_to: 'Denna applikation kommer att kunna:'
       show:
         title: 'Auktoriseringskod'
       form_post:

@@ -67,7 +67,7 @@ cs:
       new:
         title: Nutná autorizace
         prompt: Autorizovat %{client_name} k přístupu k vašemu účtu?
-        able_to: Tato aplikace bude mít tato oprávnění
+        able_to: 'Tato aplikace bude mít tato oprávnění:'
       show:
         title: Autorizační kód
       form_post:

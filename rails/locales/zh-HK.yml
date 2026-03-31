@@ -67,7 +67,7 @@ zh-HK:
       new:
         title: 需要用戶授權
         prompt: 應用程式 %{client_name} 要求得到你用戶的部份權限
-        able_to: 要求獲取權限
+        able_to: '要求獲取權限:'
       show:
         title: 授權代碼
       form_post:

@@ -67,7 +67,7 @@ fi:
       new:
         title: Valtuutus vaadittu
         prompt: Valtuuta %{client_name} käyttämään tiliäsi?
-        able_to: Tämä sovellus pystyy
+        able_to: 'Tämä sovellus pystyy:'
       show:
         title: Valtuutuskoodi
       form_post:

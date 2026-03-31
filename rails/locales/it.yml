@@ -67,7 +67,7 @@ it:
       new:
         title: Richiesta di autorizzazione
         prompt: Autorizzi %{client_name} ad usare il tuo account?
-        able_to: Questa applicazione portà
+        able_to: 'Questa applicazione portà:'
       show:
         title: Codide di autorizzazione
       form_post:

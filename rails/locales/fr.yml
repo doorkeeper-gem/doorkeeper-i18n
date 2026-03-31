@@ -69,7 +69,7 @@ fr:
       new:
         title: 'Autorisation requise'
         prompt: 'Autorisez %{client_name} à utiliser votre compte?'
-        able_to: 'Cette application pourra'
+        able_to: 'Cette application pourra :'
       show:
         title: "Code d'autorisation"
       form_post:

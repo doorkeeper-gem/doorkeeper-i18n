@@ -67,7 +67,7 @@ vi:
       new:
         title: 'Cần ủy quyền'
         prompt: 'Ủy quyền %{client_name} sử dụng tài khoản của bạn?'
-        able_to: 'Ứng dụng này sẽ có thể'
+        able_to: 'Ứng dụng này sẽ có thể:'
       show:
         title: 'Mã ủy quyền'
       form_post:

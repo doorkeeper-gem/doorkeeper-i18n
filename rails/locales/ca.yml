@@ -67,7 +67,7 @@ ca:
       new:
         title: Autorització necessària
         prompt: Autoritzes a %{client_name} per a que utilitzi el teu compte?
-        able_to: Aquesta aplicació tindrà permisos per a
+        able_to: 'Aquesta aplicació tindrà permisos per a:'
       show:
         title: Codi d'autorització
       form_post:
