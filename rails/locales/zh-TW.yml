@@ -50,12 +50,12 @@ zh-TW:
         title: 新應用
       show:
         title: '應用: %{name}'
-        application_id: 應用 UID
-        secret: 私鑰
+        application_id: '應用 UID:'
+        secret: '私鑰:'
         secret_hashed: Secret hashed
-        scopes: Scopes
-        confidential: Confidential
-        callback_urls: 回應網址
+        scopes: 'Scopes:'
+        confidential: 'Confidential:'
+        callback_urls: '回應網址:'
         actions: 動作
         not_defined: Not defined
     authorizations:
@@ -69,7 +69,7 @@ zh-TW:
         prompt: 授權 %{client_name} 使用您的帳戶?
         able_to: '這個應用將會:'
       show:
-        title: 授權碼
+        title: '授權碼:'
       form_post:
         title: 送出表單
     authorized_applications:

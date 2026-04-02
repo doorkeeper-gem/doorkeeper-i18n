@@ -50,12 +50,12 @@ sk:
         title: Nová aplikácia
       show:
         title: 'Aplikácia: %{name}'
-        application_id: UID aplikácie
-        secret: Secret
+        application_id: 'UID aplikácie:'
+        secret: 'Secret:'
         secret_hashed: Secret hashed
-        scopes: Scopes
-        confidential: Dôverné
-        callback_urls: Url presmerovanie
+        scopes: 'Scopes:'
+        confidential: 'Dôverné:'
+        callback_urls: 'Url presmerovanie:'
         actions: Akcia
         not_defined: Not defined
     authorizations:
@@ -69,7 +69,7 @@ sk:
         prompt: Autorizovať %{client_name} k prístupu k vášmu účtu?
         able_to: 'Táto aplikácia bude mať tieto oprávnenia:'
       show:
-        title: Autorizačný kód
+        title: 'Autorizačný kód:'
       form_post:
         title: Submit this form
     authorized_applications:

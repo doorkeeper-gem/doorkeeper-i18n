@@ -51,12 +51,12 @@ fr:
         title: 'Nouvelle application'
       show:
         title: 'Application : %{name}'
-        application_id: 'UID'
-        secret: 'Secret'
+        application_id: 'UID :'
+        secret: 'Secret :'
         secret_hashed: 'Secret hashé'
-        scopes: 'Portées'
-        confidential: 'Confidentiel'
-        callback_urls: "Urls du retour d'appel"
+        scopes: 'Portées :'
+        confidential: 'Confidentiel :'
+        callback_urls: "Urls du retour d'appel :"
         actions: 'Actions'
         not_defined: 'Non défini'
 
@@ -71,7 +71,7 @@ fr:
         prompt: 'Autorisez %{client_name} à utiliser votre compte?'
         able_to: 'Cette application pourra :'
       show:
-        title: "Code d'autorisation"
+        title: "Code d'autorisation :"
       form_post:
         title: 'Soumettre ce formulaire'
 

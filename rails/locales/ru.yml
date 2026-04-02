@@ -50,12 +50,12 @@ ru:
         title: Новое приложение
       show:
         title: 'Приложение: %{name}'
-        application_id: ID приложения
-        secret: Секретный ключ
+        application_id: 'ID приложения:'
+        secret: 'Секретный ключ:'
         secret_hashed: Secret hashed
-        scopes: Скоупы
-        confidential: Конфиденциально
-        callback_urls: Список URL обратного вызова
+        scopes: 'Скоупы:'
+        confidential: 'Конфиденциально:'
+        callback_urls: 'Список URL обратного вызова:'
         actions: Действия
         not_defined: Not defined
     authorizations:
@@ -69,7 +69,7 @@ ru:
         prompt: Разрешить %{client_name} использовать данные Вашей учётной записи?
         able_to: 'Данное приложение требует следующие разрешения:'
       show:
-        title: Код авторизации
+        title: 'Код авторизации:'
       form_post:
         title: Submit this form
     authorized_applications:

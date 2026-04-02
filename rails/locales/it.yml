@@ -50,12 +50,12 @@ it:
         title: Nuova Applicazione
       show:
         title: 'Applicazione: %{name}'
-        application_id: Id Applicazione
-        secret: Secret
+        application_id: 'Id Applicazione:'
+        secret: 'Secret:'
         secret_hashed: Secret hashed
-        scopes: Scopes
-        confidential: Confidential
-        callback_urls: Callback urls
+        scopes: 'Scopes:'
+        confidential: 'Confidential:'
+        callback_urls: 'Callback urls:'
         actions: Azioni
         not_defined: Not defined
     authorizations:
@@ -69,7 +69,7 @@ it:
         prompt: Autorizzi %{client_name} ad usare il tuo account?
         able_to: 'Questa applicazione portà:'
       show:
-        title: Codide di autorizzazione
+        title: 'Codide di autorizzazione:'
       form_post:
         title: Submit this form
     authorized_applications:

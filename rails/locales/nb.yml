@@ -50,12 +50,12 @@ nb:
         title: Ny Applikasjon
       show:
         title: 'Applikasjon: %{name}'
-        application_id: Applikasjoner UID
-        secret: Secret
+        application_id: 'Applikasjoner UID:'
+        secret: 'Secret:'
         secret_hashed: Secret hashed
-        scopes: Tagger
-        confidential: Konfidensiell
-        callback_urls: Callback url-er
+        scopes: 'Tagger:'
+        confidential: 'Konfidensiell:'
+        callback_urls: 'Callback url-er:'
         actions: Handlinger
         not_defined: Not defined
     authorizations:
@@ -69,7 +69,7 @@ nb:
         prompt: Autoriser %{client_name} til å bruke din bruker?
         able_to: 'Denne applikasjonen vil ha tilgang til å gjøre følgende:'
       show:
-        title: Autorisasjonskode
+        title: 'Autorisasjonskode:'
       form_post:
         title: Submit this form
     authorized_applications:

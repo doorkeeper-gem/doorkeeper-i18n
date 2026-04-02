@@ -50,12 +50,12 @@ ca:
         title: Nova aplicació
       show:
         title: 'Aplicació: %{name}'
-        application_id: Identificador d'aplicació
-        secret: Secret
+        application_id: "Identificador d'aplicació:"
+        secret: 'Secret:'
         secret_hashed: Secret hashed
-        scopes: Àmbits
-        confidential: Confidential
-        callback_urls: URLs de callback
+        scopes: 'Àmbits:'
+        confidential: 'Confidential:'
+        callback_urls: 'URLs de callback:'
         actions: Accions
         not_defined: Not defined
     authorizations:
@@ -69,7 +69,7 @@ ca:
         prompt: Autoritzes a %{client_name} per a que utilitzi el teu compte?
         able_to: 'Aquesta aplicació tindrà permisos per a:'
       show:
-        title: Codi d'autorització
+        title: "Codi d'autorització:"
       form_post:
         title: Submit this form
     authorized_applications:

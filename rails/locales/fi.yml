@@ -50,12 +50,12 @@ fi:
         title: Uusi sovellus
       show:
         title: 'Sovellus: %{name}'
-        application_id: Sovelluksen UID
-        secret: Salainen avain
+        application_id: 'Sovelluksen UID:'
+        secret: 'Salainen avain:'
         secret_hashed: Secret hashed
-        scopes: Näkyvyysalueet
-        confidential: Confidential
-        callback_urls: Callback URL:t
+        scopes: 'Näkyvyysalueet:'
+        confidential: 'Confidential:'
+        callback_urls: 'Callback URL:t:'
         actions: Toiminnot
         not_defined: Not defined
     authorizations:
@@ -69,7 +69,7 @@ fi:
         prompt: Valtuuta %{client_name} käyttämään tiliäsi?
         able_to: 'Tämä sovellus pystyy:'
       show:
-        title: Valtuutuskoodi
+        title: 'Valtuutuskoodi:'
       form_post:
         title: Submit this form
     authorized_applications:

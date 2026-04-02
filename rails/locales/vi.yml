@@ -50,12 +50,12 @@ vi:
         title: 'Ứng dụng mới'
       show:
         title: 'Ứng dụng: %{name}'
-        application_id: 'UID'
-        secret: 'Secret'
+        application_id: 'UID:'
+        secret: 'Secret:'
         secret_hashed: 'Secret mã hóa'
-        scopes: 'Scopes'
-        confidential: 'Bí mật'
-        callback_urls: 'Callback URL'
+        scopes: 'Scopes:'
+        confidential: 'Bí mật:'
+        callback_urls: 'Callback URL:'
         actions: 'Hành động'
         not_defined: 'Chưa xác định'
     authorizations:
@@ -69,7 +69,7 @@ vi:
         prompt: 'Ủy quyền %{client_name} sử dụng tài khoản của bạn?'
         able_to: 'Ứng dụng này sẽ có thể:'
       show:
-        title: 'Mã ủy quyền'
+        title: 'Mã ủy quyền:'
       form_post:
         title: 'Gửi form này'
     authorized_applications:

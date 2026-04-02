@@ -50,12 +50,12 @@ bg:
         title: Ново приложение
       show:
         title: 'Приложение: %{name}'
-        application_id: УИД на приложение
-        secret: Тайна
+        application_id: 'УИД на приложение:'
+        secret: 'Тайна:'
         secret_hashed: Secret hashed
-        scopes: Обхвати
-        confidential: Поверително
-        callback_urls: УРЛ-и за обратна връзка
+        scopes: 'Обхвати:'
+        confidential: 'Поверително:'
+        callback_urls: 'УРЛ-и за обратна връзка:'
         actions: Действия
         not_defined: Not defined
     authorizations:
@@ -69,7 +69,7 @@ bg:
         prompt: Бихте ли упълномощили %{client_name} да използва вашия акаунт?
         able_to: 'Това приложение ще може да:'
       show:
-        title: Код за упълномощаване
+        title: 'Код за упълномощаване:'
       form_post:
         title: Submit this form
     authorized_applications:
