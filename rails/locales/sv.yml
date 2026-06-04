@@ -50,12 +50,12 @@ sv:
         title: 'Ny applikation'
       show:
         title: 'Applikation: %{name}'
-        application_id: 'UID'
-        secret: 'Hemlighet'
+        application_id: 'UID:'
+        secret: 'Hemlighet:'
         secret_hashed: 'Hemlighet hashad'
-        scopes: 'Scope'
-        confidential: 'Konfidentiell'
-        callback_urls: 'Callback-URL:er'
+        scopes: 'Scope:'
+        confidential: 'Konfidentiell:'
+        callback_urls: 'Callback-URL:er:'
         actions: 'Åtgärder'
         not_defined: 'Inte definierad'
     authorizations:
@@ -67,9 +67,9 @@ sv:
       new:
         title: 'Auktorisering krävs'
         prompt: 'Auktorisera %{client_name} att använda ditt konto?'
-        able_to: 'Denna applikation kommer att kunna'
+        able_to: 'Denna applikation kommer att kunna:'
       show:
-        title: 'Auktoriseringskod'
+        title: 'Auktoriseringskod:'
       form_post:
         title: 'Skicka detta formulär'
     authorized_applications:

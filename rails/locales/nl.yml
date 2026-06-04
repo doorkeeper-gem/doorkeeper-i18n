@@ -50,12 +50,12 @@ nl:
         title: Nieuwe applicatie
       show:
         title: 'Applicatie: %{name}'
-        application_id: Applicatie UID
-        secret: Secret
+        application_id: 'Applicatie UID:'
+        secret: 'Secret:'
         secret_hashed: Secret hashed
-        scopes: Scopes
-        confidential: Confidentieel
-        callback_urls: Callback urls
+        scopes: 'Scopes:'
+        confidential: 'Confidentieel:'
+        callback_urls: 'Callback urls:'
         actions: Acties
         not_defined: Not defined
     authorizations:
@@ -67,9 +67,9 @@ nl:
       new:
         title: Authorisatie vereist
         prompt: "%{client_name} authoriseren om uw account te gebruiken?"
-        able_to: Deze applicatie zal in staat zijn om
+        able_to: 'Deze applicatie zal in staat zijn om:'
       show:
-        title: Authorisatie code
+        title: 'Authorisatie code:'
       form_post:
         title: Submit this form
     authorized_applications:

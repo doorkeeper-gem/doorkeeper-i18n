@@ -50,12 +50,12 @@ be:
         title: Новая праграма
       show:
         title: 'Праграма: %{name}'
-        application_id: ID праграмы
-        secret: Сакрэтны ключ
+        application_id: 'ID праграмы:'
+        secret: 'Сакрэтны ключ:'
         secret_hashed: Сакрэтны ключ зашыфраваны
-        scopes: Скоупы
-        confidential: Прыватна
-        callback_urls: Спіс URL зваротнага выкліку
+        scopes: 'Скоупы:'
+        confidential: 'Прыватна:'
+        callback_urls: 'Спіс URL зваротнага выкліку:'
         actions: Дзеянні
         not_defined: Не вызначана
     authorizations:
@@ -69,7 +69,7 @@ be:
         prompt: Дазволіць %{client_name} выкарыстоўваць звесткі Вашага ўліковага запісу?
         able_to: 'Дадзеная праграма патрабуе наступныя дазволы:'
       show:
-        title: Код аўтарызацыі
+        title: 'Код аўтарызацыі:'
       form_post:
         title: Адпраўце гэтую форму
     authorized_applications:

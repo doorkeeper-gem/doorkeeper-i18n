@@ -50,12 +50,12 @@ zh-HK:
         title: 新增應用程式
       show:
         title: 應用程式︰ %{name}
-        application_id: 應用程式 UID
-        secret: 密碼
+        application_id: '應用程式 UID:'
+        secret: '密碼:'
         secret_hashed: Secret hashed
-        scopes: 權限範圍
-        confidential: Confidential
-        callback_urls: 回傳網址
+        scopes: '權限範圍:'
+        confidential: 'Confidential:'
+        callback_urls: '回傳網址:'
         actions: 操作
         not_defined: Not defined
     authorizations:
@@ -67,9 +67,9 @@ zh-HK:
       new:
         title: 需要用戶授權
         prompt: 應用程式 %{client_name} 要求得到你用戶的部份權限
-        able_to: 要求獲取權限
+        able_to: '要求獲取權限:'
       show:
-        title: 授權代碼
+        title: '授權代碼:'
       form_post:
         title: Submit this form
     authorized_applications:

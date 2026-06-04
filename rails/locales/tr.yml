@@ -50,12 +50,12 @@ tr:
         title: 'Yeni Uygulama'
       show:
         title: "Uygulama: %{name}"
-        application_id: 'UID'
-        secret: 'Gizli'
+        application_id: 'UID:'
+        secret: 'Gizli:'
         secret_hashed: 'Gizli karma'
-        scopes: 'Yetkiler'
-        confidential: 'Gizli'
-        callback_urls: 'Yönlendirme URLleri'
+        scopes: 'Yetkiler:'
+        confidential: 'Gizli:'
+        callback_urls: 'Yönlendirme URLleri:'
         actions: 'Eylemler'
         not_defined: 'Belirtilmemiş'
     authorizations:
@@ -67,9 +67,9 @@ tr:
       new:
         title: 'Oturum zorunlu '
         prompt: "%{client_name} kullanıcı hesabınıza yetkilendirmek istiyor musunuz?"
-        able_to: 'Bu uygulama şunu yapabilir'
+        able_to: 'Bu uygulama şunu yapabilir:'
       show:
-        title: 'Yetkilendirme kodu'
+        title: 'Yetkilendirme kodu:'
       form_post:
         title: 'Bu formu gönderin'
     authorized_applications:

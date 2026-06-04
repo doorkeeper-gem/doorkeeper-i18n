@@ -50,12 +50,12 @@ zh-CN:
         title: 创建新应用
       show:
         title: 应用：%{name}
-        application_id: 应用 UID
-        secret: 应用密钥
+        application_id: '应用 UID:'
+        secret: '应用密钥:'
         secret_hashed: Secret hashed
-        scopes: 权限范围
-        confidential: Confidential
-        callback_urls: 回调 URL
+        scopes: '权限范围:'
+        confidential: 'Confidential:'
+        callback_urls: '回调 URL:'
         actions: 操作
         not_defined: Not defined
     authorizations:
@@ -67,9 +67,9 @@ zh-CN:
       new:
         title: 需要授权
         prompt: 授权 %{client_name} 使用你的帐户？
-        able_to: 此应用将能够
+        able_to: '此应用将能够:'
       show:
-        title: 授权代码
+        title: '授权代码:'
       form_post:
         title: Submit this form
     authorized_applications:

@@ -50,12 +50,12 @@ cs:
         title: Nová aplikace
       show:
         title: 'Aplikace: %{name}'
-        application_id: UID aplikace
-        secret: Secret
+        application_id: 'UID aplikace:'
+        secret: 'Secret:'
         secret_hashed: Secret hashed
-        scopes: Scopes
-        confidential: Důvěrné
-        callback_urls: Url přesměrování
+        scopes: 'Scopes:'
+        confidential: 'Důvěrné:'
+        callback_urls: 'Url přesměrování:'
         actions: Akce
         not_defined: Not defined
     authorizations:
@@ -67,9 +67,9 @@ cs:
       new:
         title: Nutná autorizace
         prompt: Autorizovat %{client_name} k přístupu k vašemu účtu?
-        able_to: Tato aplikace bude mít tato oprávnění
+        able_to: 'Tato aplikace bude mít tato oprávnění:'
       show:
-        title: Autorizační kód
+        title: 'Autorizační kód:'
       form_post:
         title: Submit this form
     authorized_applications:

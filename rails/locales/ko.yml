@@ -50,12 +50,12 @@ ko:
         title: 새 애플리케이션
       show:
         title: '애플리케이션: %{name}'
-        application_id: 애플리케이션 UID
-        secret: 비밀 키
+        application_id: '애플리케이션 UID:'
+        secret: '비밀 키:'
         secret_hashed: Secret hashed
-        scopes: 스코프
-        confidential: 기밀
-        callback_urls: 콜백 URL
+        scopes: '스코프:'
+        confidential: '기밀:'
+        callback_urls: '콜백 URL:'
         actions: 액션
         not_defined: Not defined
     authorizations:
@@ -69,7 +69,7 @@ ko:
         prompt: "%{client_name}이 당신의 계정을 사용하는 것을 허락하시겠습니까?"
         able_to: '이 애플리케이션은 다음의 것들을 할 수 있게 됩니다:'
       show:
-        title: 인증 코드
+        title: '인증 코드:'
       form_post:
         title: Submit this form
     authorized_applications:

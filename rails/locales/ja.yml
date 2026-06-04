@@ -50,12 +50,12 @@ ja:
         title: アプリケーションの作成
       show:
         title: 'アプリケーション: %{name}'
-        application_id: アプリケーションID
-        secret: シークレット
+        application_id: 'アプリケーションID:'
+        secret: 'シークレット:'
         secret_hashed: Secret hashed
-        scopes: スコープ
-        confidential: 機密
-        callback_urls: コールバックURL
+        scopes: 'スコープ:'
+        confidential: '機密:'
+        callback_urls: 'コールバックURL:'
         actions: アクション
         not_defined: Not defined
     authorizations:
@@ -67,9 +67,9 @@ ja:
       new:
         title: 承認が必要です
         prompt: あなたのアカウントで %{client_name} を承認しますか？
-        able_to: このアプリケーションは次のことが可能です
+        able_to: 'このアプリケーションは次のことが可能です:'
       show:
-        title: 認可コード
+        title: '認可コード:'
       form_post:
         title: Submit this form
     authorized_applications:

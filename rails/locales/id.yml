@@ -50,12 +50,12 @@ id:
         title: 'Aplikasi Baru'
       show:
         title: 'Aplikasi: %{name}'
-        application_id: 'UID'
-        secret: 'Kunci rahasia'
+        application_id: 'UID:'
+        secret: 'Kunci rahasia:'
         secret_hashed: 'Kunci rahasia yang dihash'
-        scopes: 'Cakupan'
-        confidential: 'Konfidensial'
-        callback_urls: 'Url-url panggil balik'
+        scopes: 'Cakupan:'
+        confidential: 'Konfidensial:'
+        callback_urls: 'Url-url panggil balik:'
         actions: 'Tindakan'
         not_defined: 'Tidak terdefinisi'
     authorizations:
@@ -67,9 +67,9 @@ id:
       new:
         title: 'Membutuhkan otorisasi '
         prompt: 'Izinkan %{client_name} untuk memakai akun anda?'
-        able_to: 'Aplikasi ini dapat melakukan'
+        able_to: 'Aplikasi ini dapat melakukan:'
       show:
-        title: 'Kode otorisasi'
+        title: 'Kode otorisasi:'
       form_post:
         title: 'Kirim form ini'
     authorized_applications:

@@ -50,12 +50,12 @@ da:
         title: Ny Applikation
       show:
         title: 'Applikation: %{name}'
-        application_id: Applikation UID
-        secret: Hemmelig
+        application_id: 'Applikation UID:'
+        secret: 'Hemmelig:'
         secret_hashed: Secret hashed
-        scopes: Afgrænsning
-        confidential: Fortroligt
-        callback_urls: Tilbagekald URL'er
+        scopes: 'Afgrænsning:'
+        confidential: 'Fortroligt:'
+        callback_urls: "Tilbagekald URL'er:"
         actions: Handlinger
         not_defined: Not defined
     authorizations:
@@ -67,9 +67,9 @@ da:
       new:
         title: Tilladelse påkrævet
         prompt: Giv %{client_name} tilladelse til at bruge din konto?
-        able_to: Denne applikation vil kunne
+        able_to: 'Denne applikation vil kunne:'
       show:
-        title: Godkendelseskode
+        title: 'Godkendelseskode:'
       form_post:
         title: Submit this form
     authorized_applications:
