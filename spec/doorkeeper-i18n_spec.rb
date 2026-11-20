@@ -20,7 +20,9 @@ Dir.glob('rails/locales/*.yml').each do |locale_file|
       end
       # Scan the decoded values, so YAML escapes do not split or hide a word, and end a
       # word at any other letter, as in Japanese text with no spaces between words.
+      # Drop strftime directives first: "%d.%m.%Yг." renders as "20.11.2026г.".
       words = strings.call(YAML.load_file(locale_file))
+                     .map { |value| value.gsub(/%[-_0^#:]*\d*[A-Za-z%]/, ' ') }
                      .flat_map { |value| value.scan(/[\p{Latin}\p{Cyrillic}\p{Greek}\p{M}]+/) }
       mixed = words.select { |word| scripts.count { |script| word.match?(script) } > 1 }
       expect(mixed).to be_empty
