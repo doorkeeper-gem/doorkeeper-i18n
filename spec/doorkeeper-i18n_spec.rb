@@ -10,7 +10,18 @@ Dir.glob('rails/locales/*.yml').each do |locale_file|
     # letter (Latin "i" for Cyrillic "і") was typed with the wrong keyboard layout.
     it 'has no words that mix letters from different alphabets' do
       scripts = [/\p{Latin}/, /\p{Cyrillic}/, /\p{Greek}/]
-      words = File.read(locale_file, encoding: 'UTF-8').scan(/[\p{L}\p{M}]+/)
+      strings = ->(node) do
+        case node
+        when Hash then node.values.flat_map(&strings)
+        when Array then node.flat_map(&strings)
+        when String then [node]
+        else []
+        end
+      end
+      # Scan the decoded values, so YAML escapes do not split or hide a word, and end a
+      # word at any other letter, as in Japanese text with no spaces between words.
+      words = strings.call(YAML.load_file(locale_file))
+                     .flat_map { |value| value.scan(/[\p{Latin}\p{Cyrillic}\p{Greek}\p{M}]+/) }
       mixed = words.select { |word| scripts.count { |script| word.match?(script) } > 1 }
       expect(mixed).to be_empty
     end
